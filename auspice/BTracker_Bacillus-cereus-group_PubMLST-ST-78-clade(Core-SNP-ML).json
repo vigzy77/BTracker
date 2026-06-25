@@ -7195,7 +7195,7 @@
         "type": "CDS"
       }
     },
-    "description": "## *Bacillus tropicus* ST78 clade (*B. cereus* group emerging lineage)\n\n### Core-SNP maximum likelihood based phylogeny \n\n- **# genomes: 14 (Last Updated: 2026-04-30)**\n\n#### Reference Genome (for SNP calling and annotation)\n\n- **BTyperDB_ID:** BTDB_2025-0002000.1\n- **Strain:** JMT105-2\n- **NCBI_BioSample:** SAMN32338359\n\n### SNP distance summary\n\n##### Pairwise SNP distances (n = 38 genomes | Last Updated: 2026-04-30)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/auspice/PubMLST-ST-78-clade_snp-dists_heatmap.svg\" alt=\"Heatmap of SNP distance matrix for ST78 clade genomes\" width=\"1000\">\n\n##### Distribution of pairwise SNP distances (n = 38 genomes | Last Updated: 2026-04-30)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/auspice/PubMLST-ST-78-clade_snp-dists_histogram.svg\" alt=\"Histogram of pairwise SNP distances between ST78 clade genomes\" width=\"1000\">\n\n### Bioinformatics Workflow\n\n**The following workflow was used to build this phylogenomic dataset:**\n\n- Gather all *B. tropicus* ST78 clade genomes from BTyperDB based on ANI (should be >99% ANI between any two genomes).\n- Refer to the BTyperDB pipeline for information about how the genomes were aggregated and annotated with genomic and metadata information.\n- Choose an appropriate reference genome to call variants (Highest quality genome: preferably most complete or closed genome, without plasmids)\n- Annotate reference genome using bakta\n- SNIPPY:\n    - Variant calling per sample and joint variant calling with snippy-core\n    - Remove reference sequence (the duplicate version with plasmids is still in the dataset)\n    - Clean the full length core genome alignment\n- GUBBINS:\n    - Identify and remove recombinations \n    - Get the full length recombination masked alignment\n- SNP-SITES:\n    - Query each resulting full length recombination-masked alignment for core SNPs and constant sites\n    - Also output the core SNP alignment in vcf format for augur\n- IQ-TREE:\n    - Build a maximum likelihood based phylogeny from the recombination-masked core SNP aligment\n- Midpoint root the phylogeny\n-  BTracker Dataset:\n    - Update the directory for the dataset (build) with the rooted tree, vcf alignment of recombination masked core SNPs and metadata files.\n    - Add reference information (reference sequence fasta, and annotation .gbff file)\n    - AUGUR:\n        - Refine the tree (add branch lengths and produce the relevant tree/node data json)\n        - Infer the ancestral sequence of each internal node and identify any nucleotide mutations on the branches leading to any node in the tree\n        - Identify amino acid mutations from the nucleotide mutations and a reference sequence with gene coordinate annotations\n        - Create a gene list to only extract annotations which have a mutation\n        - Identify amino acid mutations again, but restricting them to this gene list\n        - Annotate the tree (add BTyperDB metadata, geoloc, auspice config and dataset description) and export dataset for Auspice",
+    "description": "## *Bacillus tropicus* ST78 clade (*B. cereus* group emerging lineage)\n\n### Core-SNP maximum likelihood based phylogeny \n\n- **No. of genomes: 14 (Last Updated: 2026-04-30)**\n\n#### Reference Genome (for SNP calling and annotation)\n\n- **BTyperDB_ID:** BTDB_2025-0002000.1\n- **Strain:** JMT105-2\n- **NCBI_BioSample:** SAMN32338359\n\n### SNP distance summary\n\n#### Pairwise SNP distances (n = 38 genomes | Last Updated: 2026-04-30)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/auspice/PubMLST-ST-78-clade_snp-dists_heatmap.svg\" alt=\"Heatmap of SNP distance matrix for ST78 clade genomes\" width=\"1000\">\n\n#### Distribution of pairwise SNP distances (n = 38 genomes | Last Updated: 2026-04-30)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/auspice/PubMLST-ST-78-clade_snp-dists_histogram.svg\" alt=\"Histogram of pairwise SNP distances between ST78 clade genomes\" width=\"1000\">\n\n### Bioinformatics Workflow\n\n**The following workflow was used to build this phylogenomic dataset:**\n\n- Gather all *B. tropicus* ST78 clade genomes from BTyperDB based on ANI (should be >99% ANI between any two genomes).\n- Refer to the BTyperDB pipeline for information about how the genomes were aggregated and annotated with genomic and metadata information.\n- Choose an appropriate reference genome to call variants (Highest quality genome: preferably most complete or closed genome, without plasmids)\n- Annotate reference genome using bakta\n- SNIPPY:\n    - Variant calling per sample and joint variant calling with snippy-core\n    - Remove reference sequence (the duplicate version with plasmids is still in the dataset)\n    - Clean the full length core genome alignment\n- GUBBINS:\n    - Identify and remove recombinations \n    - Get the full length recombination masked alignment\n- SNP-SITES:\n    - Query each resulting full length recombination-masked alignment for core SNPs and constant sites\n    - Also output the core SNP alignment in vcf format for augur\n- IQ-TREE:\n    - Build a maximum likelihood based phylogeny from the recombination-masked core SNP aligment\n- Midpoint root the phylogeny\n-  BTracker Dataset:\n    - Update the directory for the dataset (build) with the rooted tree, vcf alignment of recombination masked core SNPs and metadata files.\n    - Add reference information (reference sequence fasta, and annotation .gbff file)\n    - AUGUR:\n        - Refine the tree (add branch lengths and produce the relevant tree/node data json)\n        - Infer the ancestral sequence of each internal node and identify any nucleotide mutations on the branches leading to any node in the tree\n        - Identify amino acid mutations from the nucleotide mutations and a reference sequence with gene coordinate annotations\n        - Create a gene list to only extract annotations which have a mutation\n        - Identify amino acid mutations again, but restricting them to this gene list\n        - Annotate the tree (add BTyperDB metadata, geoloc, auspice config and dataset description) and export dataset for Auspice",
     "colorings": [
       {
         "key": "gt",
@@ -7363,10 +7363,6 @@
       {
         "key": "Country(Code)",
         "demes": {
-          "KOR": {
-            "latitude": 37.0,
-            "longitude": 127.5
-          },
           "USA": {
             "latitude": 38.0,
             "longitude": -97.0
@@ -7374,47 +7370,51 @@
           "CHN": {
             "latitude": 35.0,
             "longitude": 105.0
+          },
+          "KOR": {
+            "latitude": 37.0,
+            "longitude": 127.5
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "US-LA": {
-            "latitude": 30.519,
-            "longitude": -91.521
-          },
-          "CN-GX": {
-            "latitude": 24.326,
-            "longitude": 109.415
-          },
-          "US-FL": {
-            "latitude": 27.665,
-            "longitude": -81.516
+          "US-IL": {
+            "latitude": 40.633,
+            "longitude": -89.399
           },
           "US-NC": {
             "latitude": 35.76,
             "longitude": -79.019
           },
-          "US-MO": {
-            "latitude": 37.964,
-            "longitude": -91.832
+          "US-FL": {
+            "latitude": 27.665,
+            "longitude": -81.516
           },
           "US-TX": {
             "latitude": 31.969,
             "longitude": -99.902
           },
+          "US-MO": {
+            "latitude": 37.964,
+            "longitude": -91.832
+          },
+          "US-LA": {
+            "latitude": 30.519,
+            "longitude": -91.521
+          },
           "CN-ZJ": {
             "latitude": 30.266,
             "longitude": 120.154
           },
+          "CN-GX": {
+            "latitude": 24.326,
+            "longitude": 109.415
+          },
           "US-NJ": {
             "latitude": 40.058,
             "longitude": -74.406
-          },
-          "US-IL": {
-            "latitude": 40.633,
-            "longitude": -89.399
           }
         }
       }
