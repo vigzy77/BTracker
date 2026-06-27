@@ -7919,13 +7919,13 @@
       {
         "key": "Country(Code)",
         "demes": {
-          "THA": {
-            "latitude": 15.0,
-            "longitude": 100.0
-          },
           "TWN": {
             "latitude": 23.5,
             "longitude": 121.0
+          },
+          "THA": {
+            "latitude": 15.0,
+            "longitude": 100.0
           },
           "CHN": {
             "latitude": 35.0,
@@ -7936,6 +7936,10 @@
       {
         "key": "Region(Code)",
         "demes": {
+          "CN-JX": {
+            "latitude": 28.674,
+            "longitude": 115.91
+          },
           "CN-LN": {
             "latitude": 41.836,
             "longitude": 123.429
@@ -7943,10 +7947,6 @@
           "CN-HE": {
             "latitude": 38.036,
             "longitude": 114.47
-          },
-          "CN-JX": {
-            "latitude": 28.674,
-            "longitude": 115.91
           },
           "TW-PIF": {
             "latitude": 35.862,
