@@ -317,11 +317,11 @@
             "#56B4E9"
           ],
           [
-            "Wisconsin",
+            "wallonne, R\u00e9gion",
             "#F0E442"
           ],
           [
-            "wallonne, R\u00e9gion",
+            "Wisconsin",
             "#009E73"
           ]
         ]
@@ -815,17 +815,9 @@
       {
         "key": "Continent",
         "demes": {
-          "Oceania": {
-            "latitude": -25.0,
-            "longitude": 162.0
-          },
           "Asia": {
             "latitude": 35.0,
             "longitude": 85.0
-          },
-          "Europe": {
-            "latitude": 50.0,
-            "longitude": 15.0
           },
           "North America": {
             "latitude": 30.0,
@@ -835,46 +827,54 @@
             "latitude": 4.0,
             "longitude": 22.0
           },
+          "Europe": {
+            "latitude": 50.0,
+            "longitude": 15.0
+          },
           "South America": {
             "latitude": -20.0,
             "longitude": -60.0
+          },
+          "Oceania": {
+            "latitude": -25.0,
+            "longitude": 162.0
           }
         }
       },
       {
         "key": "Country(Code)",
         "demes": {
-          "CHN": {
-            "latitude": 35.0,
-            "longitude": 105.0
-          },
           "GHA": {
             "latitude": 8.0,
             "longitude": -2.0
-          },
-          "CAN": {
-            "latitude": 60.0,
-            "longitude": -95.0
           },
           "DEU": {
             "latitude": 51.0,
             "longitude": 9.0
           },
-          "ARG": {
-            "latitude": -34.0,
-            "longitude": -64.0
+          "ESP": {
+            "latitude": 40.0,
+            "longitude": -4.0
+          },
+          "CAN": {
+            "latitude": 60.0,
+            "longitude": -95.0
+          },
+          "BEL": {
+            "latitude": 50.8333,
+            "longitude": 4.0
           },
           "UKR": {
             "latitude": 49.0,
             "longitude": 32.0
           },
-          "TUR": {
-            "latitude": 39.0,
-            "longitude": 35.0
+          "CHN": {
+            "latitude": 35.0,
+            "longitude": 105.0
           },
-          "SRB": {
-            "latitude": 44.0,
-            "longitude": 21.0
+          "USA": {
+            "latitude": 38.0,
+            "longitude": -97.0
           },
           "NLD": {
             "latitude": 52.5,
@@ -884,98 +884,90 @@
             "latitude": 72.0,
             "longitude": -40.0
           },
-          "PNG": {
-            "latitude": -6.0,
-            "longitude": 147.0
-          },
-          "GBR": {
-            "latitude": 54.0,
-            "longitude": -2.0
-          },
-          "USA": {
-            "latitude": 38.0,
-            "longitude": -97.0
-          },
           "GRC": {
             "latitude": 39.0,
             "longitude": 22.0
           },
-          "BEL": {
-            "latitude": 50.8333,
-            "longitude": 4.0
+          "PNG": {
+            "latitude": -6.0,
+            "longitude": 147.0
           },
-          "ESP": {
-            "latitude": 40.0,
-            "longitude": -4.0
+          "SRB": {
+            "latitude": 44.0,
+            "longitude": 21.0
+          },
+          "TUR": {
+            "latitude": 39.0,
+            "longitude": 35.0
+          },
+          "ARG": {
+            "latitude": -34.0,
+            "longitude": -64.0
+          },
+          "GBR": {
+            "latitude": 54.0,
+            "longitude": -2.0
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "US-IL": {
-            "latitude": 40.633,
-            "longitude": -89.399
+          "US-MD": {
+            "latitude": 39.046,
+            "longitude": -76.641
           },
-          "CA-QC": {
-            "latitude": 46.813,
-            "longitude": -71.207
-          },
-          "US-MO": {
-            "latitude": 37.964,
-            "longitude": -91.832
+          "CA-ON": {
+            "latitude": 51.254,
+            "longitude": -85.323
           },
           "CN-BJ": {
             "latitude": 39.904,
             "longitude": 116.407
           },
-          "US-SD": {
-            "latitude": 43.97,
-            "longitude": -99.902
-          },
           "AR-X": {
             "latitude": -31.42,
             "longitude": -64.189
           },
-          "CN-HB": {
-            "latitude": 30.545,
-            "longitude": 114.342
-          },
-          "US-OK": {
-            "latitude": 35.008,
-            "longitude": -97.093
-          },
-          "US-MA": {
-            "latitude": 42.407,
-            "longitude": -71.382
-          },
-          "DE-SN": {
-            "latitude": 51.105,
-            "longitude": 13.202
+          "US-NC": {
+            "latitude": 35.76,
+            "longitude": -79.019
           },
           "CA-NB": {
             "latitude": 46.565,
             "longitude": -66.462
           },
-          "DE-BE": {
-            "latitude": 52.52,
-            "longitude": 13.405
+          "US-MO": {
+            "latitude": 37.964,
+            "longitude": -91.832
           },
-          "US-WI": {
-            "latitude": 43.784,
-            "longitude": -88.788
+          "US-SD": {
+            "latitude": 43.97,
+            "longitude": -99.902
           },
-          "GB-SCT": {
-            "latitude": 56.0,
-            "longitude": -4.0
+          "US-IA": {
+            "latitude": 41.878,
+            "longitude": -93.098
           },
-          "DE-SH": {
-            "latitude": 54.219,
-            "longitude": 9.696
+          "US-MN": {
+            "latitude": 46.73,
+            "longitude": -94.686
           },
-          "US-MD": {
-            "latitude": 39.046,
-            "longitude": -76.641
+          "CN-HB": {
+            "latitude": 30.545,
+            "longitude": 114.342
+          },
+          "US-IL": {
+            "latitude": 40.633,
+            "longitude": -89.399
+          },
+          "US-OK": {
+            "latitude": 35.008,
+            "longitude": -97.093
+          },
+          "DE-SN": {
+            "latitude": 51.105,
+            "longitude": 13.202
           },
           "US-IN": {
             "latitude": 39.769,
@@ -985,29 +977,37 @@
             "latitude": 40.713,
             "longitude": -74.006
           },
-          "CA-ON": {
-            "latitude": 51.254,
-            "longitude": -85.323
-          },
-          "US-NC": {
-            "latitude": 35.76,
-            "longitude": -79.019
-          },
-          "US-MN": {
-            "latitude": 46.73,
-            "longitude": -94.686
-          },
           "US-OH": {
             "latitude": 40.417,
             "longitude": -82.907
+          },
+          "DE-BE": {
+            "latitude": 52.52,
+            "longitude": 13.405
+          },
+          "DE-SH": {
+            "latitude": 54.219,
+            "longitude": 9.696
+          },
+          "GB-SCT": {
+            "latitude": 56.0,
+            "longitude": -4.0
+          },
+          "CA-QC": {
+            "latitude": 46.813,
+            "longitude": -71.207
           },
           "BE-WAL": {
             "latitude": 50.401,
             "longitude": 5.134
           },
-          "US-IA": {
-            "latitude": 41.878,
-            "longitude": -93.098
+          "US-MA": {
+            "latitude": 42.407,
+            "longitude": -71.382
+          },
+          "US-WI": {
+            "latitude": 43.784,
+            "longitude": -88.788
           }
         }
       }
