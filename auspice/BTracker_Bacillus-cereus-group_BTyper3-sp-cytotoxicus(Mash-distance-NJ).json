@@ -21,6 +21,10 @@
       }
     ],
     "display_defaults": {
+      "panels": [
+        "tree",
+        "map"
+      ],
       "map_triplicate": true,
       "color_by": "Source_1",
       "geo_resolution": "Country(Code)"
@@ -197,15 +201,15 @@
             "#D55E00"
           ],
           [
-            "wallonne, R\u00e9gion",
+            "Washington",
             "#0072B2"
           ],
           [
-            "Washington",
+            "Z\u00fcrich",
             "#56B4E9"
           ],
           [
-            "Z\u00fcrich",
+            "wallonne, R\u00e9gion",
             "#F0E442"
           ]
         ]
@@ -322,7 +326,7 @@
       {
         "key": "matchcol_BTyper3_anthrax_toxin",
         "title": "BTyper3_anthrax_toxin",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -333,7 +337,7 @@
       {
         "key": "matchcol_BTyper3_emetic_toxin_cereulide",
         "title": "BTyper3_emetic_toxin_cereulide",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -344,7 +348,7 @@
       {
         "key": "matchcol_BTyper3_diarrheal_toxin_Nhe",
         "title": "BTyper3_diarrheal_toxin_Nhe",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "3",
@@ -355,7 +359,7 @@
       {
         "key": "matchcol_BTyper3_diarrheal_toxin_Hbl",
         "title": "BTyper3_diarrheal_toxin_Hbl",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -388,7 +392,7 @@
       {
         "key": "matchcol_BTyper3_capsule_Cap",
         "title": "BTyper3_capsule_Cap",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -399,7 +403,7 @@
       {
         "key": "matchcol_BTyper3_capsule_Has",
         "title": "BTyper3_capsule_Has",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -410,7 +414,7 @@
       {
         "key": "matchcol_BTyper3_capsule_Bps",
         "title": "BTyper3_capsule_Bps",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "1",
@@ -436,7 +440,7 @@
       {
         "key": "matchcol_BTyper3_PubMLST_ST",
         "title": "BTyper3_PubMLST_ST",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "2112",
@@ -561,6 +565,10 @@
       {
         "key": "Continent",
         "demes": {
+          "North America": {
+            "latitude": 30.0,
+            "longitude": -100.0
+          },
           "Asia": {
             "latitude": 35.0,
             "longitude": 85.0
@@ -568,10 +576,6 @@
           "Europe": {
             "latitude": 50.0,
             "longitude": 15.0
-          },
-          "North America": {
-            "latitude": 30.0,
-            "longitude": -100.0
           }
         }
       },
@@ -586,33 +590,33 @@
             "latitude": 52.5,
             "longitude": 5.75
           },
-          "DEU": {
-            "latitude": 51.0,
-            "longitude": 9.0
-          },
-          "USA": {
-            "latitude": 38.0,
-            "longitude": -97.0
+          "FRA": {
+            "latitude": 46.0,
+            "longitude": 2.0
           },
           "CHE": {
             "latitude": 47.0,
             "longitude": 8.0
           },
+          "USA": {
+            "latitude": 38.0,
+            "longitude": -97.0
+          },
           "CAN": {
             "latitude": 60.0,
             "longitude": -95.0
           },
-          "FRA": {
-            "latitude": 46.0,
-            "longitude": 2.0
-          },
-          "THA": {
-            "latitude": 15.0,
-            "longitude": 100.0
+          "DEU": {
+            "latitude": 51.0,
+            "longitude": 9.0
           },
           "NOR": {
             "latitude": 62.0,
             "longitude": 10.0
+          },
+          "THA": {
+            "latitude": 15.0,
+            "longitude": 100.0
           }
         }
       },
@@ -623,44 +627,45 @@
             "latitude": 39.046,
             "longitude": -76.641
           },
-          "BE-WAL": {
-            "latitude": 50.401,
-            "longitude": 5.134
-          },
-          "US-CA": {
-            "latitude": 36.778,
-            "longitude": -119.418
-          },
-          "BE-BRU": {
-            "latitude": 50.826,
-            "longitude": 4.38
-          },
-          "US-AL": {
-            "latitude": 32.318,
-            "longitude": -86.902
-          },
-          "DE-NW": {
-            "latitude": 51.433,
-            "longitude": 7.662
-          },
-          "US-WA": {
-            "latitude": 47.751,
-            "longitude": -120.74
+          "CH-ZH": {
+            "latitude": 47.377,
+            "longitude": 8.542
           },
           "DE-SN": {
             "latitude": 51.105,
             "longitude": 13.202
           },
-          "CH-ZH": {
-            "latitude": 47.377,
-            "longitude": 8.542
+          "US-CA": {
+            "latitude": 36.778,
+            "longitude": -119.418
+          },
+          "US-AL": {
+            "latitude": 32.318,
+            "longitude": -86.902
+          },
+          "US-WA": {
+            "latitude": 47.751,
+            "longitude": -120.74
+          },
+          "BE-WAL": {
+            "latitude": 50.401,
+            "longitude": 5.134
+          },
+          "DE-NW": {
+            "latitude": 51.433,
+            "longitude": 7.662
+          },
+          "BE-BRU": {
+            "latitude": 50.826,
+            "longitude": 4.38
           }
         }
       }
     ],
     "panels": [
       "tree",
-      "map"
+      "map",
+      "measurements"
     ]
   },
   "tree": {
@@ -724,6 +729,9 @@
                   },
                   "Metadata_Source": {
                     "value": "BioProject; BioSample"
+                  },
+                  "AMRFinderPlus_Class(Genes)": {
+                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                   },
                   "BTyper3_species(ANI)": {
                     "value": "cytotoxicus(94.83197021484375)"
@@ -894,6 +902,9 @@
                   },
                   "Metadata_Source": {
                     "value": "BioProject; BioSample"
+                  },
+                  "AMRFinderPlus_Class(Genes)": {
+                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                   },
                   "BTyper3_species(ANI)": {
                     "value": "cytotoxicus(95.01931762695312)"
@@ -1076,6 +1087,9 @@
                   },
                   "Metadata_Source": {
                     "value": "BioSample"
+                  },
+                  "AMRFinderPlus_Class(Genes)": {
+                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
                   },
                   "BTyper3_species(ANI)": {
                     "value": "cytotoxicus(95.11834716796875)"
@@ -1276,6 +1290,9 @@
                           "Metadata_Source": {
                             "value": "BioSample"
                           },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
+                          },
                           "BTyper3_species(ANI)": {
                             "value": "cytotoxicus(95.08108520507812)"
                           },
@@ -1460,6 +1477,9 @@
                           },
                           "Metadata_Source": {
                             "value": "BioSample"
+                          },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
                           },
                           "BTyper3_species(ANI)": {
                             "value": "cytotoxicus(95.12132263183594)"
@@ -1652,6 +1672,9 @@
                           "Metadata_Source": {
                             "value": "BioSample"
                           },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
+                          },
                           "BTyper3_species(ANI)": {
                             "value": "cytotoxicus(95.0504150390625)"
                           },
@@ -1841,6 +1864,9 @@
                               "Metadata_Source": {
                                 "value": "BioProject; BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "cytotoxicus(95.10215759277344)"
                               },
@@ -2007,6 +2033,9 @@
                               },
                               "Metadata_Source": {
                                 "value": "BioSample"
+                              },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
                               },
                               "BTyper3_species(ANI)": {
                                 "value": "cytotoxicus(95.13378143310547)"
@@ -2218,6 +2247,9 @@
                       "Metadata_Source": {
                         "value": "BioSample"
                       },
+                      "AMRFinderPlus_Class(Genes)": {
+                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                      },
                       "BTyper3_species(ANI)": {
                         "value": "cytotoxicus(99.4642105102539)"
                       },
@@ -2392,6 +2424,9 @@
                               },
                               "Metadata_Source": {
                                 "value": "BioSample"
+                              },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                               },
                               "BTyper3_species(ANI)": {
                                 "value": "cytotoxicus(99.27357482910156)"
@@ -2585,6 +2620,9 @@
                                   "Metadata_Source": {
                                     "value": "BioProject; BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "cytotoxicus(99.27998352050781)"
                                   },
@@ -2761,6 +2799,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.34656524658203)"
@@ -2943,6 +2984,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.31324005126953)"
@@ -3139,6 +3183,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "cytotoxicus(98.94276428222656)"
                               },
@@ -3326,6 +3373,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(98.9303970336914)"
                                       },
@@ -3498,6 +3548,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(98.85993957519531)"
@@ -3681,6 +3734,9 @@
                                       "Metadata_Source": {
                                         "value": "Publication (https://doi.org/10.1128/genomea.01568-16)"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(98.8752670288086)"
                                       },
@@ -3853,6 +3909,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(98.98635864257812)"
@@ -4063,6 +4122,9 @@
                           "Metadata_Source": {
                             "value": "BioSample"
                           },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                          },
                           "BTyper3_species(ANI)": {
                             "value": "cytotoxicus(99.3778076171875)"
                           },
@@ -4235,6 +4297,9 @@
                           },
                           "Metadata_Source": {
                             "value": "BioSample"
+                          },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                           },
                           "BTyper3_species(ANI)": {
                             "value": "cytotoxicus(99.48670959472656)"
@@ -4425,6 +4490,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "cytotoxicus(99.26412200927734)"
                               },
@@ -4606,6 +4674,9 @@
                               },
                               "Metadata_Source": {
                                 "value": "Publication (https://doi.org/10.1016/j.ijfoodmicro.2025.111266); BioProject; BioSample"
+                              },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                               },
                               "BTyper3_species(ANI)": {
                                 "value": "cytotoxicus(99.27650451660156)"
@@ -4805,6 +4876,9 @@
                                   "Metadata_Source": {
                                     "value": "Publication (https://doi.org/10.1016/j.ijfoodmicro.2025.111266); BioProject; BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "cytotoxicus(99.2727279663086)"
                                   },
@@ -4992,6 +5066,9 @@
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.37128448486328)"
                                           },
@@ -5164,6 +5241,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.31358337402344)"
@@ -5347,6 +5427,9 @@
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.26490783691406)"
                                           },
@@ -5526,6 +5609,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.2995834350586)"
@@ -5707,6 +5793,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.25959014892578)"
                                                   },
@@ -5879,6 +5968,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.2818603515625)"
@@ -6082,6 +6174,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "Publication (https://doi.org/10.3390/foods11233924); BioProject; BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.39048767089844)"
@@ -6295,6 +6390,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.38987731933594)"
                                                   },
@@ -6473,6 +6571,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.38203430175781)"
@@ -6661,6 +6762,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Collaborator (Hendrik Frentzel, German Federal Institute for Risk Assessment, Berlin, Germany)"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.33854675292969)"
                                                   },
@@ -6833,6 +6937,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.33854675292969)"
@@ -7018,6 +7125,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1128/aem.01778-23); BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.32344818115234)"
@@ -7207,6 +7317,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Validation (Monika Ehling-Schulz); Publication (https://doi.org/0.1186/s12862-015-0529-4); BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.33343505859375)"
                                                   },
@@ -7389,6 +7502,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.33598327636719)"
                                                   },
@@ -7556,6 +7672,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.30880737304688)"
@@ -7749,6 +7868,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.3172607421875)"
                                                           },
@@ -7928,6 +8050,9 @@
                                                               },
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
+                                                              },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                               },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "cytotoxicus(99.31175994873047)"
@@ -8115,6 +8240,9 @@
                                                                   "Metadata_Source": {
                                                                     "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
                                                                   },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                                  },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "cytotoxicus(99.37122344970703)"
                                                                   },
@@ -8287,6 +8415,9 @@
                                                                   },
                                                                   "Metadata_Source": {
                                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
+                                                                  },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                                   },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "cytotoxicus(99.35980224609375)"
@@ -8503,6 +8634,9 @@
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.42118072509766)"
                                           },
@@ -8683,6 +8817,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.3349838256836)"
                                               },
@@ -8855,6 +8992,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.38953399658203)"
@@ -9047,6 +9187,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.32420349121094)"
                                               },
@@ -9227,6 +9370,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.32518005371094)"
                                                   },
@@ -9399,6 +9545,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.29754638671875)"
@@ -9584,6 +9733,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.33419799804688)"
                                               },
@@ -9763,6 +9915,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.29979705810547)"
@@ -9951,6 +10106,9 @@
                                                           "Metadata_Source": {
                                                             "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.29871368408203)"
                                                           },
@@ -10131,6 +10289,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "cytotoxicus(99.3691177368164)"
                                                               },
@@ -10303,6 +10464,9 @@
                                                               },
                                                               "Metadata_Source": {
                                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                                              },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                               },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "cytotoxicus(99.30217742919922)"
@@ -10488,6 +10652,9 @@
                                                           "Metadata_Source": {
                                                             "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.2950210571289)"
                                                           },
@@ -10668,6 +10835,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "cytotoxicus(99.30359649658203)"
                                                               },
@@ -10840,6 +11010,9 @@
                                                               },
                                                               "Metadata_Source": {
                                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2018.06.008, https://doi.org/10.1016/j.ijfoodmicro.2024.111015); BioProject; BioSample"
+                                                              },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                               },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "cytotoxicus(99.31446838378906)"
@@ -11052,6 +11225,9 @@
                       "Metadata_Source": {
                         "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
                       },
+                      "AMRFinderPlus_Class(Genes)": {
+                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                      },
                       "BTyper3_species(ANI)": {
                         "value": "cytotoxicus(99.36287689208984)"
                       },
@@ -11244,6 +11420,9 @@
                           "Metadata_Source": {
                             "value": "Publication (https://doi.org/10.4081/ijfs.2025.12691); BioSample"
                           },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                          },
                           "BTyper3_species(ANI)": {
                             "value": "cytotoxicus(99.39002990722656)"
                           },
@@ -11431,6 +11610,9 @@
                           },
                           "Metadata_Source": {
                             "value": "BioSample"
+                          },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                           },
                           "BTyper3_species(ANI)": {
                             "value": "cytotoxicus(99.31880187988281)"
@@ -11646,6 +11828,9 @@
                                   "Metadata_Source": {
                                     "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "FOSFOMYCIN(fosB);MACROLIDE(abc-f)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "cytotoxicus(99.50965118408203)"
                                   },
@@ -11830,6 +12015,9 @@
                                   },
                                   "Metadata_Source": {
                                     "value": "BioSample"
+                                  },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                   },
                                   "BTyper3_species(ANI)": {
                                     "value": "cytotoxicus(99.53866577148438)"
@@ -12017,6 +12205,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.60050964355469)"
                                       },
@@ -12186,6 +12377,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.58639526367188)"
@@ -12365,6 +12559,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.58345031738281)"
@@ -12546,6 +12743,9 @@
                                           "Metadata_Source": {
                                             "value": "BioProject; BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.45535278320312)"
                                           },
@@ -12721,6 +12921,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.54446411132812)"
@@ -12939,6 +13142,9 @@
                                       "Metadata_Source": {
                                         "value": "Publication (https://doi.org/10.3390/foods11233924); BioProject; BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.58325958251953)"
                                       },
@@ -13137,6 +13343,9 @@
                                           "Metadata_Source": {
                                             "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.5477523803711)"
                                           },
@@ -13322,6 +13531,9 @@
                                               "Metadata_Source": {
                                                 "value": "Collaborator (Hendrik Frentzel, German Federal Institute for Risk Assessment, Berlin, Germany)"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.52500915527344)"
                                               },
@@ -13494,6 +13706,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.52500915527344)"
@@ -13688,6 +13903,9 @@
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.52955627441406)"
                                           },
@@ -13877,6 +14095,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.56520080566406)"
                                               },
@@ -14058,6 +14279,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.56658172607422)"
@@ -14252,6 +14476,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.53355407714844)"
                                           },
@@ -14434,6 +14661,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.3390/foods11233924); BioProject; BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.564453125)"
@@ -14630,6 +14860,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.3390/foods11233924); BioProject; BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.50453186035156)"
                                                   },
@@ -14814,6 +15047,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.58136749267578)"
@@ -15028,6 +15264,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.5160903930664)"
                                           },
@@ -15200,6 +15439,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.54175567626953)"
@@ -15398,6 +15640,9 @@
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1128/aem.01778-23, https://doi.org/10.1128/mra.00836-20); BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.50080108642578)"
                                           },
@@ -15591,6 +15836,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1128/MRA.00836-20, https://doi.org/10.1016/j.ijfoodmicro.2018.06.019); BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.51464080810547)"
@@ -15795,6 +16043,9 @@
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.53044891357422)"
                                           },
@@ -15988,6 +16239,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "Publication (https://doi.org/10.1016/j.ijfoodmicro.2025.111266); BioProject; BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.51702117919922)"
@@ -16187,6 +16441,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1046/j.1365-2958.2000.02147.x); BioProject"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.5157241821289)"
                                               },
@@ -16381,6 +16638,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.ijfoodmicro.2025.111266); BioProject; BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.5472412109375)"
                                               },
@@ -16572,6 +16832,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.ijfoodmicro.2025.111266); BioProject; BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.53596496582031)"
                                               },
@@ -16751,6 +17014,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.53231811523438)"
@@ -16939,6 +17205,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Publication (https://doi.org/10.3390/foods11233924); BioProject; BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.52798461914062)"
@@ -17153,6 +17422,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "FOSFOMYCIN(fosB);MACROLIDE(abc-f)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "cytotoxicus(99.51876068115234)"
                               },
@@ -17335,6 +17607,9 @@
                                   },
                                   "Metadata_Source": {
                                     "value": "Publication (https://doi.org/10.3390/foods11233924); BioProject; BioSample"
+                                  },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "FOSFOMYCIN(fosB);MACROLIDE(abc-f)"
                                   },
                                   "BTyper3_species(ANI)": {
                                     "value": "cytotoxicus(99.61734771728516)"
@@ -17525,6 +17800,9 @@
                                       "Metadata_Source": {
                                         "value": "Publication (https://doi.org/10.1016/j.fm.2025.104882); BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);MACROLIDE(abc-f)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.59163665771484)"
                                       },
@@ -17706,6 +17984,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);MACROLIDE(abc-f)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.58084869384766)"
@@ -17897,6 +18178,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "cytotoxicus(99.68406677246094)"
                                   },
@@ -18069,6 +18353,9 @@
                                   },
                                   "Metadata_Source": {
                                     "value": "BioSample"
+                                  },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                   },
                                   "BTyper3_species(ANI)": {
                                     "value": "cytotoxicus(99.89659881591797)"
@@ -18262,6 +18549,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "cytotoxicus(99.9775161743164)"
                                       },
@@ -18442,6 +18732,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.95789337158203)"
                                           },
@@ -18621,6 +18914,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.95748901367188)"
@@ -18806,6 +19102,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.96153259277344)"
@@ -19012,6 +19311,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "cytotoxicus(99.98863983154297)"
                                           },
@@ -19197,6 +19499,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "cytotoxicus(99.99051666259766)"
@@ -19384,6 +19689,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.9977798461914)"
                                                   },
@@ -19562,6 +19870,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.99747467041016)"
@@ -19750,6 +20061,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "cytotoxicus(99.99427032470703)"
@@ -19943,6 +20257,9 @@
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.9936294555664)"
                                                       },
@@ -20115,6 +20432,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.99454498291016)"
@@ -20306,6 +20626,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.95008850097656)"
@@ -20499,6 +20822,9 @@
                                                           "Metadata_Source": {
                                                             "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.94047546386719)"
                                                           },
@@ -20680,6 +21006,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "Publication (https://doi.org/10.1128/genomea.01568-16)"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.92362976074219)"
@@ -20872,6 +21201,9 @@
                                                           "Metadata_Source": {
                                                             "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.98473358154297)"
                                                           },
@@ -21044,6 +21376,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.98941802978516)"
@@ -21239,6 +21574,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.99472045898438)"
                                                           },
@@ -21411,6 +21749,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.98973083496094)"
@@ -21614,6 +21955,9 @@
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.97682189941406)"
                                                       },
@@ -21786,6 +22130,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "Publication (https://doi.org/10.1016/j.fm.2023.104399); BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.97875213623047)"
@@ -21981,6 +22328,9 @@
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.97901916503906)"
                                                       },
@@ -22161,6 +22511,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.9791030883789)"
                                                           },
@@ -22333,6 +22686,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.97854614257812)"
@@ -22533,6 +22889,9 @@
                                                       "Metadata_Source": {
                                                         "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(100.0)"
                                                       },
@@ -22705,6 +23064,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "cytotoxicus(99.99767303466797)"
@@ -22882,6 +23244,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.99530792236328)"
@@ -23073,6 +23438,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "Publication (https://doi.org/10.3390/foods11233924); BioProject; BioSample"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.98641967773438)"
@@ -23268,6 +23636,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "cytotoxicus(99.99453735351562)"
                                                           },
@@ -23454,6 +23825,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "cytotoxicus(99.99405670166016)"
                                                               },
@@ -23632,6 +24006,9 @@
                                                               },
                                                               "Metadata_Source": {
                                                                 "value": "Validation (Danai Etter; Sophia Johler); Publication (https://doi.org/10.1038/s41598-018-36254-x); BioSample"
+                                                              },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga)"
                                                               },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "cytotoxicus(99.99405670166016)"

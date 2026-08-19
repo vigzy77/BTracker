@@ -21,6 +21,10 @@
       }
     ],
     "display_defaults": {
+      "panels": [
+        "tree",
+        "map"
+      ],
       "map_triplicate": true,
       "color_by": "Source_1",
       "geo_resolution": "Country(Code)"
@@ -313,11 +317,11 @@
             "#56B4E9"
           ],
           [
-            "wallonne, R\u00e9gion",
+            "Wisconsin",
             "#F0E442"
           ],
           [
-            "Wisconsin",
+            "wallonne, R\u00e9gion",
             "#009E73"
           ]
         ]
@@ -412,7 +416,7 @@
       {
         "key": "matchcol_BTyper3_anthrax_toxin",
         "title": "BTyper3_anthrax_toxin",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -423,7 +427,7 @@
       {
         "key": "matchcol_BTyper3_emetic_toxin_cereulide",
         "title": "BTyper3_emetic_toxin_cereulide",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -434,7 +438,7 @@
       {
         "key": "matchcol_BTyper3_diarrheal_toxin_Nhe",
         "title": "BTyper3_diarrheal_toxin_Nhe",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -457,7 +461,7 @@
       {
         "key": "matchcol_BTyper3_diarrheal_toxin_Hbl",
         "title": "BTyper3_diarrheal_toxin_Hbl",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -502,7 +506,7 @@
       {
         "key": "matchcol_BTyper3_capsule_Cap",
         "title": "BTyper3_capsule_Cap",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -513,7 +517,7 @@
       {
         "key": "matchcol_BTyper3_capsule_Has",
         "title": "BTyper3_capsule_Has",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "0",
@@ -524,7 +528,7 @@
       {
         "key": "matchcol_BTyper3_capsule_Bps",
         "title": "BTyper3_capsule_Bps",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "1",
@@ -550,7 +554,7 @@
       {
         "key": "matchcol_BTyper3_PubMLST_ST",
         "title": "BTyper3_PubMLST_ST",
-        "type": "ordinal",
+        "type": "categorical",
         "scale": [
           [
             "83",
@@ -791,7 +795,6 @@
       "Source_2",
       "Human_Illness",
       "GTDB_Species",
-      "AMRFinderPlus_Subclass(Genes)",
       "matchcol_BTyper3_species",
       "matchcol_BTyper3_subspecies",
       "matchcol_BTyper3_anthrax_toxin",
@@ -812,9 +815,21 @@
       {
         "key": "Continent",
         "demes": {
+          "Oceania": {
+            "latitude": -25.0,
+            "longitude": 162.0
+          },
+          "Asia": {
+            "latitude": 35.0,
+            "longitude": 85.0
+          },
           "Europe": {
             "latitude": 50.0,
             "longitude": 15.0
+          },
+          "North America": {
+            "latitude": 30.0,
+            "longitude": -100.0
           },
           "Africa": {
             "latitude": 4.0,
@@ -823,79 +838,35 @@
           "South America": {
             "latitude": -20.0,
             "longitude": -60.0
-          },
-          "Asia": {
-            "latitude": 35.0,
-            "longitude": 85.0
-          },
-          "Oceania": {
-            "latitude": -25.0,
-            "longitude": 162.0
-          },
-          "North America": {
-            "latitude": 30.0,
-            "longitude": -100.0
           }
         }
       },
       {
         "key": "Country(Code)",
         "demes": {
-          "GRL": {
-            "latitude": 72.0,
-            "longitude": -40.0
-          },
-          "GRC": {
-            "latitude": 39.0,
-            "longitude": 22.0
-          },
-          "ESP": {
-            "latitude": 40.0,
-            "longitude": -4.0
-          },
-          "NLD": {
-            "latitude": 52.5,
-            "longitude": 5.75
-          },
-          "ARG": {
-            "latitude": -34.0,
-            "longitude": -64.0
+          "CHN": {
+            "latitude": 35.0,
+            "longitude": 105.0
           },
           "GHA": {
             "latitude": 8.0,
             "longitude": -2.0
           },
-          "UKR": {
-            "latitude": 49.0,
-            "longitude": 32.0
-          },
-          "PNG": {
-            "latitude": -6.0,
-            "longitude": 147.0
-          },
           "CAN": {
             "latitude": 60.0,
             "longitude": -95.0
-          },
-          "GBR": {
-            "latitude": 54.0,
-            "longitude": -2.0
-          },
-          "CHN": {
-            "latitude": 35.0,
-            "longitude": 105.0
           },
           "DEU": {
             "latitude": 51.0,
             "longitude": 9.0
           },
-          "BEL": {
-            "latitude": 50.8333,
-            "longitude": 4.0
+          "ARG": {
+            "latitude": -34.0,
+            "longitude": -64.0
           },
-          "USA": {
-            "latitude": 38.0,
-            "longitude": -97.0
+          "UKR": {
+            "latitude": 49.0,
+            "longitude": 32.0
           },
           "TUR": {
             "latitude": 39.0,
@@ -904,6 +875,38 @@
           "SRB": {
             "latitude": 44.0,
             "longitude": 21.0
+          },
+          "NLD": {
+            "latitude": 52.5,
+            "longitude": 5.75
+          },
+          "GRL": {
+            "latitude": 72.0,
+            "longitude": -40.0
+          },
+          "PNG": {
+            "latitude": -6.0,
+            "longitude": 147.0
+          },
+          "GBR": {
+            "latitude": 54.0,
+            "longitude": -2.0
+          },
+          "USA": {
+            "latitude": 38.0,
+            "longitude": -97.0
+          },
+          "GRC": {
+            "latitude": 39.0,
+            "longitude": 22.0
+          },
+          "BEL": {
+            "latitude": 50.8333,
+            "longitude": 4.0
+          },
+          "ESP": {
+            "latitude": 40.0,
+            "longitude": -4.0
           }
         }
       },
@@ -914,104 +917,105 @@
             "latitude": 40.633,
             "longitude": -89.399
           },
-          "DE-SN": {
-            "latitude": 51.105,
-            "longitude": 13.202
-          },
-          "US-WI": {
-            "latitude": 43.784,
-            "longitude": -88.788
-          },
-          "US-NY": {
-            "latitude": 40.713,
-            "longitude": -74.006
-          },
-          "CN-HB": {
-            "latitude": 30.545,
-            "longitude": 114.342
-          },
-          "US-IN": {
-            "latitude": 39.769,
-            "longitude": -86.158
-          },
-          "CA-NB": {
-            "latitude": 46.565,
-            "longitude": -66.462
-          },
-          "US-NC": {
-            "latitude": 35.76,
-            "longitude": -79.019
-          },
-          "US-IA": {
-            "latitude": 41.878,
-            "longitude": -93.098
-          },
-          "US-MD": {
-            "latitude": 39.046,
-            "longitude": -76.641
-          },
-          "US-OK": {
-            "latitude": 35.008,
-            "longitude": -97.093
-          },
-          "DE-BE": {
-            "latitude": 52.52,
-            "longitude": 13.405
-          },
-          "US-MA": {
-            "latitude": 42.407,
-            "longitude": -71.382
-          },
-          "GB-SCT": {
-            "latitude": 56.0,
-            "longitude": -4.0
-          },
-          "BE-WAL": {
-            "latitude": 50.401,
-            "longitude": 5.134
-          },
-          "AR-X": {
-            "latitude": -31.42,
-            "longitude": -64.189
+          "CA-QC": {
+            "latitude": 46.813,
+            "longitude": -71.207
           },
           "US-MO": {
             "latitude": 37.964,
             "longitude": -91.832
           },
+          "CN-BJ": {
+            "latitude": 39.904,
+            "longitude": 116.407
+          },
           "US-SD": {
             "latitude": 43.97,
             "longitude": -99.902
           },
-          "US-OH": {
-            "latitude": 40.417,
-            "longitude": -82.907
+          "AR-X": {
+            "latitude": -31.42,
+            "longitude": -64.189
           },
-          "US-MN": {
-            "latitude": 46.73,
-            "longitude": -94.686
+          "CN-HB": {
+            "latitude": 30.545,
+            "longitude": 114.342
+          },
+          "US-OK": {
+            "latitude": 35.008,
+            "longitude": -97.093
+          },
+          "US-MA": {
+            "latitude": 42.407,
+            "longitude": -71.382
+          },
+          "DE-SN": {
+            "latitude": 51.105,
+            "longitude": 13.202
+          },
+          "CA-NB": {
+            "latitude": 46.565,
+            "longitude": -66.462
+          },
+          "DE-BE": {
+            "latitude": 52.52,
+            "longitude": 13.405
+          },
+          "US-WI": {
+            "latitude": 43.784,
+            "longitude": -88.788
+          },
+          "GB-SCT": {
+            "latitude": 56.0,
+            "longitude": -4.0
           },
           "DE-SH": {
             "latitude": 54.219,
             "longitude": 9.696
           },
+          "US-MD": {
+            "latitude": 39.046,
+            "longitude": -76.641
+          },
+          "US-IN": {
+            "latitude": 39.769,
+            "longitude": -86.158
+          },
+          "US-NY": {
+            "latitude": 40.713,
+            "longitude": -74.006
+          },
           "CA-ON": {
             "latitude": 51.254,
             "longitude": -85.323
           },
-          "CN-BJ": {
-            "latitude": 39.904,
-            "longitude": 116.407
+          "US-NC": {
+            "latitude": 35.76,
+            "longitude": -79.019
           },
-          "CA-QC": {
-            "latitude": 46.813,
-            "longitude": -71.207
+          "US-MN": {
+            "latitude": 46.73,
+            "longitude": -94.686
+          },
+          "US-OH": {
+            "latitude": 40.417,
+            "longitude": -82.907
+          },
+          "BE-WAL": {
+            "latitude": 50.401,
+            "longitude": 5.134
+          },
+          "US-IA": {
+            "latitude": 41.878,
+            "longitude": -93.098
           }
         }
       }
     ],
     "panels": [
       "tree",
-      "map"
+      "map",
+      "measurements"
     ]
   },
   "tree": {
@@ -1085,6 +1089,9 @@
                       },
                       "Metadata_Source": {
                         "value": "BioSample"
+                      },
+                      "AMRFinderPlus_Class(Genes)": {
+                        "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                       },
                       "BTyper3_species(ANI)": {
                         "value": "pseudomycoides(96.2992172241211)"
@@ -1272,6 +1279,9 @@
                           "Metadata_Source": {
                             "value": "BioSample"
                           },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                          },
                           "BTyper3_species(ANI)": {
                             "value": "pseudomycoides(96.33232116699219)"
                           },
@@ -1458,6 +1468,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(96.34098052978516)"
                               },
@@ -1636,6 +1649,9 @@
                               },
                               "Metadata_Source": {
                                 "value": "BioSample"
+                              },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                               },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(96.25021362304688)"
@@ -1829,6 +1845,9 @@
                           },
                           "Metadata_Source": {
                             "value": "Publication (https://doi.org/10.3390/foods13081140, https://doi.org/10.1186/1471-2180-6-20); BioSample"
+                          },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                           },
                           "BTyper3_species(ANI)": {
                             "value": "pseudomycoides(96.14805603027344)"
@@ -2031,6 +2050,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(96.25862884521484)"
                               },
@@ -2216,6 +2238,9 @@
                                   },
                                   "Metadata_Source": {
                                     "value": "Publication (https://doi.org/10.1002/pbc.27568); BioSample"
+                                  },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                   },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.17755889892578)"
@@ -2414,6 +2439,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "Validation (Tyler Chandross-Cohen); Publication (https://doi.org/10.1128/AEM.02479-17); BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(96.26032257080078)"
@@ -2620,6 +2648,9 @@
                                               "Metadata_Source": {
                                                 "value": "Validation (Tyler Chandross-Cohen); Publication (https://doi.org/10.1128/AEM.02479-17); BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.32218933105469)"
                                               },
@@ -2810,6 +2841,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.24921417236328)"
@@ -3014,6 +3048,9 @@
                                               "Metadata_Source": {
                                                 "value": "Validation (Tyler Chandross-Cohen); Publication (https://doi.org/10.1128/AEM.02479-17); BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.14034271240234)"
                                               },
@@ -3212,6 +3249,9 @@
                                                   "Metadata_Source": {
                                                     "value": "Collaborator (Jasna Kovac, Pennsylvania State University, University Park, PA, USA)"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.17935943603516)"
                                                   },
@@ -3393,6 +3433,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Validation (Tyler Chandross-Cohen); Publication (https://doi.org/10.1128/AEM.02479-17); BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.21586608886719)"
@@ -3588,6 +3631,9 @@
                           "Metadata_Source": {
                             "value": "BioSample"
                           },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                          },
                           "BTyper3_species(ANI)": {
                             "value": "pseudomycoides(96.2170639038086)"
                           },
@@ -3775,6 +3821,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.14781951904297)"
                                   },
@@ -3953,6 +4002,9 @@
                                   },
                                   "Metadata_Source": {
                                     "value": "BioSample"
+                                  },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                   },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.11009216308594)"
@@ -4152,6 +4204,9 @@
                                       "Metadata_Source": {
                                         "value": "Publication (https://doi.org/10.1128/AEM.02709-08, https://doi.org/10.1128/genomea.00380-13); BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(96.17097473144531)"
                                       },
@@ -4315,6 +4370,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.20469665527344)"
                                               },
@@ -4475,6 +4533,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.26182556152344)"
@@ -4670,6 +4731,9 @@
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1128/AEM.02709-08, https://doi.org/10.1128/genomea.00380-13); BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.13825988769531)"
                                               },
@@ -4825,6 +4889,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.20733642578125)"
@@ -4986,6 +5053,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.23735046386719)"
@@ -5204,6 +5274,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.22709655761719)"
                                               },
@@ -5376,6 +5449,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.26217651367188)"
@@ -5565,6 +5641,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.29544067382812)"
                                               },
@@ -5743,6 +5822,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.39180755615234)"
@@ -5933,6 +6015,9 @@
                                           "Metadata_Source": {
                                             "value": "Collaborator (Hendrik Frentzel, German Federal Institute for Risk Assessment, Berlin, Germany)"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(96.26233673095703)"
                                           },
@@ -6106,6 +6191,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "Publication (https://doi.org/10.1128/AEM.02709-08, https://doi.org/10.1128/genomea.00380-13); BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.18294525146484)"
@@ -6290,6 +6378,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioProject; BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.1109848022461)"
                                                   },
@@ -6464,6 +6555,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "Collaborator (Hendrik Frentzel, German Federal Institute for Risk Assessment, Berlin, Germany)"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.24935913085938)"
@@ -6673,6 +6767,9 @@
                       "Metadata_Source": {
                         "value": "BioSample"
                       },
+                      "AMRFinderPlus_Class(Genes)": {
+                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                      },
                       "BTyper3_species(ANI)": {
                         "value": "pseudomycoides(96.25767517089844)"
                       },
@@ -6866,6 +6963,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(96.25818634033203)"
                               },
@@ -7044,6 +7144,9 @@
                               },
                               "Metadata_Source": {
                                 "value": "BioSample"
+                              },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                               },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(96.28207397460938)"
@@ -7240,6 +7343,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.2380599975586)"
                                   },
@@ -7425,6 +7531,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(96.28319549560547)"
@@ -7612,6 +7721,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(96.30833435058594)"
                                           },
@@ -7798,6 +7910,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.34345245361328)"
                                               },
@@ -7976,6 +8091,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.34148406982422)"
@@ -8171,6 +8289,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.29261016845703)"
                                   },
@@ -8356,6 +8477,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(96.28884887695312)"
@@ -8550,6 +8674,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.27623748779297)"
                                               },
@@ -8736,6 +8863,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.37053680419922)"
                                                   },
@@ -8914,6 +9044,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.27116394042969)"
@@ -9105,6 +9238,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.29692840576172)"
                                               },
@@ -9291,6 +9427,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.36223602294922)"
                                                   },
@@ -9469,6 +9608,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vatI,vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.370361328125)"
@@ -9672,6 +9814,9 @@
                       "Metadata_Source": {
                         "value": "BioSample"
                       },
+                      "AMRFinderPlus_Class(Genes)": {
+                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                      },
                       "BTyper3_species(ANI)": {
                         "value": "pseudomycoides(96.32997131347656)"
                       },
@@ -9872,6 +10017,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.41302490234375)"
                                   },
@@ -10050,6 +10198,9 @@
                                   },
                                   "Metadata_Source": {
                                     "value": "BioSample"
+                                  },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                   },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.28752136230469)"
@@ -10239,6 +10390,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.33926391601562)"
                                   },
@@ -10425,6 +10579,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(96.32427978515625)"
                                       },
@@ -10603,6 +10760,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(96.23541259765625)"
@@ -10796,6 +10956,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(96.28014373779297)"
                               },
@@ -10982,6 +11145,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(96.39791870117188)"
                                   },
@@ -11167,6 +11333,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(96.3051986694336)"
@@ -11361,6 +11530,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.35147857666016)"
                                               },
@@ -11539,6 +11711,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.2945556640625)"
@@ -11728,6 +11903,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(96.31139373779297)"
                                               },
@@ -11913,6 +12091,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(96.26403045654297)"
@@ -12100,6 +12281,9 @@
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(96.29694366455078)"
                                                       },
@@ -12286,6 +12470,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(96.23499298095703)"
                                                           },
@@ -12464,6 +12651,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN(clbA);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(96.33256530761719)"
@@ -12678,6 +12868,9 @@
               "Metadata_Source": {
                 "value": "Publication (https://doi.org/10.1186/s12863-023-01113-w); BioSample"
               },
+              "AMRFinderPlus_Class(Genes)": {
+                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+              },
               "BTyper3_species(ANI)": {
                 "value": "pseudomycoides(97.98009490966797)"
               },
@@ -12875,6 +13068,9 @@
                               },
                               "Metadata_Source": {
                                 "value": "URL (https://nrrl.ncaur.usda.gov/media/141/download); BioSample"
+                              },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);TETRACYCLINE(tet)"
                               },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(98.27340698242188)"
@@ -13074,6 +13270,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(98.36967468261719)"
                                   },
@@ -13260,6 +13459,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.33468627929688)"
                                       },
@@ -13438,6 +13640,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.40279388427734)"
@@ -13638,6 +13843,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(98.3258285522461)"
                                   },
@@ -13829,6 +14037,9 @@
                                   "Metadata_Source": {
                                     "value": "Publication (https://doi.org/10.1016/j.ijfoodmicro.2025.111266); BioProject; BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(98.36100006103516)"
                                   },
@@ -14004,6 +14215,9 @@
                                   },
                                   "Metadata_Source": {
                                     "value": "BioSample"
+                                  },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                   },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(98.43453979492188)"
@@ -14203,6 +14417,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.35169219970703)"
                                       },
@@ -14388,6 +14605,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.39363098144531)"
@@ -14575,6 +14795,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(98.41717529296875)"
                                               },
@@ -14753,6 +14976,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(98.41718292236328)"
@@ -14973,6 +15199,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.36515808105469)"
                                       },
@@ -15151,6 +15380,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.34693908691406)"
@@ -15340,6 +15572,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.41158294677734)"
                                       },
@@ -15526,6 +15761,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.31035614013672)"
                                           },
@@ -15704,6 +15942,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.40158081054688)"
@@ -15900,6 +16141,9 @@
                                   "Metadata_Source": {
                                     "value": "BioProject; BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(98.42912292480469)"
                                   },
@@ -16089,6 +16333,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.3636474609375)"
                                       },
@@ -16263,6 +16510,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.46473693847656)"
                                           },
@@ -16434,6 +16684,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(98.36573028564453)"
                                               },
@@ -16585,6 +16838,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(98.39540100097656)"
@@ -16796,6 +17052,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.34666442871094)"
                                       },
@@ -16982,6 +17241,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.24650573730469)"
                                           },
@@ -17160,6 +17422,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.35787963867188)"
@@ -17351,6 +17616,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.39796447753906)"
                                       },
@@ -17537,6 +17805,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.366943359375)"
                                           },
@@ -17715,6 +17986,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.35262298583984)"
@@ -17922,6 +18196,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.43170928955078)"
                                           },
@@ -18100,6 +18377,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.38031005859375)"
@@ -18289,6 +18569,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.38833618164062)"
                                           },
@@ -18474,6 +18757,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(98.3360824584961)"
@@ -18661,6 +18947,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(98.29531860351562)"
                                                   },
@@ -18839,6 +19128,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(98.35809326171875)"
@@ -19034,6 +19326,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.32713317871094)"
                                       },
@@ -19195,6 +19490,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(98.29779052734375)"
@@ -19398,6 +19696,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioProject; BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(98.34526062011719)"
                                                   },
@@ -19585,6 +19886,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioProject; BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(98.37010192871094)"
@@ -19777,6 +20081,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "URL (https://nrrl.ncaur.usda.gov/media/141/download); BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(98.32897186279297)"
@@ -19976,6 +20283,9 @@
                                                           "Metadata_Source": {
                                                             "value": "Validation (Tyler Chandross-Cohen); Publication (https://doi.org/10.1128/AEM.02479-17); BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(98.36324310302734)"
                                                           },
@@ -20166,6 +20476,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "Collaborator (Jasna Kovac, Pennsylvania State University, University Park, PA, USA)"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(98.3132553100586)"
@@ -20364,6 +20677,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(98.36998748779297)"
                                                           },
@@ -20542,6 +20858,9 @@
                                                           },
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
+                                                          },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                           },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(98.35297393798828)"
@@ -20731,6 +21050,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(98.45719909667969)"
                                                           },
@@ -20917,6 +21239,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(98.4948501586914)"
                                                               },
@@ -21078,6 +21403,9 @@
                                                                   },
                                                                   "Metadata_Source": {
                                                                     "value": "URL (https://nrrl.ncaur.usda.gov/media/141/download); BioSample"
+                                                                  },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                                   },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(98.42168426513672)"
@@ -21251,6 +21579,9 @@
                                                                   },
                                                                   "Metadata_Source": {
                                                                     "value": "URL (https://www.dsmz.de/collection/catalogue/details/culture/DSM-12442); BioProject"
+                                                                  },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                                   },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(98.38134002685547)"
@@ -21468,6 +21799,9 @@
                           "Metadata_Source": {
                             "value": "Collaborator (Hendrik Frentzel, German Federal Institute for Risk Assessment, Berlin, Germany)"
                           },
+                          "AMRFinderPlus_Class(Genes)": {
+                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                          },
                           "BTyper3_species(ANI)": {
                             "value": "pseudomycoides(98.44136047363281)"
                           },
@@ -21648,6 +21982,9 @@
                               "Metadata_Source": {
                                 "value": "BioSample"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(98.21713256835938)"
                               },
@@ -21823,6 +22160,9 @@
                               "Metadata_Source": {
                                 "value": "Collaborator (Hendrik Frentzel, German Federal Institute for Risk Assessment, Berlin, Germany)"
                               },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                              },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(98.37457275390625)"
                               },
@@ -21995,6 +22335,9 @@
                               },
                               "Metadata_Source": {
                                 "value": "BioSample"
+                              },
+                              "AMRFinderPlus_Class(Genes)": {
+                                "value": "BETA-LACTAM(bla);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                               },
                               "BTyper3_species(ANI)": {
                                 "value": "pseudomycoides(98.53938293457031)"
@@ -22191,6 +22534,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(98.70565795898438)"
                                   },
@@ -22377,6 +22723,9 @@
                                       "Metadata_Source": {
                                         "value": "BioSample"
                                       },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                      },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.76449584960938)"
                                       },
@@ -22555,6 +22904,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(98.56480407714844)"
@@ -22755,6 +23107,9 @@
                                   "Metadata_Source": {
                                     "value": "BioSample"
                                   },
+                                  "AMRFinderPlus_Class(Genes)": {
+                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                  },
                                   "BTyper3_species(ANI)": {
                                     "value": "pseudomycoides(99.16158294677734)"
                                   },
@@ -22931,6 +23286,9 @@
                                       },
                                       "Metadata_Source": {
                                         "value": "BioSample"
+                                      },
+                                      "AMRFinderPlus_Class(Genes)": {
+                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                       },
                                       "BTyper3_species(ANI)": {
                                         "value": "pseudomycoides(99.20069122314453)"
@@ -23118,6 +23476,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(99.26783752441406)"
                                           },
@@ -23296,6 +23657,9 @@
                                           },
                                           "Metadata_Source": {
                                             "value": "BioSample"
+                                          },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                           },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(99.24070739746094)"
@@ -23509,6 +23873,9 @@
                                           "Metadata_Source": {
                                             "value": "BioProject; BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(99.38687133789062)"
                                           },
@@ -23691,6 +24058,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(99.32477569580078)"
@@ -23875,6 +24245,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.40606689453125)"
                                                   },
@@ -24053,6 +24426,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.32781982421875)"
@@ -24243,6 +24619,9 @@
                                           "Metadata_Source": {
                                             "value": "BioSample"
                                           },
+                                          "AMRFinderPlus_Class(Genes)": {
+                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                          },
                                           "BTyper3_species(ANI)": {
                                             "value": "pseudomycoides(99.26036071777344)"
                                           },
@@ -24425,6 +24804,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "URL (https://nrrl.ncaur.usda.gov/media/141/download); BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(99.30435943603516)"
@@ -24627,6 +25009,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.2275390625)"
                                                   },
@@ -24796,6 +25181,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.31603240966797)"
@@ -24978,6 +25366,9 @@
                                               "Metadata_Source": {
                                                 "value": "BioSample"
                                               },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                              },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(99.44393920898438)"
                                               },
@@ -25143,6 +25534,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.49820709228516)"
@@ -25319,6 +25713,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "URL (https://nrrl.ncaur.usda.gov/media/141/download); BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.41111755371094)"
@@ -25520,6 +25917,9 @@
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.47183227539062)"
                                                       },
@@ -25698,6 +26098,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.43275451660156)"
@@ -25898,6 +26301,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.82471466064453)"
                                                   },
@@ -26084,6 +26490,9 @@
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.99999237060547)"
                                                       },
@@ -26262,6 +26671,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.88166046142578)"
@@ -26456,6 +26868,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.48937225341797)"
                                                   },
@@ -26644,6 +27059,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "URL (https://kbase.us/n/122484/45/); BioProject; BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.52493286132812)"
@@ -26836,6 +27254,9 @@
                                                       "Metadata_Source": {
                                                         "value": "Validation (Tyler Chandross-Cohen); BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.54411315917969)"
                                                       },
@@ -27009,6 +27430,9 @@
                                               },
                                               "Metadata_Source": {
                                                 "value": "URL (https://nrrl.ncaur.usda.gov/media/141/download); BioSample"
+                                              },
+                                              "AMRFinderPlus_Class(Genes)": {
+                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                               },
                                               "BTyper3_species(ANI)": {
                                                 "value": "pseudomycoides(99.41304016113281)"
@@ -27205,6 +27629,9 @@
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
                                                   },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                  },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.37657928466797)"
                                                   },
@@ -27383,6 +27810,9 @@
                                                   },
                                                   "Metadata_Source": {
                                                     "value": "BioSample"
+                                                  },
+                                                  "AMRFinderPlus_Class(Genes)": {
+                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                   },
                                                   "BTyper3_species(ANI)": {
                                                     "value": "pseudomycoides(99.3368148803711)"
@@ -27563,6 +27993,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.36858367919922)"
@@ -27751,6 +28184,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.39049530029297)"
@@ -27947,6 +28383,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(99.4263916015625)"
                                                           },
@@ -28133,6 +28572,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.36235046386719)"
                                                               },
@@ -28311,6 +28753,9 @@
                                                               },
                                                               "Metadata_Source": {
                                                                 "value": "BioProject"
+                                                              },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                               },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.40193939208984)"
@@ -28506,6 +28951,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "Publication (https://doi.org/10.1101/gr.134437.111); BioProject"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.36202239990234)"
                                                               },
@@ -28683,6 +29131,9 @@
                                                               },
                                                               "Metadata_Source": {
                                                                 "value": "Collaborator (Hendrik Frentzel, German Federal Institute for Risk Assessment, Berlin, Germany)"
+                                                              },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                               },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.35726928710938)"
@@ -28863,6 +29314,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.37749481201172)"
                                                               },
@@ -29034,6 +29488,9 @@
                                                                   "Metadata_Source": {
                                                                     "value": "BioSample"
                                                                   },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                                  },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(99.48162078857422)"
                                                                   },
@@ -29188,6 +29645,9 @@
                                                                   },
                                                                   "Metadata_Source": {
                                                                     "value": "URL (https://nrrl.ncaur.usda.gov/media/141/download); BioSample"
+                                                                  },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);TETRACYCLINE(tet)"
                                                                   },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(99.40957641601562)"
@@ -29404,6 +29864,9 @@
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
                                                       },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                      },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.38329315185547)"
                                                       },
@@ -29582,6 +30045,9 @@
                                                       },
                                                       "Metadata_Source": {
                                                         "value": "BioSample"
+                                                      },
+                                                      "AMRFinderPlus_Class(Genes)": {
+                                                        "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                       },
                                                       "BTyper3_species(ANI)": {
                                                         "value": "pseudomycoides(99.34728240966797)"
@@ -29778,6 +30244,9 @@
                                                           "Metadata_Source": {
                                                             "value": "BioSample"
                                                           },
+                                                          "AMRFinderPlus_Class(Genes)": {
+                                                            "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                          },
                                                           "BTyper3_species(ANI)": {
                                                             "value": "pseudomycoides(99.42521667480469)"
                                                           },
@@ -29964,6 +30433,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.36544799804688)"
                                                               },
@@ -30142,6 +30614,9 @@
                                                               },
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
+                                                              },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                               },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.37012481689453)"
@@ -30340,6 +30815,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.41263580322266)"
                                                               },
@@ -30526,6 +31004,9 @@
                                                                   "Metadata_Source": {
                                                                     "value": "BioSample"
                                                                   },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                                  },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(99.40413665771484)"
                                                                   },
@@ -30704,6 +31185,9 @@
                                                                   },
                                                                   "Metadata_Source": {
                                                                     "value": "BioSample"
+                                                                  },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                                   },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(99.40003967285156)"
@@ -30895,6 +31379,9 @@
                                                               "Metadata_Source": {
                                                                 "value": "BioSample"
                                                               },
+                                                              "AMRFinderPlus_Class(Genes)": {
+                                                                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                              },
                                                               "BTyper3_species(ANI)": {
                                                                 "value": "pseudomycoides(99.38407897949219)"
                                                               },
@@ -31081,6 +31568,9 @@
                                                                   "Metadata_Source": {
                                                                     "value": "BioSample"
                                                                   },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+                                                                  },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(99.42822265625)"
                                                                   },
@@ -31259,6 +31749,9 @@
                                                                   },
                                                                   "Metadata_Source": {
                                                                     "value": "BioSample"
+                                                                  },
+                                                                  "AMRFinderPlus_Class(Genes)": {
+                                                                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);LINCOSAMIDE/STREPTOGRAMIN(lsa);LINCOSAMIDE(vga);MACROLIDE(abc-f);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
                                                                   },
                                                                   "BTyper3_species(ANI)": {
                                                                     "value": "pseudomycoides(99.45130920410156)"
