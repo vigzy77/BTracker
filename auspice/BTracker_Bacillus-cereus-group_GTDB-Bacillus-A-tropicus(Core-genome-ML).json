@@ -370,7 +370,7 @@
             "#CC79A7"
           ],
           [
-            "Turkey",
+            "T\u00fcrkiye",
             "#D55E00"
           ],
           [
@@ -401,7 +401,7 @@
             "#F0E442"
           ],
           [
-            "Brussels Hoofdstedelijk Gewest",
+            "Bruxelles-Capitale, R\u00e9gion de",
             "#009E73"
           ],
           [
@@ -1405,451 +1405,451 @@
       {
         "key": "Continent",
         "demes": {
+          "Africa": {
+            "latitude": 4.0,
+            "longitude": 22.0
+          },
           "Asia": {
             "latitude": 35.0,
             "longitude": 85.0
-          },
-          "North America": {
-            "latitude": 30.0,
-            "longitude": -100.0
-          },
-          "South America": {
-            "latitude": -20.0,
-            "longitude": -60.0
           },
           "Europe": {
             "latitude": 50.0,
             "longitude": 15.0
           },
-          "Africa": {
-            "latitude": 4.0,
-            "longitude": 22.0
+          "South America": {
+            "latitude": -20.0,
+            "longitude": -60.0
+          },
+          "North America": {
+            "latitude": 30.0,
+            "longitude": -100.0
           }
         }
       },
       {
         "key": "Country(Code)",
         "demes": {
-          "GRD": {
-            "latitude": 12.1167,
-            "longitude": -61.6667
-          },
-          "VNM": {
-            "latitude": 16.0,
-            "longitude": 106.0
-          },
-          "NGA": {
-            "latitude": 10.0,
-            "longitude": 8.0
-          },
-          "TWN": {
-            "latitude": 23.5,
-            "longitude": 121.0
-          },
-          "MDG": {
-            "latitude": -20.0,
-            "longitude": 47.0
-          },
-          "DNK": {
-            "latitude": 56.0,
-            "longitude": 10.0
-          },
-          "BGD": {
-            "latitude": 24.0,
-            "longitude": 90.0
-          },
-          "COL": {
-            "latitude": 4.0,
-            "longitude": -72.0
-          },
-          "TTO": {
-            "latitude": 11.0,
-            "longitude": -61.0
-          },
-          "PRT": {
-            "latitude": 39.5,
-            "longitude": -8.0
-          },
-          "ESP": {
-            "latitude": 40.0,
-            "longitude": -4.0
-          },
-          "MYS": {
-            "latitude": 2.5,
-            "longitude": 112.5
+          "ZAF": {
+            "latitude": -27.17706863,
+            "longitude": 24.50856092
           },
           "BGR": {
-            "latitude": 43.0,
-            "longitude": 25.0
-          },
-          "BEL": {
-            "latitude": 50.8333,
-            "longitude": 4.0
-          },
-          "SVN": {
-            "latitude": 46.0,
-            "longitude": 15.0
+            "latitude": 42.70160678,
+            "longitude": 25.485832
           },
           "TUR": {
-            "latitude": 39.0,
-            "longitude": 35.0
+            "latitude": 38.27069555,
+            "longitude": 36.28703317
           },
-          "GBR": {
-            "latitude": 54.0,
-            "longitude": -2.0
+          "GRD": {
+            "latitude": 12.11644807,
+            "longitude": -61.678994
           },
-          "ARG": {
-            "latitude": -34.0,
-            "longitude": -64.0
-          },
-          "IND": {
-            "latitude": 20.0,
-            "longitude": 77.0
-          },
-          "HKG": {
-            "latitude": 22.25,
-            "longitude": 114.1667
-          },
-          "ITA": {
-            "latitude": 42.8333,
-            "longitude": 12.8333
-          },
-          "CHE": {
-            "latitude": 47.0,
-            "longitude": 8.0
-          },
-          "DEU": {
-            "latitude": 51.0,
-            "longitude": 9.0
-          },
-          "USA": {
-            "latitude": 38.0,
-            "longitude": -97.0
-          },
-          "CHL": {
-            "latitude": -30.0,
-            "longitude": -71.0
-          },
-          "THA": {
-            "latitude": 15.0,
-            "longitude": 100.0
-          },
-          "POL": {
-            "latitude": 52.0,
-            "longitude": 20.0
-          },
-          "KOR": {
-            "latitude": 37.0,
-            "longitude": 127.5
-          },
-          "FRA": {
-            "latitude": 46.0,
-            "longitude": 2.0
+          "CHN": {
+            "latitude": 36.7145744,
+            "longitude": 103.55819197
           },
           "CAN": {
-            "latitude": 60.0,
-            "longitude": -95.0
+            "latitude": 60.36196817,
+            "longitude": -106.6983315
+          },
+          "BGD": {
+            "latitude": 24.08273251,
+            "longitude": 90.49915527
+          },
+          "JPN": {
+            "latitude": 37.51848822,
+            "longitude": 137.67066061
+          },
+          "KOR": {
+            "latitude": 36.56344139,
+            "longitude": 127.51424646
+          },
+          "IND": {
+            "latitude": 20.46549519,
+            "longitude": 78.50146222
+          },
+          "SVN": {
+            "latitude": 46.14315048,
+            "longitude": 14.995463
+          },
+          "ITA": {
+            "latitude": 41.7781084,
+            "longitude": 12.67725128
+          },
+          "CHL": {
+            "latitude": -38.0176079,
+            "longitude": -71.40014474
           },
           "BFA": {
-            "latitude": 13.0,
-            "longitude": -2.0
+            "latitude": 12.22492458,
+            "longitude": -1.561591
+          },
+          "MEX": {
+            "latitude": 22.92036676,
+            "longitude": -102.33305344
           },
           "SWE": {
-            "latitude": 62.0,
-            "longitude": 15.0
+            "latitude": 61.42370427,
+            "longitude": 16.73188991
+          },
+          "MYS": {
+            "latitude": 4.97345793,
+            "longitude": 106.5460905
+          },
+          "NGA": {
+            "latitude": 9.02165273,
+            "longitude": 7.82933373
+          },
+          "USA": {
+            "latitude": 37.66895362,
+            "longitude": -102.3925645
+          },
+          "THA": {
+            "latitude": 14.6000981,
+            "longitude": 101.38805881
+          },
+          "FRA": {
+            "latitude": 46.48372145,
+            "longitude": 2.60926281
+          },
+          "DEU": {
+            "latitude": 50.82871201,
+            "longitude": 10.97887975
+          },
+          "COL": {
+            "latitude": 3.6818232,
+            "longitude": -73.53927436
+          },
+          "HKG": {
+            "latitude": 22.33728531,
+            "longitude": 114.14657786
+          },
+          "BEL": {
+            "latitude": 50.49593874,
+            "longitude": 4.469936
+          },
+          "GBR": {
+            "latitude": 53.36540813,
+            "longitude": -2.72184767
+          },
+          "TWN": {
+            "latitude": 23.71891402,
+            "longitude": 121.10884043
+          },
+          "POL": {
+            "latitude": 52.10117636,
+            "longitude": 19.33190957
+          },
+          "ESP": {
+            "latitude": 39.87299401,
+            "longitude": -3.67089492
+          },
+          "DNK": {
+            "latitude": 54.71794021,
+            "longitude": 9.41938953
+          },
+          "ARG": {
+            "latitude": -38.01529308,
+            "longitude": -64.97897469
+          },
+          "MDG": {
+            "latitude": -19.79858543,
+            "longitude": 46.97898228
           },
           "OPC": {
             "latitude": 0.0,
             "longitude": -150.0
           },
-          "MEX": {
-            "latitude": 23.0,
-            "longitude": -102.0
+          "CHE": {
+            "latitude": 46.81010721,
+            "longitude": 8.227512
           },
-          "JPN": {
-            "latitude": 36.0,
-            "longitude": 138.0
+          "PRT": {
+            "latitude": 39.44879136,
+            "longitude": -8.03768042
           },
-          "ZAF": {
-            "latitude": -29.0,
-            "longitude": 24.0
+          "VNM": {
+            "latitude": 17.19931699,
+            "longitude": 107.14012804
           },
-          "CHN": {
-            "latitude": 35.0,
-            "longitude": 105.0
+          "TTO": {
+            "latitude": 10.43241863,
+            "longitude": -61.222503
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "CL-MA": {
-            "latitude": -53.443,
-            "longitude": -72.15
+          "FR-IDF": {
+            "latitude": 48.6443,
+            "longitude": 2.7538
           },
-          "BE-BRU": {
-            "latitude": 50.826,
-            "longitude": 4.38
+          "BD-C": {
+            "latitude": 23.9456,
+            "longitude": 90.2526
           },
-          "MX-QUE": {
-            "latitude": 20.589,
-            "longitude": -100.39
+          "VN-41": {
+            "latitude": 10.7119,
+            "longitude": 106.1258
           },
-          "TR-25": {
-            "latitude": 39.905,
-            "longitude": 41.266
-          },
-          "NG-EK": {
-            "latitude": 7.719,
-            "longitude": 5.311
-          },
-          "US-NY": {
-            "latitude": 40.713,
-            "longitude": -74.006
-          },
-          "DE-SH": {
-            "latitude": 54.219,
-            "longitude": 9.696
-          },
-          "CN-SD": {
-            "latitude": 36.668,
-            "longitude": 117.021
-          },
-          "CN-FJ": {
-            "latitude": 26.1,
-            "longitude": 119.297
-          },
-          "IT-77": {
-            "latitude": 40.643,
-            "longitude": 15.97
-          },
-          "MY-06": {
-            "latitude": 3.974,
-            "longitude": 102.438
-          },
-          "TW-TAO": {
-            "latitude": 35.862,
-            "longitude": 104.195
-          },
-          "US-NC": {
-            "latitude": 35.76,
-            "longitude": -79.019
-          },
-          "JP-08": {
-            "latitude": 36.219,
-            "longitude": 140.183
-          },
-          "US-TN": {
-            "latitude": 35.517,
-            "longitude": -86.58
-          },
-          "IT-75": {
-            "latitude": 40.793,
-            "longitude": 17.101
-          },
-          "US-IL": {
-            "latitude": 40.633,
-            "longitude": -89.399
+          "DE-BW": {
+            "latitude": 48.5378,
+            "longitude": 9.0412
           },
           "US-CA": {
-            "latitude": 36.778,
-            "longitude": -119.418
+            "latitude": 36.7015,
+            "longitude": -118.756
           },
-          "US-LA": {
-            "latitude": 30.519,
-            "longitude": -91.521
-          },
-          "CN-GX": {
-            "latitude": 24.326,
-            "longitude": 109.415
+          "MY-06": {
+            "latitude": 3.6169,
+            "longitude": 102.5995
           },
           "IN-KA": {
-            "latitude": 15.317,
-            "longitude": 75.714
+            "latitude": 14.9562,
+            "longitude": 75.7897
           },
-          "BE-VLG": {
-            "latitude": 51.095,
-            "longitude": 4.448
+          "IN-OD": {
+            "latitude": 20.5431,
+            "longitude": 84.6897
           },
-          "US-MN": {
-            "latitude": 46.73,
-            "longitude": -94.686
+          "US-TX": {
+            "latitude": 31.2639,
+            "longitude": -98.5456
           },
-          "IN-WB": {
-            "latitude": 22.987,
-            "longitude": 87.855
+          "IN-HP": {
+            "latitude": 31.9292,
+            "longitude": 77.1828
+          },
+          "TH-13": {
+            "latitude": 14.0487,
+            "longitude": 100.564
+          },
+          "KR-30": {
+            "latitude": 36.3497,
+            "longitude": 127.3849
+          },
+          "US-NJ": {
+            "latitude": 40.0757,
+            "longitude": -74.4042
+          },
+          "VN-HN": {
+            "latitude": 21.0283,
+            "longitude": 105.854
+          },
+          "BF-03": {
+            "latitude": 12.3673,
+            "longitude": -1.5431
+          },
+          "TT-POS": {
+            "latitude": 10.6573,
+            "longitude": -61.518
+          },
+          "TW-PIF": {
+            "latitude": 22.6828,
+            "longitude": 120.4879
+          },
+          "US-MO": {
+            "latitude": 38.7605,
+            "longitude": -92.5618
+          },
+          "CN-JX": {
+            "latitude": 28.0,
+            "longitude": 116.0
+          },
+          "US-GA": {
+            "latitude": 32.3294,
+            "longitude": -83.1137
+          },
+          "CN-FJ": {
+            "latitude": 26.1932,
+            "longitude": 118.2209
+          },
+          "US-IL": {
+            "latitude": 40.0797,
+            "longitude": -89.4337
+          },
+          "TW-TAO": {
+            "latitude": 24.993,
+            "longitude": 121.301
+          },
+          "US-LA": {
+            "latitude": 30.8704,
+            "longitude": -92.0071
+          },
+          "BD-E": {
+            "latitude": 24.6285,
+            "longitude": 89.0377
+          },
+          "JP-29": {
+            "latitude": 34.2963,
+            "longitude": 135.8817
+          },
+          "BE-WAL": {
+            "latitude": 50.1546,
+            "longitude": 5.3992
           },
           "GB-SCT": {
             "latitude": 56.0,
             "longitude": -4.0
           },
-          "DE-SN": {
-            "latitude": 51.105,
-            "longitude": 13.202
+          "BE-BRU": {
+            "latitude": 50.8388,
+            "longitude": 4.3753
           },
-          "TW-PIF": {
-            "latitude": 35.862,
-            "longitude": 104.195
+          "CN-GX": {
+            "latitude": 24.0,
+            "longitude": 109.0
           },
-          "US-GA": {
-            "latitude": 32.157,
-            "longitude": -82.907
-          },
-          "ZA-KZN": {
-            "latitude": -28.531,
-            "longitude": 30.896
-          },
-          "IN-DL": {
-            "latitude": 28.704,
-            "longitude": 77.102
-          },
-          "BE-WAL": {
-            "latitude": 50.401,
-            "longitude": 5.134
-          },
-          "CN-HE": {
-            "latitude": 38.036,
-            "longitude": 114.47
-          },
-          "KR-30": {
-            "latitude": 36.34,
-            "longitude": 127.394
-          },
-          "CN-LN": {
-            "latitude": 41.836,
-            "longitude": 123.429
-          },
-          "CN-JX": {
-            "latitude": 28.674,
-            "longitude": 115.91
-          },
-          "IN-OD": {
-            "latitude": 20.238,
-            "longitude": 84.27
-          },
-          "MY-08": {
-            "latitude": 4.807,
-            "longitude": 100.8
-          },
-          "JP-18": {
-            "latitude": 36.064,
-            "longitude": 136.22
-          },
-          "US-MD": {
-            "latitude": 39.046,
-            "longitude": -76.641
-          },
-          "JP-46": {
-            "latitude": 31.597,
-            "longitude": 130.557
-          },
-          "CN-HN": {
-            "latitude": 28.114,
-            "longitude": 112.983
-          },
-          "JP-29": {
-            "latitude": 34.685,
-            "longitude": 135.805
-          },
-          "CO-VAC": {
-            "latitude": 3.801,
-            "longitude": -76.641
-          },
-          "CN-ZJ": {
-            "latitude": 30.266,
-            "longitude": 120.154
-          },
-          "DE-BW": {
-            "latitude": 48.662,
-            "longitude": 9.35
-          },
-          "VN-41": {
-            "latitude": 10.561,
-            "longitude": 106.65
-          },
-          "BD-C": {
-            "latitude": 23.804,
-            "longitude": 90.415
-          },
-          "FR-IDF": {
-            "latitude": 48.85,
-            "longitude": 2.637
-          },
-          "US-FL": {
-            "latitude": 27.665,
-            "longitude": -81.516
-          },
-          "ZA-GP": {
-            "latitude": -26.271,
-            "longitude": 28.112
-          },
-          "US-SD": {
-            "latitude": 43.97,
-            "longitude": -99.902
-          },
-          "BD-E": {
-            "latitude": 24.375,
-            "longitude": 88.6
-          },
-          "CN-HB": {
-            "latitude": 30.545,
-            "longitude": 114.342
-          },
-          "BF-03": {
-            "latitude": 12.343,
-            "longitude": -1.443
-          },
-          "JP-13": {
-            "latitude": 35.676,
-            "longitude": 139.65
-          },
-          "CA-ON": {
-            "latitude": 51.254,
-            "longitude": -85.323
-          },
-          "PT-20": {
-            "latitude": 37.741,
-            "longitude": -25.676
-          },
-          "IN-HP": {
-            "latitude": 32.102,
-            "longitude": 77.562
-          },
-          "CN-GD": {
-            "latitude": 23.132,
-            "longitude": 113.266
-          },
-          "PL-20": {
-            "latitude": 54.106,
-            "longitude": 23.495
-          },
-          "TT-POS": {
-            "latitude": 10.66,
-            "longitude": -61.509
-          },
-          "VN-HN": {
-            "latitude": 21.028,
-            "longitude": 105.834
-          },
-          "US-TX": {
-            "latitude": 31.969,
-            "longitude": -99.902
+          "NG-EK": {
+            "latitude": 7.7369,
+            "longitude": 5.2738
           },
           "CN-SC": {
-            "latitude": 30.651,
-            "longitude": 104.076
+            "latitude": 30.5,
+            "longitude": 102.5
           },
-          "TH-13": {
-            "latitude": 14.003,
-            "longitude": 100.665
+          "IN-DL": {
+            "latitude": 28.6328,
+            "longitude": 77.2198
           },
-          "US-MO": {
-            "latitude": 37.964,
-            "longitude": -91.832
+          "US-MN": {
+            "latitude": 45.9897,
+            "longitude": -94.6113
           },
-          "US-NJ": {
-            "latitude": 40.058,
-            "longitude": -74.406
+          "CN-SD": {
+            "latitude": 36.399,
+            "longitude": 118.5056
+          },
+          "JP-08": {
+            "latitude": 36.287,
+            "longitude": 140.4703
+          },
+          "CN-HB": {
+            "latitude": 31.0,
+            "longitude": 112.0
+          },
+          "CL-MA": {
+            "latitude": -53.3528,
+            "longitude": -71.5548
+          },
+          "CN-ZJ": {
+            "latitude": 29.0,
+            "longitude": 120.0
+          },
+          "ZA-GP": {
+            "latitude": -25.9363,
+            "longitude": 28.0813
+          },
+          "US-NC": {
+            "latitude": 35.673,
+            "longitude": -79.0393
+          },
+          "CN-GD": {
+            "latitude": 23.1358,
+            "longitude": 113.1983
+          },
+          "JP-13": {
+            "latitude": 35.6769,
+            "longitude": 139.7639
+          },
+          "US-FL": {
+            "latitude": 27.7568,
+            "longitude": -81.464
+          },
+          "BE-VLG": {
+            "latitude": 51.0962,
+            "longitude": 4.1786
+          },
+          "CN-HE": {
+            "latitude": 39.0,
+            "longitude": 116.0
+          },
+          "US-TN": {
+            "latitude": 35.773,
+            "longitude": -86.282
+          },
+          "IN-WB": {
+            "latitude": 22.9965,
+            "longitude": 87.6856
+          },
+          "PT-20": {
+            "latitude": 37.8086,
+            "longitude": -25.4731
+          },
+          "ZA-KZN": {
+            "latitude": -28.5038,
+            "longitude": 30.8875
+          },
+          "PL-20": {
+            "latitude": 53.2668,
+            "longitude": 22.8526
+          },
+          "JP-18": {
+            "latitude": 35.9264,
+            "longitude": 136.6068
+          },
+          "MX-QUE": {
+            "latitude": 20.8052,
+            "longitude": -99.8837
+          },
+          "CO-VAC": {
+            "latitude": 3.6984,
+            "longitude": -76.5502
+          },
+          "JP-46": {
+            "latitude": 31.5216,
+            "longitude": 130.5474
+          },
+          "CA-ON": {
+            "latitude": 50.0007,
+            "longitude": -86.001
+          },
+          "DE-SH": {
+            "latitude": 54.1854,
+            "longitude": 9.822
+          },
+          "MY-08": {
+            "latitude": 4.8122,
+            "longitude": 100.9798
+          },
+          "DE-SN": {
+            "latitude": 50.9296,
+            "longitude": 13.4585
+          },
+          "IT-75": {
+            "latitude": 40.9843,
+            "longitude": 16.621
+          },
+          "US-NY": {
+            "latitude": 43.1562,
+            "longitude": -75.845
+          },
+          "CN-HN": {
+            "latitude": 27.6662,
+            "longitude": 111.7487
+          },
+          "US-SD": {
+            "latitude": 44.6472,
+            "longitude": -100.3488
+          },
+          "TR-25": {
+            "latitude": 39.7582,
+            "longitude": 41.4032
+          },
+          "IT-77": {
+            "latitude": 40.5006,
+            "longitude": 16.082
+          },
+          "US-MD": {
+            "latitude": 39.5162,
+            "longitude": -76.9382
+          },
+          "CN-LN": {
+            "latitude": 41.2374,
+            "longitude": 122.9955
           }
         }
       }
@@ -29536,7 +29536,7 @@
                                                                     "value": "Belgium"
                                                                   },
                                                                   "Region": {
-                                                                    "value": "Brussels Hoofdstedelijk Gewest"
+                                                                    "value": "Bruxelles-Capitale, R\u00e9gion de"
                                                                   },
                                                                   "Country(Code)": {
                                                                     "value": "BEL"
@@ -55133,7 +55133,7 @@
                                                                     "value": "Asia"
                                                                   },
                                                                   "Country": {
-                                                                    "value": "Turkey"
+                                                                    "value": "T\u00fcrkiye"
                                                                   },
                                                                   "Region": {
                                                                     "value": "Erzurum"
