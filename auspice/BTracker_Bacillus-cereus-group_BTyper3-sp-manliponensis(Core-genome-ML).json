@@ -317,6 +317,11 @@
             "#56B4E9"
           ]
         ]
+      },
+      {
+        "key": "Assembly_Information",
+        "title": "Assembly_Information",
+        "type": "categorical"
       }
     ],
     "filters": [
@@ -355,26 +360,26 @@
       {
         "key": "Country(Code)",
         "demes": {
-          "KOR": {
-            "latitude": 36.56344139,
-            "longitude": 127.51424646
-          },
           "ISR": {
             "latitude": 30.85883075,
             "longitude": 34.91753797
+          },
+          "KOR": {
+            "latitude": 36.56344139,
+            "longitude": 127.51424646
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "KR-44": {
-            "latitude": 36.6593,
-            "longitude": 126.6729
-          },
           "IL-M": {
             "latitude": 32.0843,
             "longitude": 34.9169
+          },
+          "KR-44": {
+            "latitude": 36.6593,
+            "longitude": 126.6729
           },
           "KR-49": {
             "latitude": 33.4888,
