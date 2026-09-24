@@ -1,0 +1,1385 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
+    "updated": "2026-09-24",
+    "build_url": "https://github.com/vigzy77/BTracker/",
+    "data_provenance": [
+      {
+        "name": "BTyperDB",
+        "url": "https://btyperdb.btyper.app/"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Vignesh Ramnath",
+        "url": "https://www.umu.se/en/staff/vignesh-ramnath/"
+      },
+      {
+        "name": "The CompMicroLab @ Ume\u00e5 University",
+        "url": "https://www.microbe.dev/"
+      }
+    ],
+    "display_defaults": {
+      "panels": [
+        "tree",
+        "map"
+      ],
+      "map_triplicate": true,
+      "color_by": "Collection_Year",
+      "geo_resolution": "Country(Code)",
+      "tip_label": "Strain"
+    },
+    "description": "## *Bacillus bingmayongensis* (*B. cereus* group Rare Species)\n\n#### Maximum-likelihood phylogeny of all *B. bingmayongensis* genomes/MAGs\n\n- **The phylogeny was constructed (via IQ-TREE v2.2.5) using 882 core genes detected (via Panaroo v1.3.4) in all *B. bingmayongensis* genomes plus an outgroup, the [*B. pseudomycoides* type strain](https://nextstrain.org/community/vigzy77/BTracker/Bacillus-cereus-group/All-Species(Mash-distance-NJ)?f_Strain=DSM%2012442).**\n\n- **The phylogeny is rooted using the aforementioned outgroup (omitted for readability), with branch lengths reported in substitutions per site.**",
+    "colorings": [
+      {
+        "key": "Strain",
+        "title": "Strain",
+        "type": "categorical",
+        "scale": [
+          [
+            "BUPM19",
+            "#56B4E9"
+          ],
+          [
+            "CommercialSpinach",
+            "#F0E442"
+          ],
+          [
+            "FJAT-13831",
+            "#009E73"
+          ],
+          [
+            "P86",
+            "#E69F00"
+          ],
+          [
+            "XF8",
+            "#CC79A7"
+          ]
+        ]
+      },
+      {
+        "key": "Collection_Year",
+        "title": "Collection_Year",
+        "type": "categorical",
+        "scale": [
+          [
+            "1994",
+            "#56B4E9"
+          ],
+          [
+            "2010",
+            "#F0E442"
+          ],
+          [
+            "[2014,2015]",
+            "#009E73"
+          ],
+          [
+            "2016",
+            "#E69F00"
+          ],
+          [
+            "2020",
+            "#CC79A7"
+          ]
+        ]
+      },
+      {
+        "key": "Continent",
+        "title": "Continent",
+        "type": "categorical",
+        "scale": [
+          [
+            "Africa",
+            "#56B4E9"
+          ],
+          [
+            "Asia",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "Country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#56B4E9"
+          ],
+          [
+            "Tunisia",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "Region",
+        "title": "Region",
+        "type": "categorical",
+        "scale": [
+          [
+            "Henan Sheng",
+            "#56B4E9"
+          ],
+          [
+            "Shaanxi Sheng",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "Source_1",
+        "title": "Source_1",
+        "type": "categorical",
+        "scale": [
+          [
+            "Environmental",
+            "#56B4E9"
+          ],
+          [
+            "Food",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "Source_2",
+        "title": "Source_2",
+        "type": "categorical",
+        "scale": [
+          [
+            "Environmental",
+            "#56B4E9"
+          ],
+          [
+            "Food",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "Source_3",
+        "title": "Source_3",
+        "type": "categorical",
+        "scale": [
+          [
+            "commercial bagged spinach purchased at a grocery store",
+            "#56B4E9"
+          ],
+          [
+            "rhizosphere soil of peanut",
+            "#F0E442"
+          ],
+          [
+            "Soil",
+            "#009E73"
+          ],
+          [
+            "Soil on the Terracotta Warriors from the No. 1 pit of the Mausoleum of the First Qin Emperor",
+            "#E69F00"
+          ]
+        ]
+      },
+      {
+        "key": "GTDB_Species",
+        "title": "GTDB_Species",
+        "type": "categorical",
+        "scale": [
+          [
+            "Bacillus_A_bingmayongensis",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_species",
+        "title": "BTyper3_species",
+        "type": "categorical",
+        "scale": [
+          [
+            "bingmayongensis",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_subspecies",
+        "title": "BTyper3_subspecies",
+        "type": "categorical",
+        "scale": [
+          [
+            "No subspecies",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_anthrax_toxin",
+        "title": "BTyper3_anthrax_toxin",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_emetic_toxin_cereulide",
+        "title": "BTyper3_emetic_toxin_cereulide",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_diarrheal_toxin_Nhe",
+        "title": "BTyper3_diarrheal_toxin_Nhe",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ],
+          [
+            "3",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_diarrheal_toxin_Hbl",
+        "title": "BTyper3_diarrheal_toxin_Hbl",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ],
+          [
+            "3",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_diarrheal_toxin_CytK",
+        "title": "BTyper3_diarrheal_toxin_CytK",
+        "type": "categorical",
+        "scale": [
+          [
+            "Absent",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_sphingomyelinase_Sph",
+        "title": "BTyper3_sphingomyelinase_Sph",
+        "type": "categorical",
+        "scale": [
+          [
+            "Absent",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_capsule_Cap",
+        "title": "BTyper3_capsule_Cap",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_capsule_Has",
+        "title": "BTyper3_capsule_Has",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_capsule_Bps",
+        "title": "BTyper3_capsule_Bps",
+        "type": "categorical",
+        "scale": [
+          [
+            "1",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_Bt",
+        "title": "BTyper3_Bt",
+        "type": "categorical",
+        "scale": [
+          [
+            "Absent",
+            "#56B4E9"
+          ],
+          [
+            "Present",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_PubMLST_ST",
+        "title": "BTyper3_PubMLST_ST",
+        "type": "categorical",
+        "scale": [
+          [
+            "763",
+            "#56B4E9"
+          ],
+          [
+            "1779",
+            "#F0E442"
+          ],
+          [
+            "2144",
+            "#009E73"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_Adjusted_panC_Group",
+        "title": "BTyper3_Adjusted_panC_Group",
+        "type": "categorical",
+        "scale": [
+          [
+            "Group_bingmayongensis",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "Assembly_Information",
+        "title": "Assembly_Information",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "Continent",
+      "Country",
+      "Source_1",
+      "Source_2",
+      "Human_Illness",
+      "GTDB_Species",
+      "matchcol_BTyper3_species",
+      "matchcol_BTyper3_subspecies",
+      "matchcol_BTyper3_anthrax_toxin",
+      "matchcol_BTyper3_emetic_toxin_cereulide",
+      "matchcol_BTyper3_diarrheal_toxin_Nhe",
+      "matchcol_BTyper3_diarrheal_toxin_Hbl",
+      "matchcol_BTyper3_diarrheal_toxin_CytK",
+      "matchcol_BTyper3_sphingomyelinase_Sph",
+      "matchcol_BTyper3_capsule_Cap",
+      "matchcol_BTyper3_capsule_Has",
+      "matchcol_BTyper3_capsule_Bps",
+      "matchcol_BTyper3_Bt",
+      "matchcol_BTyper3_Adjusted_panC_Group",
+      "Assembly_Information",
+      "Runtype_Platform"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "Continent",
+        "demes": {
+          "Asia": {
+            "latitude": 35.0,
+            "longitude": 85.0
+          },
+          "Africa": {
+            "latitude": 4.0,
+            "longitude": 22.0
+          }
+        }
+      },
+      {
+        "key": "Country(Code)",
+        "demes": {
+          "CHN": {
+            "latitude": 36.7145744,
+            "longitude": 103.55819197
+          },
+          "TUN": {
+            "latitude": 33.8843194,
+            "longitude": 9.71878341
+          }
+        }
+      },
+      {
+        "key": "Region(Code)",
+        "demes": {
+          "CN-HA": {
+            "latitude": 34.0,
+            "longitude": 114.0
+          },
+          "CN-SN": {
+            "latitude": 35.5896,
+            "longitude": 109.3013
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "measurements"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0
+    },
+    "branch_attrs": {},
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00399021
+        },
+        "branch_attrs": {},
+        "children": [
+          {
+            "name": "BTDB_2026-0001323.1",
+            "node_attrs": {
+              "div": 0.0084485,
+              "BTyperDB_ID": {
+                "value": "BTDB_2026-0001323.1"
+              },
+              "NCBI_BioSample": {
+                "value": "SAMN04001593",
+                "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN04001593"
+              },
+              "Strain": {
+                "value": "CommercialSpinach"
+              },
+              "Collection_Year": {
+                "value": "[2014,2015]"
+              },
+              "Source_1": {
+                "value": "Food"
+              },
+              "Source_2": {
+                "value": "Food"
+              },
+              "Source_3": {
+                "value": "commercial bagged spinach purchased at a grocery store"
+              },
+              "Free_Text": {
+                "value": "commercial spinach spiked with Shiga toxin-producing Escherichia coli (STEC); strain possesses BGCs that resemble BGCs responsible for the production of paeninodin, petrobactin and a putative novel nonribosomal peptide synthetase (NRP); sample represents a metagenome-assembled genome (MAG) assembled from the metagenomic run SRR2177360 of study SRP062607"
+              },
+              "Metadata_Source": {
+                "value": "Publication (https://doi.org/10.1128/aem.02601-15); BioSample"
+              },
+              "AMRFinderPlus_Class(Genes)": {
+                "value": "MACROLIDE(abc-f);TETRACYCLINE(tet)"
+              },
+              "BTyper3_species(ANI)": {
+                "value": "bingmayongensis(97.45414733886719)"
+              },
+              "BTyper3_subspecies(ANI)": {
+                "value": "No subspecies"
+              },
+              "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                "value": "bingmayongensis*(97.45414733886719)"
+              },
+              "BTyper3_Closest_Type_Strain(ANI)": {
+                "value": "bingmayongensis(97.45414733886719)"
+              },
+              "BTyper3_anthrax_toxin(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_emetic_toxin_cereulide(genes)": {
+                "value": "0/4()"
+              },
+              "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                "value": "0/4()"
+              },
+              "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                "value": "0/1()"
+              },
+              "BTyper3_sphingomyelinase_Sph(gene)": {
+                "value": "0/1()"
+              },
+              "BTyper3_capsule_Cap(genes)": {
+                "value": "0/5()"
+              },
+              "BTyper3_capsule_Has(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_capsule_Bps(genes)": {
+                "value": "1/9(bpsE)"
+              },
+              "BTyper3_Bt(genes)": {
+                "value": "0()"
+              },
+              "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                "value": "Unknown(missing alleles)"
+              },
+              "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                "value": "Group_bingmayongensis"
+              },
+              "BTyper3_final_taxon_names": {
+                "value": "B. bingmayongensis"
+              },
+              "GTDB_Genus": {
+                "value": "Bacillus_A"
+              },
+              "GTDB_Species": {
+                "value": "Bacillus_A_bingmayongensis"
+              },
+              "MLST_Scheme": {
+                "value": "-"
+              },
+              "Prokka_Genes": {
+                "value": "1674"
+              },
+              "Assembly_Information": {
+                "value": "MAG Assembly (MEGAHIT v1.2.9, SemiBin2 v2.2.0)"
+              },
+              "Runtype_Platform": {
+                "value": "ILLUMINA"
+              },
+              "Quast_Contigs": {
+                "value": "680"
+              },
+              "Quast_Length": {
+                "value": "1690805"
+              },
+              "Quast_N50": {
+                "value": "2415"
+              },
+              "Quast_Largest_Contig": {
+                "value": "11172"
+              },
+              "Quast_GC": {
+                "value": "36.22"
+              },
+              "CheckM_Completeness": {
+                "value": "33.10"
+              },
+              "CheckM_Contamination": {
+                "value": "0.54"
+              },
+              "Genome_Quality": {
+                "value": "Low_Quality"
+              },
+              "matchcol_BTyper3_species": {
+                "value": "bingmayongensis"
+              },
+              "matchcol_BTyper3_subspecies": {
+                "value": "No subspecies"
+              },
+              "matchcol_BTyper3_anthrax_toxin": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_emetic_toxin_cereulide": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_sphingomyelinase_Sph": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_capsule_Cap": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Has": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Bps": {
+                "value": "1"
+              },
+              "matchcol_BTyper3_Bt": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_Adjusted_panC_Group": {
+                "value": "Group_bingmayongensis"
+              }
+            },
+            "branch_attrs": {}
+          },
+          {
+            "name": "BTDB_2026-0001321.1",
+            "node_attrs": {
+              "div": 0.00631022,
+              "BTyperDB_ID": {
+                "value": "BTDB_2026-0001321.1"
+              },
+              "NCBI_BioSample": {
+                "value": "SAMN18316467",
+                "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN18316467"
+              },
+              "Strain": {
+                "value": "XF8"
+              },
+              "Collection_Year": {
+                "value": "2020"
+              },
+              "Continent": {
+                "value": "Asia"
+              },
+              "Country": {
+                "value": "China"
+              },
+              "Region": {
+                "value": "Henan Sheng"
+              },
+              "Country(Code)": {
+                "value": "CHN"
+              },
+              "Region(Code)": {
+                "value": "CN-HA"
+              },
+              "Source_1": {
+                "value": "Environmental"
+              },
+              "Source_2": {
+                "value": "Environmental"
+              },
+              "Source_3": {
+                "value": "rhizosphere soil of peanut"
+              },
+              "Free_Text": {
+                "value": "strain contains homologs of hemolysin BL (hblACD)"
+              },
+              "Metadata_Source": {
+                "value": "BioSample"
+              },
+              "AMRFinderPlus_Class(Genes)": {
+                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanR-F,vanY,vanZ-F);LINCOSAMIDE/STREPTOGRAMIN(lsa);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat);TETRACYCLINE(tet)"
+              },
+              "BTyper3_species(ANI)": {
+                "value": "bingmayongensis(97.35189819335938)"
+              },
+              "BTyper3_subspecies(ANI)": {
+                "value": "No subspecies"
+              },
+              "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                "value": "bingmayongensis*(97.35189819335938)"
+              },
+              "BTyper3_Closest_Type_Strain(ANI)": {
+                "value": "bingmayongensis(97.35189819335938)"
+              },
+              "BTyper3_anthrax_toxin(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_emetic_toxin_cereulide(genes)": {
+                "value": "0/4()"
+              },
+              "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                "value": "3/3(nheA;nheB;nheC)"
+              },
+              "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                "value": "3/4(hblA;hblC;hblD)"
+              },
+              "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                "value": "0/1()"
+              },
+              "BTyper3_sphingomyelinase_Sph(gene)": {
+                "value": "0/1()"
+              },
+              "BTyper3_capsule_Cap(genes)": {
+                "value": "0/5()"
+              },
+              "BTyper3_capsule_Has(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_capsule_Bps(genes)": {
+                "value": "1/9(bpsE)"
+              },
+              "BTyper3_Bt(genes)": {
+                "value": "0()"
+              },
+              "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                "value": "1779[No clonal complex](7/7)"
+              },
+              "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                "value": "Group_bingmayongensis"
+              },
+              "BTyper3_final_taxon_names": {
+                "value": "B. bingmayongensis"
+              },
+              "GTDB_Genus": {
+                "value": "Bacillus_A"
+              },
+              "GTDB_Species": {
+                "value": "Bacillus_A_bingmayongensis"
+              },
+              "MLST_Scheme": {
+                "value": "bcereus"
+              },
+              "Prokka_Genes": {
+                "value": "5625"
+              },
+              "Assembly_Information": {
+                "value": "GenBank Assembly"
+              },
+              "Quast_Contigs": {
+                "value": "123"
+              },
+              "Quast_Length": {
+                "value": "5590783"
+              },
+              "Quast_N50": {
+                "value": "122955"
+              },
+              "Quast_Largest_Contig": {
+                "value": "540068"
+              },
+              "Quast_GC": {
+                "value": "35.55"
+              },
+              "CheckM_Completeness": {
+                "value": "99.43"
+              },
+              "CheckM_Contamination": {
+                "value": "1.01"
+              },
+              "Genome_Quality": {
+                "value": "High_Quality"
+              },
+              "matchcol_BTyper3_species": {
+                "value": "bingmayongensis"
+              },
+              "matchcol_BTyper3_subspecies": {
+                "value": "No subspecies"
+              },
+              "matchcol_BTyper3_anthrax_toxin": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_emetic_toxin_cereulide": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                "value": "3"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                "value": "3"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_sphingomyelinase_Sph": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_capsule_Cap": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Has": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Bps": {
+                "value": "1"
+              },
+              "matchcol_BTyper3_Bt": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_PubMLST_ST": {
+                "value": "1779"
+              },
+              "matchcol_BTyper3_Adjusted_panC_Group": {
+                "value": "Group_bingmayongensis"
+              }
+            },
+            "branch_attrs": {}
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.00398279
+        },
+        "branch_attrs": {},
+        "children": [
+          {
+            "name": "BTDB_2026-0001322.1",
+            "node_attrs": {
+              "div": 0.00841157,
+              "BTyperDB_ID": {
+                "value": "BTDB_2026-0001322.1"
+              },
+              "NCBI_BioSample": {
+                "value": "SAMN38378306",
+                "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN38378306"
+              },
+              "Strain": {
+                "value": "BUPM19"
+              },
+              "Collection_Year": {
+                "value": "1994"
+              },
+              "Continent": {
+                "value": "Africa"
+              },
+              "Country": {
+                "value": "Tunisia"
+              },
+              "Country(Code)": {
+                "value": "TUN"
+              },
+              "Source_1": {
+                "value": "Environmental"
+              },
+              "Source_2": {
+                "value": "Environmental"
+              },
+              "Source_3": {
+                "value": "Soil"
+              },
+              "Free_Text": {
+                "value": "strain has the ability to produce the metalloprotease inhA that harms Lepidopteran insects; strain harbors a putative novel cyclic lactone autoinducer/class II lanthipeptide BGC on a plasmid"
+              },
+              "Metadata_Source": {
+                "value": "Publication (https://doi.org/10.5281/zenodo.13767668); BioSample"
+              },
+              "AMRFinderPlus_Class(Genes)": {
+                "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanR-F,vanS-F,vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat)"
+              },
+              "BTyper3_species(ANI)": {
+                "value": "bingmayongensis(97.96202087402344)"
+              },
+              "BTyper3_subspecies(ANI)": {
+                "value": "No subspecies"
+              },
+              "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                "value": "bingmayongensis*(97.96202087402344)"
+              },
+              "BTyper3_Closest_Type_Strain(ANI)": {
+                "value": "bingmayongensis(97.96202087402344)"
+              },
+              "BTyper3_anthrax_toxin(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_emetic_toxin_cereulide(genes)": {
+                "value": "0/4()"
+              },
+              "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                "value": "3/3(nheA;nheB;nheC)"
+              },
+              "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                "value": "0/4()"
+              },
+              "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                "value": "0/1()"
+              },
+              "BTyper3_sphingomyelinase_Sph(gene)": {
+                "value": "0/1()"
+              },
+              "BTyper3_capsule_Cap(genes)": {
+                "value": "0/5()"
+              },
+              "BTyper3_capsule_Has(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_capsule_Bps(genes)": {
+                "value": "1/9(bpsE)"
+              },
+              "BTyper3_Bt(genes)": {
+                "value": "0()"
+              },
+              "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                "value": "Unknown(unknown ST)"
+              },
+              "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                "value": "Group_bingmayongensis"
+              },
+              "BTyper3_final_taxon_names": {
+                "value": "B. bingmayongensis"
+              },
+              "GTDB_Genus": {
+                "value": "Bacillus_A"
+              },
+              "GTDB_Species": {
+                "value": "Bacillus_A_bingmayongensis"
+              },
+              "MLST_Scheme": {
+                "value": "bcereus"
+              },
+              "Prokka_Genes": {
+                "value": "5484"
+              },
+              "Assembly_Information": {
+                "value": "GenBank Assembly"
+              },
+              "Quast_Contigs": {
+                "value": "395"
+              },
+              "Quast_Length": {
+                "value": "5459685"
+              },
+              "Quast_N50": {
+                "value": "59899"
+              },
+              "Quast_Largest_Contig": {
+                "value": "223199"
+              },
+              "Quast_GC": {
+                "value": "35.45"
+              },
+              "CheckM_Completeness": {
+                "value": "99.43"
+              },
+              "CheckM_Contamination": {
+                "value": "1.44"
+              },
+              "Genome_Quality": {
+                "value": "Good_Quality"
+              },
+              "matchcol_BTyper3_species": {
+                "value": "bingmayongensis"
+              },
+              "matchcol_BTyper3_subspecies": {
+                "value": "No subspecies"
+              },
+              "matchcol_BTyper3_anthrax_toxin": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_emetic_toxin_cereulide": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                "value": "3"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_sphingomyelinase_Sph": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_capsule_Cap": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Has": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Bps": {
+                "value": "1"
+              },
+              "matchcol_BTyper3_Bt": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_Adjusted_panC_Group": {
+                "value": "Group_bingmayongensis"
+              }
+            },
+            "branch_attrs": {}
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.00815424
+            },
+            "branch_attrs": {},
+            "children": [
+              {
+                "name": "BTDB_2022-0003361.2",
+                "node_attrs": {
+                  "div": 0.00862478,
+                  "BTyperDB_ID": {
+                    "value": "BTDB_2022-0003361.2"
+                  },
+                  "NCBI_BioSample": {
+                    "value": "SAMN20822653",
+                    "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN20822653"
+                  },
+                  "Strain": {
+                    "value": "P86"
+                  },
+                  "Collection_Year": {
+                    "value": "2016"
+                  },
+                  "Continent": {
+                    "value": "Asia"
+                  },
+                  "Country": {
+                    "value": "China"
+                  },
+                  "Region": {
+                    "value": "Henan Sheng"
+                  },
+                  "Country(Code)": {
+                    "value": "CHN"
+                  },
+                  "Region(Code)": {
+                    "value": "CN-HA"
+                  },
+                  "Source_1": {
+                    "value": "Environmental"
+                  },
+                  "Source_2": {
+                    "value": "Environmental"
+                  },
+                  "Source_3": {
+                    "value": "Soil"
+                  },
+                  "Free_Text": {
+                    "value": "geo_loc: Zhengzhou"
+                  },
+                  "Metadata_Source": {
+                    "value": "Publication (https://doi.org/10.1186/s12934-022-01912-3); BioSample"
+                  },
+                  "AMRFinderPlus_Class(Genes)": {
+                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanR-F,vanS-F,vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat)"
+                  },
+                  "BTyper3_species(ANI)": {
+                    "value": "bingmayongensis(99.55096435546875)"
+                  },
+                  "BTyper3_subspecies(ANI)": {
+                    "value": "No subspecies"
+                  },
+                  "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                    "value": "bingmayongensis*(99.55096435546875)"
+                  },
+                  "BTyper3_Closest_Type_Strain(ANI)": {
+                    "value": "bingmayongensis(99.55096435546875)"
+                  },
+                  "BTyper3_anthrax_toxin(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_emetic_toxin_cereulide(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                    "value": "3/3(nheA;nheB;nheC)"
+                  },
+                  "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_sphingomyelinase_Sph(gene)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_capsule_Cap(genes)": {
+                    "value": "0/5()"
+                  },
+                  "BTyper3_capsule_Has(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_capsule_Bps(genes)": {
+                    "value": "1/9(bpsE)"
+                  },
+                  "BTyper3_Bt(genes)": {
+                    "value": "1(Cry22Ba1/Cry22Bb1)"
+                  },
+                  "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                    "value": "2144[No clonal complex](7/7)"
+                  },
+                  "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                    "value": "Group_bingmayongensis"
+                  },
+                  "BTyper3_final_taxon_names": {
+                    "value": "B. bingmayongensis biovar Thuringiensis; B. Thuringiensis"
+                  },
+                  "GTDB_Genus": {
+                    "value": "Bacillus_A"
+                  },
+                  "GTDB_Species": {
+                    "value": "Bacillus_A_bingmayongensis"
+                  },
+                  "MLST_Scheme": {
+                    "value": "bcereus"
+                  },
+                  "Prokka_Genes": {
+                    "value": "5847"
+                  },
+                  "Assembly_Information": {
+                    "value": "GenBank Assembly (Scaffolds split into contigs)"
+                  },
+                  "Quast_Contigs": {
+                    "value": "285"
+                  },
+                  "Quast_Length": {
+                    "value": "5886285"
+                  },
+                  "Quast_N50": {
+                    "value": "102705"
+                  },
+                  "Quast_Largest_Contig": {
+                    "value": "457097"
+                  },
+                  "Quast_GC": {
+                    "value": "35.46"
+                  },
+                  "CheckM_Completeness": {
+                    "value": "99.43"
+                  },
+                  "CheckM_Contamination": {
+                    "value": "0.92"
+                  },
+                  "Genome_Quality": {
+                    "value": "High_Quality"
+                  },
+                  "matchcol_BTyper3_species": {
+                    "value": "bingmayongensis"
+                  },
+                  "matchcol_BTyper3_subspecies": {
+                    "value": "No subspecies"
+                  },
+                  "matchcol_BTyper3_anthrax_toxin": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_emetic_toxin_cereulide": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                    "value": "3"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_sphingomyelinase_Sph": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_capsule_Cap": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Has": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Bps": {
+                    "value": "1"
+                  },
+                  "matchcol_BTyper3_Bt": {
+                    "value": "Present"
+                  },
+                  "matchcol_BTyper3_PubMLST_ST": {
+                    "value": "2144"
+                  },
+                  "matchcol_BTyper3_Adjusted_panC_Group": {
+                    "value": "Group_bingmayongensis"
+                  }
+                },
+                "branch_attrs": {}
+              },
+              {
+                "name": "BTDB_2022-0000619.2",
+                "node_attrs": {
+                  "div": 0.00874411,
+                  "BTyperDB_ID": {
+                    "value": "BTDB_2022-0000619.2"
+                  },
+                  "NCBI_BioSample": {
+                    "value": "SAMN02469796",
+                    "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN02469796"
+                  },
+                  "Strain": {
+                    "value": "FJAT-13831"
+                  },
+                  "Collection_Year": {
+                    "value": "2010"
+                  },
+                  "Continent": {
+                    "value": "Asia"
+                  },
+                  "Country": {
+                    "value": "China"
+                  },
+                  "Region": {
+                    "value": "Shaanxi Sheng"
+                  },
+                  "Country(Code)": {
+                    "value": "CHN"
+                  },
+                  "Region(Code)": {
+                    "value": "CN-SN"
+                  },
+                  "Source_1": {
+                    "value": "Environmental"
+                  },
+                  "Source_2": {
+                    "value": "Environmental"
+                  },
+                  "Source_3": {
+                    "value": "Soil on the Terracotta Warriors from the No. 1 pit of the Mausoleum of the First Qin Emperor"
+                  },
+                  "Free_Text": {
+                    "value": "geo_loc: Xi\u2019an"
+                  },
+                  "Metadata_Source": {
+                    "value": "Publication (https://doi.org/10.1007/s10482-013-0102-3); BioSample"
+                  },
+                  "AMRFinderPlus_Class(Genes)": {
+                    "value": "BETA-LACTAM(bla);FOSFOMYCIN(fosB);GLYCOPEPTIDE(vanR-F,vanS-F,vanY);LINCOSAMIDE(vga);MACROLIDE(abc-f);PHENICOL(catA);STREPTOGRAMIN(vat)"
+                  },
+                  "BTyper3_species(ANI)": {
+                    "value": "bingmayongensis(100.0)"
+                  },
+                  "BTyper3_subspecies(ANI)": {
+                    "value": "No subspecies"
+                  },
+                  "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                    "value": "bingmayongensis(100.0)"
+                  },
+                  "BTyper3_Closest_Type_Strain(ANI)": {
+                    "value": "bingmayongensis(100.0)"
+                  },
+                  "BTyper3_anthrax_toxin(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_emetic_toxin_cereulide(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                    "value": "3/3(nheA;nheB;nheC)"
+                  },
+                  "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_sphingomyelinase_Sph(gene)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_capsule_Cap(genes)": {
+                    "value": "0/5()"
+                  },
+                  "BTyper3_capsule_Has(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_capsule_Bps(genes)": {
+                    "value": "1/9(bpsE)"
+                  },
+                  "BTyper3_Bt(genes)": {
+                    "value": "2(Cry22Bb1;Cry78Aa1)"
+                  },
+                  "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                    "value": "763[No clonal complex](7/7)"
+                  },
+                  "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                    "value": "Group_bingmayongensis"
+                  },
+                  "BTyper3_final_taxon_names": {
+                    "value": "B. bingmayongensis biovar Thuringiensis; B. Thuringiensis"
+                  },
+                  "GTDB_Genus": {
+                    "value": "Bacillus_A"
+                  },
+                  "GTDB_Species": {
+                    "value": "Bacillus_A_bingmayongensis"
+                  },
+                  "MLST_Scheme": {
+                    "value": "bcereus"
+                  },
+                  "Prokka_Genes": {
+                    "value": "5508"
+                  },
+                  "Assembly_Information": {
+                    "value": "GenBank Assembly (Scaffolds split into contigs)"
+                  },
+                  "Quast_Contigs": {
+                    "value": "88"
+                  },
+                  "Quast_Length": {
+                    "value": "5471712"
+                  },
+                  "Quast_N50": {
+                    "value": "567733"
+                  },
+                  "Quast_Largest_Contig": {
+                    "value": "1414149"
+                  },
+                  "Quast_GC": {
+                    "value": "35.49"
+                  },
+                  "CheckM_Completeness": {
+                    "value": "99.43"
+                  },
+                  "CheckM_Contamination": {
+                    "value": "0.29"
+                  },
+                  "Genome_Quality": {
+                    "value": "High_Quality"
+                  },
+                  "matchcol_BTyper3_species": {
+                    "value": "bingmayongensis"
+                  },
+                  "matchcol_BTyper3_subspecies": {
+                    "value": "No subspecies"
+                  },
+                  "matchcol_BTyper3_anthrax_toxin": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_emetic_toxin_cereulide": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                    "value": "3"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_sphingomyelinase_Sph": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_capsule_Cap": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Has": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Bps": {
+                    "value": "1"
+                  },
+                  "matchcol_BTyper3_Bt": {
+                    "value": "Present"
+                  },
+                  "matchcol_BTyper3_PubMLST_ST": {
+                    "value": "763"
+                  },
+                  "matchcol_BTyper3_Adjusted_panC_Group": {
+                    "value": "Group_bingmayongensis"
+                  }
+                },
+                "branch_attrs": {}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
