@@ -360,13 +360,13 @@
       {
         "key": "Country(Code)",
         "demes": {
-          "ISR": {
-            "latitude": 30.85883075,
-            "longitude": 34.91753797
-          },
           "KOR": {
             "latitude": 36.56344139,
             "longitude": 127.51424646
+          },
+          "ISR": {
+            "latitude": 30.85883075,
+            "longitude": 34.91753797
           }
         }
       },
@@ -538,9 +538,6 @@
           "CheckM_Contamination": {
             "value": "0.00"
           },
-          "Genome_Quality": {
-            "value": "High_Quality"
-          },
           "matchcol_BTyper3_species": {
             "value": "manliponensis"
           },
@@ -703,9 +700,6 @@
               "Assembly_Information": {
                 "value": "MAG Assembly (MEGAHIT v1.2.9, SemiBin2 v2.2.0)"
               },
-              "Runtype_Platform": {
-                "value": "ILLUMINA"
-              },
               "Quast_Contigs": {
                 "value": "302"
               },
@@ -726,9 +720,6 @@
               },
               "CheckM_Contamination": {
                 "value": "3.16"
-              },
-              "Genome_Quality": {
-                "value": "Good_Quality"
               },
               "matchcol_BTyper3_species": {
                 "value": "manliponensis"
@@ -768,6 +759,9 @@
               },
               "matchcol_BTyper3_Adjusted_panC_Group": {
                 "value": "Group_manliponensis"
+              },
+              "Runtype_Platform": {
+                "value": "ILLUMINA"
               }
             },
             "branch_attrs": {}
@@ -895,18 +889,6 @@
                   "Assembly_Information": {
                     "value": "Short Read Assembly (Shovill v1.1.0)"
                   },
-                  "Runtype_Platform": {
-                    "value": "ILLUMINA"
-                  },
-                  "Kraken_Phylum(Bacillota)": {
-                    "value": "54.64"
-                  },
-                  "Kraken_Order(Bacillales)": {
-                    "value": "53.12"
-                  },
-                  "Kraken_Genus(Bacillus)": {
-                    "value": "43.15"
-                  },
                   "Quast_Contigs": {
                     "value": "207"
                   },
@@ -927,9 +909,6 @@
                   },
                   "CheckM_Contamination": {
                     "value": "1.44"
-                  },
-                  "Genome_Quality": {
-                    "value": "Good_Quality"
                   },
                   "matchcol_BTyper3_species": {
                     "value": "manliponensis"
@@ -969,6 +948,9 @@
                   },
                   "matchcol_BTyper3_Adjusted_panC_Group": {
                     "value": "Group_manliponensis"
+                  },
+                  "Runtype_Platform": {
+                    "value": "ILLUMINA"
                   }
                 },
                 "branch_attrs": {}
@@ -1109,9 +1091,6 @@
                   },
                   "CheckM_Contamination": {
                     "value": "1.44"
-                  },
-                  "Genome_Quality": {
-                    "value": "High_Quality"
                   },
                   "matchcol_BTyper3_species": {
                     "value": "manliponensis"

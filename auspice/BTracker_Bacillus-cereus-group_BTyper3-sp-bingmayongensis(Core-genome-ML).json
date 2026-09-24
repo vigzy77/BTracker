@@ -402,26 +402,26 @@
       {
         "key": "Continent",
         "demes": {
-          "Asia": {
-            "latitude": 35.0,
-            "longitude": 85.0
-          },
           "Africa": {
             "latitude": 4.0,
             "longitude": 22.0
+          },
+          "Asia": {
+            "latitude": 35.0,
+            "longitude": 85.0
           }
         }
       },
       {
         "key": "Country(Code)",
         "demes": {
-          "CHN": {
-            "latitude": 36.7145744,
-            "longitude": 103.55819197
-          },
           "TUN": {
             "latitude": 33.8843194,
             "longitude": 9.71878341
+          },
+          "CHN": {
+            "latitude": 36.7145744,
+            "longitude": 103.55819197
           }
         }
       },
@@ -560,9 +560,6 @@
               "Assembly_Information": {
                 "value": "MAG Assembly (MEGAHIT v1.2.9, SemiBin2 v2.2.0)"
               },
-              "Runtype_Platform": {
-                "value": "ILLUMINA"
-              },
               "Quast_Contigs": {
                 "value": "680"
               },
@@ -583,9 +580,6 @@
               },
               "CheckM_Contamination": {
                 "value": "0.54"
-              },
-              "Genome_Quality": {
-                "value": "Low_Quality"
               },
               "matchcol_BTyper3_species": {
                 "value": "bingmayongensis"
@@ -625,6 +619,9 @@
               },
               "matchcol_BTyper3_Adjusted_panC_Group": {
                 "value": "Group_bingmayongensis"
+              },
+              "Runtype_Platform": {
+                "value": "ILLUMINA"
               }
             },
             "branch_attrs": {}
@@ -765,9 +762,6 @@
               },
               "CheckM_Contamination": {
                 "value": "1.01"
-              },
-              "Genome_Quality": {
-                "value": "High_Quality"
               },
               "matchcol_BTyper3_species": {
                 "value": "bingmayongensis"
@@ -953,9 +947,6 @@
               },
               "CheckM_Contamination": {
                 "value": "1.44"
-              },
-              "Genome_Quality": {
-                "value": "Good_Quality"
               },
               "matchcol_BTyper3_species": {
                 "value": "bingmayongensis"
@@ -1143,9 +1134,6 @@
                   "CheckM_Contamination": {
                     "value": "0.92"
                   },
-                  "Genome_Quality": {
-                    "value": "High_Quality"
-                  },
                   "matchcol_BTyper3_species": {
                     "value": "bingmayongensis"
                   },
@@ -1327,9 +1315,6 @@
                   },
                   "CheckM_Contamination": {
                     "value": "0.29"
-                  },
-                  "Genome_Quality": {
-                    "value": "High_Quality"
                   },
                   "matchcol_BTyper3_species": {
                     "value": "bingmayongensis"
