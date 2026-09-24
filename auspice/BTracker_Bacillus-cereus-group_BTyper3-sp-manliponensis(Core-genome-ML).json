@@ -373,13 +373,13 @@
       {
         "key": "Region(Code)",
         "demes": {
-          "KR-44": {
-            "latitude": 36.6593,
-            "longitude": 126.6729
-          },
           "KR-49": {
             "latitude": 33.4888,
             "longitude": 126.4987
+          },
+          "KR-44": {
+            "latitude": 36.6593,
+            "longitude": 126.6729
           },
           "IL-M": {
             "latitude": 32.0843,
