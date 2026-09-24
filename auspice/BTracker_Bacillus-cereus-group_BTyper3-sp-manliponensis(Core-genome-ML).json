@@ -26,9 +26,11 @@
         "map"
       ],
       "map_triplicate": true,
-      "color_by": "Strain",
-      "geo_resolution": "Country(Code)"
+      "color_by": "Collection_Year",
+      "geo_resolution": "Country(Code)",
+      "tip_label": "Strain"
     },
+    "description": "## *Bacillus manliponensis* (*B. cereus* group Rare Species)\n\n#### Maximum-likelihood phylogeny of all *B. manliponensis* genomes/MAGs\n\n- The phylogeny was constructed (via IQ-TREE v2.2.5) using 684 core genes detected (via Panaroo v1.3.4) in all *B. manliponensis* genomes, plus an outgroup [the B. pseudomycoides type strain](https://nextstrain.org/community/vigzy77/BTracker/Bacillus-cereus-group/All-Species(Mash-distance-NJ)?f_Strain=DSM%2012442).\n\n- The phylogeny is rooted using the outgroup (omitted for readability), with branch lengths reported in substitutions per site.\n",
     "colorings": [
       {
         "key": "Strain",
@@ -90,7 +92,7 @@
         "scale": [
           [
             "Israel",
-            "#004488"
+            "#56B4E9"
           ],
           [
             "Korea, Republic of",
@@ -353,26 +355,26 @@
       {
         "key": "Country(Code)",
         "demes": {
-          "KOR": {
-            "latitude": 36.56344139,
-            "longitude": 127.51424646
-          },
           "ISR": {
             "latitude": 30.85883075,
             "longitude": 34.91753797
+          },
+          "KOR": {
+            "latitude": 36.56344139,
+            "longitude": 127.51424646
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "KR-44": {
-            "latitude": 36.6593,
-            "longitude": 126.6729
-          },
           "IL-M": {
             "latitude": 32.0843,
             "longitude": 34.9169
+          },
+          "KR-44": {
+            "latitude": 36.6593,
+            "longitude": 126.6729
           },
           "KR-49": {
             "latitude": 33.4888,
