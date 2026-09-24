@@ -1,0 +1,1157 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
+    "updated": "2026-09-24",
+    "build_url": "https://github.com/vigzy77/BTracker/",
+    "data_provenance": [
+      {
+        "name": "BTyperDB",
+        "url": "https://btyperdb.btyper.app/"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Vignesh Ramnath",
+        "url": "https://www.umu.se/en/staff/vignesh-ramnath/"
+      },
+      {
+        "name": "The CompMicroLab @ Ume\u00e5 University",
+        "url": "https://www.microbe.dev/"
+      }
+    ],
+    "display_defaults": {
+      "panels": [
+        "tree",
+        "map"
+      ],
+      "map_triplicate": true,
+      "color_by": "Strain",
+      "geo_resolution": "Country(Code)"
+    },
+    "colorings": [
+      {
+        "key": "Strain",
+        "title": "Strain",
+        "type": "categorical",
+        "scale": [
+          [
+            "CIP111019T",
+            "#56B4E9"
+          ],
+          [
+            "IsraeliOrchard",
+            "#F0E442"
+          ],
+          [
+            "JCM 15802",
+            "#009E73"
+          ],
+          [
+            "jeju3-1",
+            "#E69F00"
+          ]
+        ]
+      },
+      {
+        "key": "Collection_Year",
+        "title": "Collection_Year",
+        "type": "categorical",
+        "scale": [
+          [
+            "2011",
+            "#56B4E9"
+          ],
+          [
+            "2019",
+            "#F0E442"
+          ],
+          [
+            "2024",
+            "#009E73"
+          ]
+        ]
+      },
+      {
+        "key": "Continent",
+        "title": "Continent",
+        "type": "categorical",
+        "scale": [
+          [
+            "Asia",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "Country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Israel",
+            "#004488"
+          ],
+          [
+            "Korea, Republic of",
+            "#BB5566"
+          ]
+        ]
+      },
+      {
+        "key": "Region",
+        "title": "Region",
+        "type": "categorical",
+        "scale": [
+          [
+            "Al Awsa\u0163",
+            "#56B4E9"
+          ],
+          [
+            "Chungcheongnam-do",
+            "#F0E442"
+          ],
+          [
+            "Jeju-teukbyeoljachido",
+            "#009E73"
+          ]
+        ]
+      },
+      {
+        "key": "Source_1",
+        "title": "Source_1",
+        "type": "categorical",
+        "scale": [
+          [
+            "Environmental",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "Source_2",
+        "title": "Source_2",
+        "type": "categorical",
+        "scale": [
+          [
+            "Environmental",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "Source_3",
+        "title": "Source_3",
+        "type": "categorical",
+        "scale": [
+          [
+            "Coastal soil",
+            "#56B4E9"
+          ],
+          [
+            "oil-contaminated foreshore tidal flat sediment of the Yellow Sea",
+            "#F0E442"
+          ],
+          [
+            "soil from a freshwater-irrigated avocado orchard (orchard2)",
+            "#009E73"
+          ]
+        ]
+      },
+      {
+        "key": "GTDB_Species",
+        "title": "GTDB_Species",
+        "type": "categorical",
+        "scale": [
+          [
+            "Bacillus_A_manliponensis",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_species",
+        "title": "BTyper3_species",
+        "type": "categorical",
+        "scale": [
+          [
+            "manliponensis",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_subspecies",
+        "title": "BTyper3_subspecies",
+        "type": "categorical",
+        "scale": [
+          [
+            "No subspecies",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_anthrax_toxin",
+        "title": "BTyper3_anthrax_toxin",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_emetic_toxin_cereulide",
+        "title": "BTyper3_emetic_toxin_cereulide",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_diarrheal_toxin_Nhe",
+        "title": "BTyper3_diarrheal_toxin_Nhe",
+        "type": "categorical",
+        "scale": [
+          [
+            "1",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_diarrheal_toxin_Hbl",
+        "title": "BTyper3_diarrheal_toxin_Hbl",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_diarrheal_toxin_CytK",
+        "title": "BTyper3_diarrheal_toxin_CytK",
+        "type": "categorical",
+        "scale": [
+          [
+            "Absent",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_sphingomyelinase_Sph",
+        "title": "BTyper3_sphingomyelinase_Sph",
+        "type": "categorical",
+        "scale": [
+          [
+            "Absent",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_capsule_Cap",
+        "title": "BTyper3_capsule_Cap",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_capsule_Has",
+        "title": "BTyper3_capsule_Has",
+        "type": "categorical",
+        "scale": [
+          [
+            "0",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_capsule_Bps",
+        "title": "BTyper3_capsule_Bps",
+        "type": "categorical",
+        "scale": [
+          [
+            "1",
+            "#56B4E9"
+          ],
+          [
+            "2",
+            "#F0E442"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_Bt",
+        "title": "BTyper3_Bt",
+        "type": "categorical",
+        "scale": [
+          [
+            "Absent",
+            "#56B4E9"
+          ]
+        ]
+      },
+      {
+        "key": "matchcol_BTyper3_Adjusted_panC_Group",
+        "title": "BTyper3_Adjusted_panC_Group",
+        "type": "categorical",
+        "scale": [
+          [
+            "Group_manliponensis",
+            "#56B4E9"
+          ]
+        ]
+      }
+    ],
+    "filters": [
+      "Continent",
+      "Country",
+      "Source_1",
+      "Source_2",
+      "Human_Illness",
+      "GTDB_Species",
+      "matchcol_BTyper3_species",
+      "matchcol_BTyper3_subspecies",
+      "matchcol_BTyper3_anthrax_toxin",
+      "matchcol_BTyper3_emetic_toxin_cereulide",
+      "matchcol_BTyper3_diarrheal_toxin_Nhe",
+      "matchcol_BTyper3_diarrheal_toxin_Hbl",
+      "matchcol_BTyper3_diarrheal_toxin_CytK",
+      "matchcol_BTyper3_sphingomyelinase_Sph",
+      "matchcol_BTyper3_capsule_Cap",
+      "matchcol_BTyper3_capsule_Has",
+      "matchcol_BTyper3_capsule_Bps",
+      "matchcol_BTyper3_Bt",
+      "matchcol_BTyper3_Adjusted_panC_Group",
+      "Assembly_Information",
+      "Runtype_Platform"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "Continent",
+        "demes": {
+          "Asia": {
+            "latitude": 35.0,
+            "longitude": 85.0
+          }
+        }
+      },
+      {
+        "key": "Country(Code)",
+        "demes": {
+          "KOR": {
+            "latitude": 36.56344139,
+            "longitude": 127.51424646
+          },
+          "ISR": {
+            "latitude": 30.85883075,
+            "longitude": 34.91753797
+          }
+        }
+      },
+      {
+        "key": "Region(Code)",
+        "demes": {
+          "KR-44": {
+            "latitude": 36.6593,
+            "longitude": 126.6729
+          },
+          "IL-M": {
+            "latitude": 32.0843,
+            "longitude": 34.9169
+          },
+          "KR-49": {
+            "latitude": 33.4888,
+            "longitude": 126.4987
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "measurements"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0
+    },
+    "branch_attrs": {},
+    "children": [
+      {
+        "name": "BTDB_2025-0004358.1",
+        "node_attrs": {
+          "div": 0.0158401,
+          "BTyperDB_ID": {
+            "value": "BTDB_2025-0004358.1"
+          },
+          "NCBI_BioSample": {
+            "value": "SAMN42622381",
+            "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN42622381"
+          },
+          "Strain": {
+            "value": "jeju3-1"
+          },
+          "Collection_Year": {
+            "value": "2024"
+          },
+          "Continent": {
+            "value": "Asia"
+          },
+          "Country": {
+            "value": "Korea, Republic of"
+          },
+          "Region": {
+            "value": "Jeju-teukbyeoljachido"
+          },
+          "Country(Code)": {
+            "value": "KOR"
+          },
+          "Region(Code)": {
+            "value": "KR-49"
+          },
+          "Source_1": {
+            "value": "Environmental"
+          },
+          "Source_2": {
+            "value": "Environmental"
+          },
+          "Source_3": {
+            "value": "Coastal soil"
+          },
+          "Free_Text": {
+            "value": "geo_loc: Jeju; strain possesses BGCs that resemble BGCs responsible for the production of paeninodin, petrobactin and bacillopaline"
+          },
+          "Metadata_Source": {
+            "value": "Publication (https://doi.org/10.1128/spectrum.03164-24); BioSample"
+          },
+          "AMRFinderPlus_Class(Genes)": {
+            "value": "LINCOSAMIDE(vga);MACROLIDE(abc-f);TRIMETHOPRIM(dfr)"
+          },
+          "BTyper3_species(ANI)": {
+            "value": "manliponensis(95.33541107177734)"
+          },
+          "BTyper3_subspecies(ANI)": {
+            "value": "No subspecies"
+          },
+          "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+            "value": "manliponensis*(95.33541107177734)"
+          },
+          "BTyper3_Closest_Type_Strain(ANI)": {
+            "value": "manliponensis(95.33541107177734)"
+          },
+          "BTyper3_anthrax_toxin(genes)": {
+            "value": "0/3()"
+          },
+          "BTyper3_emetic_toxin_cereulide(genes)": {
+            "value": "0/4()"
+          },
+          "BTyper3_diarrheal_toxin_Nhe(genes)": {
+            "value": "1/3(nheB)"
+          },
+          "BTyper3_diarrheal_toxin_Hbl(genes)": {
+            "value": "0/4()"
+          },
+          "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+            "value": "0/1()"
+          },
+          "BTyper3_sphingomyelinase_Sph(gene)": {
+            "value": "0/1()"
+          },
+          "BTyper3_capsule_Cap(genes)": {
+            "value": "0/5()"
+          },
+          "BTyper3_capsule_Has(genes)": {
+            "value": "0/3()"
+          },
+          "BTyper3_capsule_Bps(genes)": {
+            "value": "2/9(bpsE;bpsH)"
+          },
+          "BTyper3_Bt(genes)": {
+            "value": "0()"
+          },
+          "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+            "value": "Unknown(missing alleles)"
+          },
+          "BTyper3_Adjusted_panC_Group(predicted_species)": {
+            "value": "Group_manliponensis*"
+          },
+          "BTyper3_final_taxon_names": {
+            "value": "B. manliponensis"
+          },
+          "GTDB_Genus": {
+            "value": "Bacillus_A"
+          },
+          "GTDB_Species": {
+            "value": "Bacillus_A_manliponensis"
+          },
+          "MLST_Scheme": {
+            "value": "-"
+          },
+          "Prokka_Genes": {
+            "value": "4284"
+          },
+          "Assembly_Information": {
+            "value": "GenBank Assembly"
+          },
+          "Quast_Contigs": {
+            "value": "1"
+          },
+          "Quast_Length": {
+            "value": "4286476"
+          },
+          "Quast_N50": {
+            "value": "4286476"
+          },
+          "Quast_Largest_Contig": {
+            "value": "4286476"
+          },
+          "Quast_GC": {
+            "value": "36.54"
+          },
+          "CheckM_Completeness": {
+            "value": "99.28"
+          },
+          "CheckM_Contamination": {
+            "value": "0.00"
+          },
+          "Genome_Quality": {
+            "value": "High_Quality"
+          },
+          "matchcol_BTyper3_species": {
+            "value": "manliponensis"
+          },
+          "matchcol_BTyper3_subspecies": {
+            "value": "No subspecies"
+          },
+          "matchcol_BTyper3_anthrax_toxin": {
+            "value": "0"
+          },
+          "matchcol_BTyper3_emetic_toxin_cereulide": {
+            "value": "0"
+          },
+          "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+            "value": "1"
+          },
+          "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+            "value": "0"
+          },
+          "matchcol_BTyper3_diarrheal_toxin_CytK": {
+            "value": "Absent"
+          },
+          "matchcol_BTyper3_sphingomyelinase_Sph": {
+            "value": "Absent"
+          },
+          "matchcol_BTyper3_capsule_Cap": {
+            "value": "0"
+          },
+          "matchcol_BTyper3_capsule_Has": {
+            "value": "0"
+          },
+          "matchcol_BTyper3_capsule_Bps": {
+            "value": "2"
+          },
+          "matchcol_BTyper3_Bt": {
+            "value": "Absent"
+          }
+        },
+        "branch_attrs": {}
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0161623
+        },
+        "branch_attrs": {},
+        "children": [
+          {
+            "name": "BTDB_2026-0001324.1",
+            "node_attrs": {
+              "div": 0.0168232,
+              "BTyperDB_ID": {
+                "value": "BTDB_2026-0001324.1"
+              },
+              "NCBI_BioSample": {
+                "value": "SAMN16073653",
+                "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN16073653"
+              },
+              "Strain": {
+                "value": "IsraeliOrchard"
+              },
+              "Collection_Year": {
+                "value": "2019"
+              },
+              "Continent": {
+                "value": "Asia"
+              },
+              "Country": {
+                "value": "Israel"
+              },
+              "Region": {
+                "value": "Al Awsa\u0163"
+              },
+              "Country(Code)": {
+                "value": "ISR"
+              },
+              "Region(Code)": {
+                "value": "IL-M"
+              },
+              "Source_1": {
+                "value": "Environmental"
+              },
+              "Source_2": {
+                "value": "Environmental"
+              },
+              "Source_3": {
+                "value": "soil from a freshwater-irrigated avocado orchard (orchard2)"
+              },
+              "Free_Text": {
+                "value": "geo_loc: Agricultural Research Organization, The Volcani Center, Rishon LeZion; strain possesses BGCs that resemble BGCs responsible for the production of paeninodin, petrobactin and a putative novel nonribosomal peptide synthetase (NRP); sample represents a metagenome-assembled genome (MAG) assembled from the metagenomic run SRR12632054 of study SRP282271"
+              },
+              "Metadata_Source": {
+                "value": "Publication (https://doi.org/10.1021/acs.est.1c00612); BioSample"
+              },
+              "AMRFinderPlus_Class(Genes)": {
+                "value": "BETA-LACTAM(bla,blaR1);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
+              },
+              "BTyper3_species(ANI)": {
+                "value": "manliponensis(99.26335144042969)"
+              },
+              "BTyper3_subspecies(ANI)": {
+                "value": "No subspecies"
+              },
+              "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                "value": "manliponensis*(99.26335144042969)"
+              },
+              "BTyper3_Closest_Type_Strain(ANI)": {
+                "value": "manliponensis(99.26335144042969)"
+              },
+              "BTyper3_anthrax_toxin(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_emetic_toxin_cereulide(genes)": {
+                "value": "0/4()"
+              },
+              "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                "value": "1/3(nheB)"
+              },
+              "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                "value": "0/4()"
+              },
+              "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                "value": "0/1()"
+              },
+              "BTyper3_sphingomyelinase_Sph(gene)": {
+                "value": "0/1()"
+              },
+              "BTyper3_capsule_Cap(genes)": {
+                "value": "0/5()"
+              },
+              "BTyper3_capsule_Has(genes)": {
+                "value": "0/3()"
+              },
+              "BTyper3_capsule_Bps(genes)": {
+                "value": "1/9(bpsE)"
+              },
+              "BTyper3_Bt(genes)": {
+                "value": "0()"
+              },
+              "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                "value": "Unknown(missing alleles)"
+              },
+              "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                "value": "Group_manliponensis"
+              },
+              "BTyper3_final_taxon_names": {
+                "value": "B. manliponensis"
+              },
+              "GTDB_Genus": {
+                "value": "Bacillus_A"
+              },
+              "GTDB_Species": {
+                "value": "Bacillus_A_manliponensis"
+              },
+              "MLST_Scheme": {
+                "value": "bcereus"
+              },
+              "Prokka_Genes": {
+                "value": "4410"
+              },
+              "Assembly_Information": {
+                "value": "MAG Assembly (MEGAHIT v1.2.9, SemiBin2 v2.2.0)"
+              },
+              "Runtype_Platform": {
+                "value": "ILLUMINA"
+              },
+              "Quast_Contigs": {
+                "value": "302"
+              },
+              "Quast_Length": {
+                "value": "4406424"
+              },
+              "Quast_N50": {
+                "value": "24077"
+              },
+              "Quast_Largest_Contig": {
+                "value": "97541"
+              },
+              "Quast_GC": {
+                "value": "36.31"
+              },
+              "CheckM_Completeness": {
+                "value": "96.17"
+              },
+              "CheckM_Contamination": {
+                "value": "3.16"
+              },
+              "Genome_Quality": {
+                "value": "Good_Quality"
+              },
+              "matchcol_BTyper3_species": {
+                "value": "manliponensis"
+              },
+              "matchcol_BTyper3_subspecies": {
+                "value": "No subspecies"
+              },
+              "matchcol_BTyper3_anthrax_toxin": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_emetic_toxin_cereulide": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                "value": "1"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_sphingomyelinase_Sph": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_capsule_Cap": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Has": {
+                "value": "0"
+              },
+              "matchcol_BTyper3_capsule_Bps": {
+                "value": "1"
+              },
+              "matchcol_BTyper3_Bt": {
+                "value": "Absent"
+              },
+              "matchcol_BTyper3_Adjusted_panC_Group": {
+                "value": "Group_manliponensis"
+              }
+            },
+            "branch_attrs": {}
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0169871
+            },
+            "branch_attrs": {},
+            "children": [
+              {
+                "name": "BTDB_2025-0000464.1",
+                "node_attrs": {
+                  "div": 0.0169872,
+                  "BTyperDB_ID": {
+                    "value": "BTDB_2025-0000464.1"
+                  },
+                  "NCBI_BioSample": {
+                    "value": "SAMEA117660542",
+                    "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMEA117660542"
+                  },
+                  "Strain": {
+                    "value": "CIP111019T"
+                  },
+                  "Collection_Year": {
+                    "value": "2011"
+                  },
+                  "Continent": {
+                    "value": "Asia"
+                  },
+                  "Country": {
+                    "value": "Korea, Republic of"
+                  },
+                  "Region": {
+                    "value": "Chungcheongnam-do"
+                  },
+                  "Country(Code)": {
+                    "value": "KOR"
+                  },
+                  "Region(Code)": {
+                    "value": "KR-44"
+                  },
+                  "Source_1": {
+                    "value": "Environmental"
+                  },
+                  "Source_2": {
+                    "value": "Environmental"
+                  },
+                  "Source_3": {
+                    "value": "oil-contaminated foreshore tidal flat sediment of the Yellow Sea"
+                  },
+                  "Free_Text": {
+                    "value": "geo_loc: Malipo beach, Tae-An, South Korea; strain possesses BGCs that resemble BGCs responsible for the production of paeninodin, petrobactin and a putative novel nonribosomal peptide synthetase (NRP)"
+                  },
+                  "Metadata_Source": {
+                    "value": "URL (https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP%20111019); Publication (https://doi.org/10.1007/s12275-011-1049-6); BioSample"
+                  },
+                  "AMRFinderPlus_Class(Genes)": {
+                    "value": "BETA-LACTAM(bla,blaR1);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
+                  },
+                  "BTyper3_species(ANI)": {
+                    "value": "manliponensis(99.97240447998047)"
+                  },
+                  "BTyper3_subspecies(ANI)": {
+                    "value": "No subspecies"
+                  },
+                  "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                    "value": "manliponensis*(99.97240447998047)"
+                  },
+                  "BTyper3_Closest_Type_Strain(ANI)": {
+                    "value": "manliponensis(99.97240447998047)"
+                  },
+                  "BTyper3_anthrax_toxin(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_emetic_toxin_cereulide(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                    "value": "1/3(nheB)"
+                  },
+                  "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_sphingomyelinase_Sph(gene)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_capsule_Cap(genes)": {
+                    "value": "0/5()"
+                  },
+                  "BTyper3_capsule_Has(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_capsule_Bps(genes)": {
+                    "value": "1/9(bpsE)"
+                  },
+                  "BTyper3_Bt(genes)": {
+                    "value": "0()"
+                  },
+                  "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                    "value": "Unknown(missing alleles)"
+                  },
+                  "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                    "value": "Group_manliponensis"
+                  },
+                  "BTyper3_final_taxon_names": {
+                    "value": "B. manliponensis"
+                  },
+                  "GTDB_Genus": {
+                    "value": "Bacillus_A"
+                  },
+                  "GTDB_Species": {
+                    "value": "Bacillus_A_manliponensis"
+                  },
+                  "MLST_Scheme": {
+                    "value": "bcereus"
+                  },
+                  "Prokka_Genes": {
+                    "value": "4720"
+                  },
+                  "Assembly_Information": {
+                    "value": "Short Read Assembly (Shovill v1.1.0)"
+                  },
+                  "Runtype_Platform": {
+                    "value": "ILLUMINA"
+                  },
+                  "Kraken_Phylum(Bacillota)": {
+                    "value": "54.64"
+                  },
+                  "Kraken_Order(Bacillales)": {
+                    "value": "53.12"
+                  },
+                  "Kraken_Genus(Bacillus)": {
+                    "value": "43.15"
+                  },
+                  "Quast_Contigs": {
+                    "value": "207"
+                  },
+                  "Quast_Length": {
+                    "value": "4621824"
+                  },
+                  "Quast_N50": {
+                    "value": "50631"
+                  },
+                  "Quast_Largest_Contig": {
+                    "value": "262064"
+                  },
+                  "Quast_GC": {
+                    "value": "36.07"
+                  },
+                  "CheckM_Completeness": {
+                    "value": "99.28"
+                  },
+                  "CheckM_Contamination": {
+                    "value": "1.44"
+                  },
+                  "Genome_Quality": {
+                    "value": "Good_Quality"
+                  },
+                  "matchcol_BTyper3_species": {
+                    "value": "manliponensis"
+                  },
+                  "matchcol_BTyper3_subspecies": {
+                    "value": "No subspecies"
+                  },
+                  "matchcol_BTyper3_anthrax_toxin": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_emetic_toxin_cereulide": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                    "value": "1"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_sphingomyelinase_Sph": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_capsule_Cap": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Has": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Bps": {
+                    "value": "1"
+                  },
+                  "matchcol_BTyper3_Bt": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_Adjusted_panC_Group": {
+                    "value": "Group_manliponensis"
+                  }
+                },
+                "branch_attrs": {}
+              },
+              {
+                "name": "BTDB_2022-0000702.2",
+                "node_attrs": {
+                  "div": 0.0169872,
+                  "BTyperDB_ID": {
+                    "value": "BTDB_2022-0000702.2"
+                  },
+                  "NCBI_BioSample": {
+                    "value": "SAMN02854473",
+                    "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN02854473"
+                  },
+                  "Strain": {
+                    "value": "JCM 15802"
+                  },
+                  "Collection_Year": {
+                    "value": "2011"
+                  },
+                  "Continent": {
+                    "value": "Asia"
+                  },
+                  "Country": {
+                    "value": "Korea, Republic of"
+                  },
+                  "Region": {
+                    "value": "Chungcheongnam-do"
+                  },
+                  "Country(Code)": {
+                    "value": "KOR"
+                  },
+                  "Region(Code)": {
+                    "value": "KR-44"
+                  },
+                  "Source_1": {
+                    "value": "Environmental"
+                  },
+                  "Source_2": {
+                    "value": "Environmental"
+                  },
+                  "Source_3": {
+                    "value": "oil-contaminated foreshore tidal flat sediment of the Yellow Sea"
+                  },
+                  "Free_Text": {
+                    "value": "geo_loc: Malipo beach, Tae-An, South Korea; strain possesses BGCs that resemble BGCs responsible for the production of paeninodin, petrobactin and a putative novel nonribosomal peptide synthetase (NRP)"
+                  },
+                  "Metadata_Source": {
+                    "value": "Publication (https://doi.org/10.1007/s12275-011-1049-6); BioSample"
+                  },
+                  "AMRFinderPlus_Class(Genes)": {
+                    "value": "BETA-LACTAM(bla,blaR1);FOSFOMYCIN(fosB);LINCOSAMIDE(vga);MACROLIDE(abc-f)"
+                  },
+                  "BTyper3_species(ANI)": {
+                    "value": "manliponensis(100.0)"
+                  },
+                  "BTyper3_subspecies(ANI)": {
+                    "value": "No subspecies"
+                  },
+                  "BTyper3_Pseudo_Gene_Flow_Unit(ANI)": {
+                    "value": "manliponensis(100.0)"
+                  },
+                  "BTyper3_Closest_Type_Strain(ANI)": {
+                    "value": "manliponensis(100.0)"
+                  },
+                  "BTyper3_anthrax_toxin(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_emetic_toxin_cereulide(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_Nhe(genes)": {
+                    "value": "1/3(nheB)"
+                  },
+                  "BTyper3_diarrheal_toxin_Hbl(genes)": {
+                    "value": "0/4()"
+                  },
+                  "BTyper3_diarrheal_toxin_CytK(top_hit)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_sphingomyelinase_Sph(gene)": {
+                    "value": "0/1()"
+                  },
+                  "BTyper3_capsule_Cap(genes)": {
+                    "value": "0/5()"
+                  },
+                  "BTyper3_capsule_Has(genes)": {
+                    "value": "0/3()"
+                  },
+                  "BTyper3_capsule_Bps(genes)": {
+                    "value": "1/9(bpsE)"
+                  },
+                  "BTyper3_Bt(genes)": {
+                    "value": "0()"
+                  },
+                  "BTyper3_PubMLST_ST[clonal_complex](perfect_matches)": {
+                    "value": "Unknown(missing alleles)"
+                  },
+                  "BTyper3_Adjusted_panC_Group(predicted_species)": {
+                    "value": "Group_manliponensis"
+                  },
+                  "BTyper3_final_taxon_names": {
+                    "value": "B. manliponensis"
+                  },
+                  "GTDB_Genus": {
+                    "value": "Bacillus_A"
+                  },
+                  "GTDB_Species": {
+                    "value": "Bacillus_A_manliponensis"
+                  },
+                  "MLST_Scheme": {
+                    "value": "bcereus"
+                  },
+                  "Prokka_Genes": {
+                    "value": "4755"
+                  },
+                  "Assembly_Information": {
+                    "value": "GenBank Assembly"
+                  },
+                  "Quast_Contigs": {
+                    "value": "101"
+                  },
+                  "Quast_Length": {
+                    "value": "4643113"
+                  },
+                  "Quast_N50": {
+                    "value": "200370"
+                  },
+                  "Quast_Largest_Contig": {
+                    "value": "434614"
+                  },
+                  "Quast_GC": {
+                    "value": "36.02"
+                  },
+                  "CheckM_Completeness": {
+                    "value": "99.28"
+                  },
+                  "CheckM_Contamination": {
+                    "value": "1.44"
+                  },
+                  "Genome_Quality": {
+                    "value": "High_Quality"
+                  },
+                  "matchcol_BTyper3_species": {
+                    "value": "manliponensis"
+                  },
+                  "matchcol_BTyper3_subspecies": {
+                    "value": "No subspecies"
+                  },
+                  "matchcol_BTyper3_anthrax_toxin": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_emetic_toxin_cereulide": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Nhe": {
+                    "value": "1"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_Hbl": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_diarrheal_toxin_CytK": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_sphingomyelinase_Sph": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_capsule_Cap": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Has": {
+                    "value": "0"
+                  },
+                  "matchcol_BTyper3_capsule_Bps": {
+                    "value": "1"
+                  },
+                  "matchcol_BTyper3_Bt": {
+                    "value": "Absent"
+                  },
+                  "matchcol_BTyper3_Adjusted_panC_Group": {
+                    "value": "Group_manliponensis"
+                  }
+                },
+                "branch_attrs": {}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
