@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-08-01",
+    "updated": "2026-10-25",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -565,13 +565,13 @@
       {
         "key": "Continent",
         "demes": {
-          "Europe": {
-            "latitude": 50.0,
-            "longitude": 15.0
-          },
           "Asia": {
             "latitude": 35.0,
             "longitude": 85.0
+          },
+          "Europe": {
+            "latitude": 50.0,
+            "longitude": 15.0
           },
           "North America": {
             "latitude": 30.0,
@@ -585,22 +585,6 @@
           "BEL": {
             "latitude": 50.49593874,
             "longitude": 4.469936
-          },
-          "THA": {
-            "latitude": 14.6000981,
-            "longitude": 101.38805881
-          },
-          "CHE": {
-            "latitude": 46.81010721,
-            "longitude": 8.227512
-          },
-          "CAN": {
-            "latitude": 60.36196817,
-            "longitude": -106.6983315
-          },
-          "NOR": {
-            "latitude": 65.04680297,
-            "longitude": 13.50069228
           },
           "USA": {
             "latitude": 37.66895362,
@@ -617,43 +601,59 @@
           "NLD": {
             "latitude": 52.33939951,
             "longitude": 4.98914998
+          },
+          "CHE": {
+            "latitude": 46.81010721,
+            "longitude": 8.227512
+          },
+          "THA": {
+            "latitude": 14.6000981,
+            "longitude": 101.38805881
+          },
+          "CAN": {
+            "latitude": 60.36196817,
+            "longitude": -106.6983315
+          },
+          "NOR": {
+            "latitude": 65.04680297,
+            "longitude": 13.50069228
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
+          "US-CA": {
+            "latitude": 36.7015,
+            "longitude": -118.756
+          },
           "CH-ZH": {
             "latitude": 47.4133,
             "longitude": 8.6564
-          },
-          "US-AL": {
-            "latitude": 33.2589,
-            "longitude": -86.8295
-          },
-          "DE-NW": {
-            "latitude": 51.4789,
-            "longitude": 7.5544
           },
           "BE-BRU": {
             "latitude": 50.8388,
             "longitude": 4.3753
           },
+          "DE-NW": {
+            "latitude": 51.4789,
+            "longitude": 7.5544
+          },
           "DE-SN": {
             "latitude": 50.9296,
             "longitude": 13.4585
           },
-          "US-CA": {
-            "latitude": 36.7015,
-            "longitude": -118.756
-          },
-          "US-WA": {
-            "latitude": 47.2868,
-            "longitude": -120.2126
+          "US-AL": {
+            "latitude": 33.2589,
+            "longitude": -86.8295
           },
           "US-MD": {
             "latitude": 39.5162,
             "longitude": -76.9382
+          },
+          "US-WA": {
+            "latitude": 47.2868,
+            "longitude": -120.2126
           },
           "BE-WAL": {
             "latitude": 50.1546,
