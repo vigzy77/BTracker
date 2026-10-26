@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-08-01",
+    "updated": "2026-10-26",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -7319,7 +7319,7 @@
         "type": "CDS"
       }
     },
-    "description": "## *Bacillus tropicus* ST78 clade (*B. cereus* group emerging lineage)\n\n#### Core-SNP maximum likelihood based phylogeny\n\n- **No. of genomes: 41** (Last Updated: 2026-08-01)\n\n#### Reference Genome (for SNP calling and annotation)\n\n- **BTyperDB_ID:** BTDB_2025-0002783.1\n- **Strain:** T36S-23\n- **NCBI_BioSample:** SAMN33748034\n\n***\n\n### **SNP distance summary** (Open in new tab for high resolution)\n\n#### **Figure 1:** Pairwise SNP distances (n = 41 genomes | Last Updated: 2026-08-01)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/extra/plots/PubMLST-ST-78-clade_snp-dists_heatmap.svg\" alt=\"Heatmap of SNP distance matrix for ST234 clade genomes\" width=\"1000\">\n\n#### **Figure 2:** Distribution of pairwise SNP distances (n = 41 genomes | Last Updated: 2026-08-01)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/extra/plots/PubMLST-ST-78-clade_snp-dists_histogram.svg\" alt=\"Histogram of pairwise SNP distances between ST234 clade genomes\" width=\"1000\">\n\n***\n\n### **Bioinformatics Workflow**\n\n**The following workflow was used to build this phylogenomic dataset:**\n\n- Gather all *B. tropicus* ST78 clade genomes from BTyperDB based on ANI (should be >99% ANI between any two genomes).\n- Refer to the BTyperDB pipeline for information about how the genomes were aggregated and annotated with genomic and metadata information.\n- Choose an appropriate reference genome to call variants (Highest quality genome: preferably most complete or closed genome, without plasmids)\n- Annotate reference genome using bakta\n- SNIPPY:\n    - Variant calling per sample and joint variant calling with snippy-core\n    - Remove reference sequence (the duplicate version with plasmids is still in the dataset)\n    - Clean the full length core genome alignment\n- GUBBINS:\n    - Identify and remove recombinations \n    - Get the full length recombination masked alignment\n- SNP-SITES:\n    - Query each resulting full length recombination-masked alignment for core SNPs and constant sites\n    - Also output the core SNP alignment in vcf format for augur\n- IQ-TREE:\n    - Build a maximum likelihood based phylogeny from the recombination-masked core SNP aligment\n- Midpoint root the phylogeny\n-  BTracker Dataset:\n    - Update the directory for the dataset (build) with the rooted tree, vcf alignment of recombination masked core SNPs and metadata files.\n    - Add reference information (reference sequence fasta, and annotation .gbff file)\n    - AUGUR:\n        - Refine the tree (add branch lengths and produce the relevant tree/node data json)\n        - Infer the ancestral sequence of each internal node and identify any nucleotide mutations on the branches leading to any node in the tree\n        - Identify amino acid mutations from the nucleotide mutations and a reference sequence with gene coordinate annotations\n        - Create a gene list to only extract annotations which have a mutation\n        - Identify amino acid mutations again, but restricting them to this gene list\n        - Annotate the tree (add BTyperDB metadata, geoloc, auspice config and dataset description) and export dataset for Auspice",
+    "description": "## *Bacillus tropicus* ST78 clade (*B. cereus* group emerging lineage)\n\n#### Core-SNP maximum likelihood based phylogeny\n\n- **No. of genomes: 41** (Last Updated: 2026-10-01)\n\n#### Reference Genome (for SNP calling and annotation)\n\n- **BTyperDB_ID:** BTDB_2025-0002783.1\n- **Strain:** T36S-23\n- **NCBI_BioSample:** SAMN33748034\n\n***\n\n### **SNP distance summary** (Open in new tab for high resolution)\n\n#### **Figure 1:** Pairwise SNP distances (n = 41 genomes | Last Updated: 2026-10-01)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/extra/plots/PubMLST-ST-78-clade_snp-dists_heatmap.svg\" alt=\"Heatmap of SNP distance matrix for ST234 clade genomes\" width=\"1000\">\n\n#### **Figure 2:** Distribution of pairwise SNP distances (n = 41 genomes | Last Updated: 2026-10-01)\n\n<img src=\"https://raw.githubusercontent.com/vigzy77/BTracker/refs/heads/main/extra/plots/PubMLST-ST-78-clade_snp-dists_histogram.svg\" alt=\"Histogram of pairwise SNP distances between ST234 clade genomes\" width=\"1000\">\n\n***\n\n",
     "colorings": [
       {
         "key": "gt",
@@ -7793,6 +7793,16 @@
             "#E69F00"
           ]
         ]
+      },
+      {
+        "key": "branch_support",
+        "title": "branch_support",
+        "type": "continuous"
+      },
+      {
+        "key": "confidence",
+        "title": "confidence",
+        "type": "continuous"
       }
     ],
     "filters": [
@@ -7822,6 +7832,10 @@
       {
         "key": "Continent",
         "demes": {
+          "North America": {
+            "latitude": 30.0,
+            "longitude": -100.0
+          },
           "Europe": {
             "latitude": 50.0,
             "longitude": 15.0
@@ -7829,60 +7843,60 @@
           "Asia": {
             "latitude": 35.0,
             "longitude": 85.0
-          },
-          "North America": {
-            "latitude": 30.0,
-            "longitude": -100.0
           }
         }
       },
       {
         "key": "Country(Code)",
         "demes": {
+          "GBR": {
+            "latitude": 53.36540813,
+            "longitude": -2.72184767
+          },
           "KOR": {
             "latitude": 36.56344139,
             "longitude": 127.51424646
-          },
-          "USA": {
-            "latitude": 37.66895362,
-            "longitude": -102.3925645
           },
           "CHN": {
             "latitude": 36.7145744,
             "longitude": 103.55819197
           },
-          "GBR": {
-            "latitude": 53.36540813,
-            "longitude": -2.72184767
+          "USA": {
+            "latitude": 37.66895362,
+            "longitude": -102.3925645
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "US-IL": {
-            "latitude": 40.0797,
-            "longitude": -89.4337
-          },
-          "CN-ZJ": {
-            "latitude": 29.0,
-            "longitude": 120.0
-          },
           "US-TX": {
             "latitude": 31.2639,
             "longitude": -98.5456
-          },
-          "US-FL": {
-            "latitude": 27.7568,
-            "longitude": -81.464
           },
           "GB-SCT": {
             "latitude": 56.0,
             "longitude": -4.0
           },
+          "CN-ZJ": {
+            "latitude": 29.0,
+            "longitude": 120.0
+          },
+          "US-NC": {
+            "latitude": 35.673,
+            "longitude": -79.0393
+          },
+          "US-IL": {
+            "latitude": 40.0797,
+            "longitude": -89.4337
+          },
           "US-NJ": {
             "latitude": 40.0757,
             "longitude": -74.4042
+          },
+          "US-FL": {
+            "latitude": 27.7568,
+            "longitude": -81.464
           },
           "CN-GX": {
             "latitude": 24.0,
@@ -7895,10 +7909,6 @@
           "US-MO": {
             "latitude": 38.7605,
             "longitude": -92.5618
-          },
-          "US-NC": {
-            "latitude": 35.673,
-            "longitude": -79.0393
           }
         }
       }
@@ -7911,7 +7921,7 @@
     ]
   },
   "tree": {
-    "name": "NODE_0000000",
+    "name": "Root",
     "node_attrs": {
       "div": 0
     },
@@ -7928,16 +7938,12 @@
           "T11610C",
           "C12038T",
           "G14767A",
-          "G17726A",
           "C18071T",
-          "C21055T",
           "G24159T",
           "G28971A",
           "C30922A",
-          "A33590G",
           "G35421A",
           "T36688C",
-          "C40215T",
           "T53481C",
           "G54541A",
           "T78202C",
@@ -7952,22 +7958,23 @@
           "C165123T",
           "C165933G",
           "T165997C",
+          "T185231C",
           "A257604G",
           "C271717T",
           "A271844G",
           "T272193C",
           "T272223C",
+          "G334461A",
           "T334509G",
           "T335509C",
-          "G335724A",
+          "G336066A",
           "A337118G",
+          "G337140A",
           "A337284G",
-          "T337547G",
           "T339723C",
-          "T339956C",
+          "G340025A",
           "G340046A",
           "C340052G",
-          "T340520C",
           "C346167G",
           "T347958G",
           "T353979A",
@@ -7980,7 +7987,7 @@
           "C463870T",
           "T466407C",
           "G479658A",
-          "A492131G",
+          "T484426A",
           "A493102C",
           "G494329A",
           "A527738G",
@@ -8005,8 +8012,6 @@
           "C615354T",
           "T616430C",
           "A633899G",
-          "G634600T",
-          "T635032G",
           "G669318A",
           "T678767G",
           "A680643G",
@@ -8037,7 +8042,6 @@
           "T993051C",
           "A995690G",
           "T997217C",
-          "T997234C",
           "T1014758C",
           "C1016512T",
           "T1032547G",
@@ -8048,9 +8052,11 @@
           "T1061582C",
           "C1081449T",
           "G1139853A",
+          "G1157459A",
           "G1158800A",
           "T1225573C",
           "T1260085C",
+          "G1295869A",
           "A1321043G",
           "T1327244G",
           "C1353054T",
@@ -8060,11 +8066,11 @@
           "G1361409A",
           "C1361792A",
           "T1362080G",
+          "A1363211C",
           "T1363213C",
           "A1364337G",
           "A1364511G",
           "A1388468G",
-          "C1389603T",
           "T1391198C",
           "T1395741G",
           "A1409490T",
@@ -8076,23 +8082,19 @@
           "G1462156T",
           "C1487583T",
           "G1491380A",
-          "A1514543G",
-          "T1514761C",
           "G1515920A",
-          "A1516106G",
           "T1517065C",
-          "A1517174G",
+          "C1517392T",
           "G1517953T",
           "T1518285C",
           "T1518545C",
-          "C1518903T",
+          "C1519278T",
           "A1520513G",
-          "A1520537C",
-          "G1521009A",
           "A1521314G",
           "T1523906G",
           "C1526096A",
           "G1529195A",
+          "A1534071G",
           "T1536080C",
           "A1567660G",
           "G1575825T",
@@ -8102,14 +8104,14 @@
           "A1647993G",
           "T1684228C",
           "G1686269A",
-          "G1691022T",
+          "G1699830A",
           "A1701020C",
+          "A1703032G",
+          "G1703886A",
           "T1705999C",
+          "C1722074T",
           "G1779133A",
-          "T1784475C",
-          "G1790317A",
           "T1790553G",
-          "C1801031T",
           "A1830327G",
           "A1831444G",
           "T1842657C",
@@ -8119,29 +8121,26 @@
           "G1848673A",
           "G1849295T",
           "G1867314T",
-          "T1887035C",
-          "A1887665G",
-          "G1888843T",
-          "G1889150T",
+          "C1888556G",
           "C1889334T",
           "G1891018T",
           "C1891911T",
+          "T1891919C",
+          "A1895559G",
           "T1895758C",
+          "G1897078C",
           "T1900216C",
           "T1900814C",
           "A1903250G",
           "A1904200C",
           "C1915101T",
           "G1943474A",
-          "A1943605G",
           "T1946735C",
           "G1949370A",
           "T1950776C",
-          "T1964505C",
           "T1964836C",
           "T1969219C",
           "A1969967G",
-          "G1977285A",
           "A1979515G",
           "T1991877G",
           "A1996492G",
@@ -8151,6 +8150,7 @@
           "A2087480G",
           "G2093935A",
           "A2097428C",
+          "A2101616G",
           "A2110929G",
           "A2111423G",
           "A2111746G",
@@ -8158,6 +8158,7 @@
           "C2128192A",
           "T2266665C",
           "C2311560T",
+          "G2314407C",
           "G2318883C",
           "A2319040C",
           "G2319432A",
@@ -8166,30 +8167,30 @@
           "T2320268C",
           "T2361021C",
           "T2409617C",
-          "A2481682G",
           "C2485192T",
           "C2485426T",
+          "A2485774G",
           "A2489985C",
           "G2491489T",
-          "C2508466A",
           "G2508604T",
           "A2512935G",
+          "C2513771T",
+          "C2514265T",
           "T2514347C",
           "G2522786A",
           "T2525744G",
           "A2525887C",
-          "C2547019T",
-          "A2551698G",
           "T2605577G",
           "T2607309C",
           "T2625997C",
-          "C2626372T",
+          "A2626648G",
           "T2656641C",
+          "A2660603G",
           "T2660912C",
           "T2663701C",
           "G2666001A",
           "C2667748T",
-          "A2670113G",
+          "A2668355G",
           "A2684175G",
           "T2684425C",
           "A2689610G",
@@ -8197,14 +8198,16 @@
           "A2693308G",
           "T2694581C",
           "G2695037T",
+          "T2697211C",
           "A2707200G",
           "T2708494G",
+          "G2709541A",
+          "T2713352A",
           "T2738145C",
-          "T2739740C",
+          "T2739268C",
           "A2740239G",
           "T2741682C",
           "A2741696C",
-          "C2742340A",
           "G2742707A",
           "T2765211C",
           "A2768076G",
@@ -8218,11 +8221,8 @@
           "C2917506A",
           "G2918025A",
           "G2918145T",
-          "G2918309A",
-          "C2918865T",
           "T2926032A",
           "T2936193G",
-          "T2936208C",
           "A2939567G",
           "T2952136C",
           "T2967362G",
@@ -8236,17 +8236,16 @@
           "A3080878G",
           "A3081634G",
           "G3082684A",
-          "T3117350C",
           "G3143540A",
           "G3143659A",
           "T3147009C",
           "C3147836T",
           "A3150150G",
           "G3151151C",
-          "C3152744T",
-          "T3152830C",
+          "G3151834T",
           "G3155167A",
           "C3155404T",
+          "C3287290A",
           "T3287332C",
           "T3287407C",
           "T3299346C",
@@ -8281,23 +8280,26 @@
           "A3764924G",
           "T3780361G",
           "A3802525C",
+          "T3806063C",
           "T3806429C",
           "A3840807G",
+          "A3847266C",
           "T3851033C",
           "T3861769C",
-          "C3888662T",
           "C3892864T",
+          "T3893938C",
           "A3894968G",
           "C3895664T",
+          "T3895706A",
           "G3933171A",
           "C3933733T",
           "A3940907G",
           "G3941479A",
           "T3946303G",
           "A3947591G",
-          "A3962392C",
           "A3964645G",
           "A4430627G",
+          "G4432522A",
           "G4460152A",
           "G4460224T",
           "T4542740C",
@@ -8307,12 +8309,15 @@
           "G4555568A",
           "T4560042A",
           "C4572814T",
+          "G4573637A",
+          "C4574612G",
+          "C4574613T",
+          "A4574991G",
           "T4579280C",
           "C4581868T",
           "T4587757C",
-          "C4587854A",
           "C4589001T",
-          "A4590027G",
+          "C4593954T",
           "T4595239C",
           "C4597870A",
           "G4597913C",
@@ -8337,7 +8342,6 @@
           "A4748293T",
           "C4755000A",
           "T4755989C",
-          "T4756209C",
           "C4756453A",
           "C4776895T",
           "T4777172G",
@@ -8352,15 +8356,14 @@
           "C4824650T",
           "C4825581T",
           "T4826948C",
-          "T4861714C",
           "T4903483C",
           "C4905277T",
           "T4911654C",
           "C4912417T",
           "G4912635A",
-          "G4913244T",
           "T4913507C",
           "T4913738C",
+          "T4914190C",
           "A4916033T",
           "A4917111G",
           "T4927662C",
@@ -8393,6 +8396,7 @@
           "C5086354G",
           "G5086494C",
           "C5086840T",
+          "C5097881T",
           "A5105640G",
           "A5122620C",
           "C5132158G",
@@ -8433,9 +8437,11 @@
         "OLKDIK_00318": [
           "S4P"
         ],
+        "OLKDIK_00320": [
+          "A186T"
+        ],
         "OLKDIK_00321": [
-          "I12V",
-          "D99E"
+          "I12V"
         ],
         "OLKDIK_00328_ppaX": [
           "L161V"
@@ -8480,10 +8486,6 @@
         ],
         "OLKDIK_00626_sdpI": [
           "I64V"
-        ],
-        "OLKDIK_00650": [
-          "I13L",
-          "Q157K"
         ],
         "OLKDIK_00691": [
           "E190K"
@@ -8534,7 +8536,7 @@
           "S297F"
         ],
         "OLKDIK_01436_aspB": [
-          "N167D"
+          "N167E"
         ],
         "OLKDIK_01467": [
           "K236R"
@@ -8551,20 +8553,14 @@
         "OLKDIK_01554_ylbJ": [
           "P357Q"
         ],
-        "OLKDIK_01603": [
-          "V109A"
-        ],
-        "OLKDIK_01606": [
-          "K136E"
-        ],
         "OLKDIK_01607_rqcH": [
           "I389V"
         ],
-        "OLKDIK_01608_mgtA": [
-          "V399I"
-        ],
         "OLKDIK_01614_priA": [
           "P11T"
+        ],
+        "OLKDIK_01620_prkC": [
+          "T321A"
         ],
         "OLKDIK_01621_rsgA": [
           "V243A"
@@ -8575,11 +8571,11 @@
         "OLKDIK_01757": [
           "K38E"
         ],
-        "OLKDIK_01765": [
-          "V167L"
-        ],
         "OLKDIK_01775_ansP": [
           "L334F"
+        ],
+        "OLKDIK_01779_yqdH": [
+          "N57D"
         ],
         "OLKDIK_01782_ptsN": [
           "V47A"
@@ -8588,7 +8584,6 @@
           "V254I"
         ],
         "OLKDIK_01883": [
-          "V9I",
           "I87M"
         ],
         "OLKDIK_01918_yitT": [
@@ -8600,8 +8595,17 @@
         "OLKDIK_01960_parE": [
           "A236S"
         ],
+        "OLKDIK_01979": [
+          "S84R"
+        ],
         "OLKDIK_01981": [
           "V571L"
+        ],
+        "OLKDIK_01984_potE": [
+          "D10G"
+        ],
+        "OLKDIK_01985_gerSC": [
+          "L350V"
         ],
         "OLKDIK_01989_forE": [
           "N14T"
@@ -8611,9 +8615,6 @@
         ],
         "OLKDIK_02034": [
           "N81D"
-        ],
-        "OLKDIK_02046_hlyII": [
-          "I242T"
         ],
         "OLKDIK_02078_amyS": [
           "N46D"
@@ -8630,6 +8631,9 @@
         ],
         "OLKDIK_02399": [
           "H66Y"
+        ],
+        "OLKDIK_02404": [
+          "G12A"
         ],
         "OLKDIK_02407_ytcJ": [
           "I217M",
@@ -8649,18 +8653,28 @@
           "V28F"
         ],
         "OLKDIK_02580": [
-          "Q794K",
           "A840S"
         ],
+        "OLKDIK_02588": [
+          "S19L"
+        ],
+        "OLKDIK_02589": [
+          "A20V"
+        ],
         "OLKDIK_02718": [
-          "V64I",
           "T189A"
+        ],
+        "OLKDIK_02759_grpB": [
+          "M1T"
         ],
         "OLKDIK_02760_yqjQ": [
           "S194G"
         ],
         "OLKDIK_02765_lpdA": [
           "S127N"
+        ],
+        "OLKDIK_02767": [
+          "T67A"
         ],
         "OLKDIK_02788": [
           "S43G",
@@ -8676,11 +8690,17 @@
           "L69I",
           "S221G"
         ],
+        "OLKDIK_02813_mutT": [
+          "G78D"
+        ],
+        "OLKDIK_02818": [
+          "I22K"
+        ],
         "OLKDIK_02849_bcsZ": [
           "N239S"
         ],
         "OLKDIK_02850_rhaT": [
-          "I58M"
+          "S216G"
         ],
         "OLKDIK_02851_aRO8": [
           "N59D"
@@ -8688,9 +8708,6 @@
         "OLKDIK_02852": [
           "I126M",
           "H131R"
-        ],
-        "OLKDIK_02853": [
-          "Q32K"
         ],
         "OLKDIK_02873_arlS": [
           "I218V"
@@ -8707,9 +8724,6 @@
         ],
         "OLKDIK_02970": [
           "V22A"
-        ],
-        "OLKDIK_03023": [
-          "Q13*"
         ],
         "OLKDIK_03031": [
           "T321S"
@@ -8735,12 +8749,6 @@
         ],
         "OLKDIK_03189_atoD": [
           "F70L"
-        ],
-        "OLKDIK_03219_mscS": [
-          "I180V"
-        ],
-        "OLKDIK_03256_azoR3": [
-          "I118V"
         ],
         "OLKDIK_03257_pbpC": [
           "R2K",
@@ -8800,11 +8808,11 @@
         "OLKDIK_04073": [
           "G85E"
         ],
-        "OLKDIK_04096_glcD": [
-          "K120N"
-        ],
         "OLKDIK_04097_glpC": [
           "I402V"
+        ],
+        "OLKDIK_04564_cpdA": [
+          "P601S"
         ],
         "OLKDIK_04707_tar": [
           "E308K"
@@ -8812,8 +8820,11 @@
         "OLKDIK_04722_rbsA": [
           "G62D"
         ],
-        "OLKDIK_04739_hAMP": [
-          "I14V"
+        "OLKDIK_04725_rbsR": [
+          "E227Q"
+        ],
+        "OLKDIK_04742": [
+          "G163S"
         ],
         "OLKDIK_04744": [
           "I113M"
@@ -8845,8 +8856,7 @@
         ],
         "OLKDIK_04895_gltB3": [
           "T207N",
-          "S537P",
-          "V610A"
+          "S537P"
         ],
         "OLKDIK_04916_wcaA": [
           "V451I"
@@ -8862,8 +8872,10 @@
           "I18V"
         ],
         "OLKDIK_05039_gabT": [
-          "T196N",
           "A399V"
+        ],
+        "OLKDIK_05041_gph": [
+          "T181A"
         ],
         "OLKDIK_05061_pcrB": [
           "K180Q"
@@ -8888,6 +8900,9 @@
         ],
         "OLKDIK_05209": [
           "P294A"
+        ],
+        "OLKDIK_05220": [
+          "M342I"
         ],
         "OLKDIK_05337_hslO": [
           "F210L"
@@ -8918,166 +8933,172 @@
         ]
       },
       "labels": {
-        "aa": "OLKDIK_00012_yyaC: V43I; OLKDIK_00029_walK: A71S; OLKDIK_00036: T43N; OLKDIK_00057_msrB: C58Y; OLKDIK_00315: F15L; OLKDIK_00318: S4P; OLKDIK_00321: I12V, D99E; OLKDIK_00328_ppaX: L161V; OLKDIK_00330_tadD: L316V; OLKDIK_00336_whiA: S269R; OLKDIK_00448_fadB: I14V; OLKDIK_00468_metQ: V167I; OLKDIK_00482_proX: S100A; OLKDIK_00484: D57N; OLKDIK_00585: S78G; OLKDIK_00615_gntP: S197A, S263I; OLKDIK_00616: L12S, L37I; OLKDIK_00619: G440R; OLKDIK_00621_salY: F367S; OLKDIK_00622_salY: M375I; OLKDIK_00626_sdpI: I64V; OLKDIK_00650: I13L, Q157K; OLKDIK_00691: E190K; OLKDIK_00704_rfaB: M254T; OLKDIK_00725_kefB: R326H; OLKDIK_00912_rnaY: T180A; OLKDIK_00916_pheT: T152A; OLKDIK_01006_hemC: G23D; OLKDIK_01010_spoVID: G218E; OLKDIK_01019_mreD: I107V; OLKDIK_01033_ybbP: L231P; OLKDIK_01034_salY: I453M; OLKDIK_01056_yrzE: I122M; OLKDIK_01087_mltG: V156I; OLKDIK_01424: D84N; OLKDIK_01428: V266L; OLKDIK_01429_mmsB: R22C; OLKDIK_01435_mtnW: S297F; OLKDIK_01436_aspB: N167D; OLKDIK_01467: K236R; OLKDIK_01487_yaeI: S24T; OLKDIK_01500: L203F; OLKDIK_01519_tgl: I206V; OLKDIK_01554_ylbJ: P357Q; OLKDIK_01603: V109A; OLKDIK_01606: K136E; OLKDIK_01607_rqcH: I389V; OLKDIK_01608_mgtA: V399I; OLKDIK_01614_priA: P11T; OLKDIK_01621_rsgA: V243A; OLKDIK_01663_rseP: E73D; OLKDIK_01757: K38E; OLKDIK_01765: V167L; OLKDIK_01775_ansP: L334F; OLKDIK_01782_ptsN: V47A; OLKDIK_01873_phnE: V254I; OLKDIK_01883: V9I, I87M; OLKDIK_01918_yitT: L206S; OLKDIK_01931: S329P; OLKDIK_01960_parE: A236S; OLKDIK_01981: V571L; OLKDIK_01989_forE: N14T; OLKDIK_02027: P9S; OLKDIK_02034: N81D; OLKDIK_02046_hlyII: I242T; OLKDIK_02078_amyS: N46D; OLKDIK_02174_dotG: I159V; OLKDIK_02199: E73G, K238E; OLKDIK_02218: Q364P; OLKDIK_02399: H66Y; OLKDIK_02407_ytcJ: I217M, Q350R, A496V; OLKDIK_02436_gerQC: S210P; OLKDIK_02485: V56A; OLKDIK_02566: D153E; OLKDIK_02569: V28F; OLKDIK_02580: Q794K, A840S; OLKDIK_02718: V64I, T189A; OLKDIK_02760_yqjQ: S194G; OLKDIK_02765_lpdA: S127N; OLKDIK_02788: S43G, I126T; OLKDIK_02795: R129G; OLKDIK_02798_dnaA: K143E; OLKDIK_02799_secY: L69I, S221G; OLKDIK_02849_bcsZ: N239S; OLKDIK_02850_rhaT: I58M; OLKDIK_02851_aRO8: N59D; OLKDIK_02852: I126M, H131R; OLKDIK_02853: Q32K; OLKDIK_02873_arlS: I218V; OLKDIK_02877: K87E; OLKDIK_02881: Q344H, G501D; OLKDIK_02964_walK: H130Y; OLKDIK_02970: V22A; OLKDIK_03023: Q13*; OLKDIK_03031: T321S; OLKDIK_03044_trmR: I160T; OLKDIK_03073: N44H; OLKDIK_03098_rihB: P99S, R276Q; OLKDIK_03112: L24F; OLKDIK_03121_araJ: S319P; OLKDIK_03136_caiD: K89E; OLKDIK_03189_atoD: F70L; OLKDIK_03219_mscS: I180V; OLKDIK_03256_azoR3: I118V; OLKDIK_03257_pbpC: R2K, T81I; OLKDIK_03412_oppA: F442Y; OLKDIK_03429_ykvI: N82D; OLKDIK_03434: Y142H; OLKDIK_03472_thrB: F117I; OLKDIK_03473_thrC: M295I; OLKDIK_03474_thrA: V48L; OLKDIK_03503_cydC: S273T; OLKDIK_03508_ssuD: L346V; OLKDIK_03517_livK: D380G; OLKDIK_03705: K557I, T763M, A785V, M944I; OLKDIK_03799: T4437A; OLKDIK_03814: *68Q; OLKDIK_03838: K24T; OLKDIK_03919_resC: F302V; OLKDIK_04014_bioY: G34S; OLKDIK_04017: V6A; OLKDIK_04073: G85E; OLKDIK_04096_glcD: K120N; OLKDIK_04097_glpC: I402V; OLKDIK_04707_tar: E308K; OLKDIK_04722_rbsA: G62D; OLKDIK_04739_hAMP: I14V; OLKDIK_04744: I113M; OLKDIK_04747_hisM: I119M, G134W; OLKDIK_04748_hisM: A22V; OLKDIK_04751_alsT: K454R; OLKDIK_04763_potE: V116L; OLKDIK_04775_fpuD: V269A; OLKDIK_04776_fepD: T304A; OLKDIK_04821_apaH: R155Q; OLKDIK_04859_eAL: I70V; OLKDIK_04895_gltB3: T207N, S537P, V610A; OLKDIK_04916_wcaA: V451I; OLKDIK_04957_mgtA: L426M, I873L; OLKDIK_04964_nagC: K95R; OLKDIK_05031_rlmD: I18V; OLKDIK_05039_gabT: T196N, A399V; OLKDIK_05061_pcrB: K180Q; OLKDIK_05105: M22I; OLKDIK_05106_ompR: A44E; OLKDIK_05147_uhpC: F91L; OLKDIK_05151_hppD: S80G; OLKDIK_05170_abc-f: L75P; OLKDIK_05206: A80T; OLKDIK_05209: P294A; OLKDIK_05337_hslO: F210L; OLKDIK_05355_pth: L66V; OLKDIK_05359_ridA: N81D; OLKDIK_05365_rsmA: K281T; OLKDIK_05367_tatD: E69D; OLKDIK_05368_metG: N150D; OLKDIK_05376_tmk: V79I; OLKDIK_05388_dnaX: A492E; OLKDIK_05400_dacA: K188T"
+        "aa": "OLKDIK_00012_yyaC: V43I; OLKDIK_00029_walK: A71S; OLKDIK_00036: T43N; OLKDIK_00057_msrB: C58Y; OLKDIK_00315: F15L; OLKDIK_00318: S4P; OLKDIK_00320: A186T; OLKDIK_00321: I12V; OLKDIK_00328_ppaX: L161V; OLKDIK_00330_tadD: L316V; OLKDIK_00336_whiA: S269R; OLKDIK_00448_fadB: I14V; OLKDIK_00468_metQ: V167I; OLKDIK_00482_proX: S100A; OLKDIK_00484: D57N; OLKDIK_00585: S78G; OLKDIK_00615_gntP: S197A, S263I; OLKDIK_00616: L12S, L37I; OLKDIK_00619: G440R; OLKDIK_00621_salY: F367S; OLKDIK_00622_salY: M375I; OLKDIK_00626_sdpI: I64V; OLKDIK_00691: E190K; OLKDIK_00704_rfaB: M254T; OLKDIK_00725_kefB: R326H; OLKDIK_00912_rnaY: T180A; OLKDIK_00916_pheT: T152A; OLKDIK_01006_hemC: G23D; OLKDIK_01010_spoVID: G218E; OLKDIK_01019_mreD: I107V; OLKDIK_01033_ybbP: L231P; OLKDIK_01034_salY: I453M; OLKDIK_01056_yrzE: I122M; OLKDIK_01087_mltG: V156I; OLKDIK_01424: D84N; OLKDIK_01428: V266L; OLKDIK_01429_mmsB: R22C; OLKDIK_01435_mtnW: S297F; OLKDIK_01436_aspB: N167E; OLKDIK_01467: K236R; OLKDIK_01487_yaeI: S24T; OLKDIK_01500: L203F; OLKDIK_01519_tgl: I206V; OLKDIK_01554_ylbJ: P357Q; OLKDIK_01607_rqcH: I389V; OLKDIK_01614_priA: P11T; OLKDIK_01620_prkC: T321A; OLKDIK_01621_rsgA: V243A; OLKDIK_01663_rseP: E73D; OLKDIK_01757: K38E; OLKDIK_01775_ansP: L334F; OLKDIK_01779_yqdH: N57D; OLKDIK_01782_ptsN: V47A; OLKDIK_01873_phnE: V254I; OLKDIK_01883: I87M; OLKDIK_01918_yitT: L206S; OLKDIK_01931: S329P; OLKDIK_01960_parE: A236S; OLKDIK_01979: S84R; OLKDIK_01981: V571L; OLKDIK_01984_potE: D10G; OLKDIK_01985_gerSC: L350V; OLKDIK_01989_forE: N14T; OLKDIK_02027: P9S; OLKDIK_02034: N81D; OLKDIK_02078_amyS: N46D; OLKDIK_02174_dotG: I159V; OLKDIK_02199: E73G, K238E; OLKDIK_02218: Q364P; OLKDIK_02399: H66Y; OLKDIK_02404: G12A; OLKDIK_02407_ytcJ: I217M, Q350R, A496V; OLKDIK_02436_gerQC: S210P; OLKDIK_02485: V56A; OLKDIK_02566: D153E; OLKDIK_02569: V28F; OLKDIK_02580: A840S; OLKDIK_02588: S19L; OLKDIK_02589: A20V; OLKDIK_02718: T189A; OLKDIK_02759_grpB: M1T; OLKDIK_02760_yqjQ: S194G; OLKDIK_02765_lpdA: S127N; OLKDIK_02767: T67A; OLKDIK_02788: S43G, I126T; OLKDIK_02795: R129G; OLKDIK_02798_dnaA: K143E; OLKDIK_02799_secY: L69I, S221G; OLKDIK_02813_mutT: G78D; OLKDIK_02818: I22K; OLKDIK_02849_bcsZ: N239S; OLKDIK_02850_rhaT: S216G; OLKDIK_02851_aRO8: N59D; OLKDIK_02852: I126M, H131R; OLKDIK_02873_arlS: I218V; OLKDIK_02877: K87E; OLKDIK_02881: Q344H, G501D; OLKDIK_02964_walK: H130Y; OLKDIK_02970: V22A; OLKDIK_03031: T321S; OLKDIK_03044_trmR: I160T; OLKDIK_03073: N44H; OLKDIK_03098_rihB: P99S, R276Q; OLKDIK_03112: L24F; OLKDIK_03121_araJ: S319P; OLKDIK_03136_caiD: K89E; OLKDIK_03189_atoD: F70L; OLKDIK_03257_pbpC: R2K, T81I; OLKDIK_03412_oppA: F442Y; OLKDIK_03429_ykvI: N82D; OLKDIK_03434: Y142H; OLKDIK_03472_thrB: F117I; OLKDIK_03473_thrC: M295I; OLKDIK_03474_thrA: V48L; OLKDIK_03503_cydC: S273T; OLKDIK_03508_ssuD: L346V; OLKDIK_03517_livK: D380G; OLKDIK_03705: K557I, T763M, A785V, M944I; OLKDIK_03799: T4437A; OLKDIK_03814: *68Q; OLKDIK_03838: K24T; OLKDIK_03919_resC: F302V; OLKDIK_04014_bioY: G34S; OLKDIK_04017: V6A; OLKDIK_04073: G85E; OLKDIK_04097_glpC: I402V; OLKDIK_04564_cpdA: P601S; OLKDIK_04707_tar: E308K; OLKDIK_04722_rbsA: G62D; OLKDIK_04725_rbsR: E227Q; OLKDIK_04742: G163S; OLKDIK_04744: I113M; OLKDIK_04747_hisM: I119M, G134W; OLKDIK_04748_hisM: A22V; OLKDIK_04751_alsT: K454R; OLKDIK_04763_potE: V116L; OLKDIK_04775_fpuD: V269A; OLKDIK_04776_fepD: T304A; OLKDIK_04821_apaH: R155Q; OLKDIK_04859_eAL: I70V; OLKDIK_04895_gltB3: T207N, S537P; OLKDIK_04916_wcaA: V451I; OLKDIK_04957_mgtA: L426M, I873L; OLKDIK_04964_nagC: K95R; OLKDIK_05031_rlmD: I18V; OLKDIK_05039_gabT: A399V; OLKDIK_05041_gph: T181A; OLKDIK_05061_pcrB: K180Q; OLKDIK_05105: M22I; OLKDIK_05106_ompR: A44E; OLKDIK_05147_uhpC: F91L; OLKDIK_05151_hppD: S80G; OLKDIK_05170_abc-f: L75P; OLKDIK_05206: A80T; OLKDIK_05209: P294A; OLKDIK_05220: M342I; OLKDIK_05337_hslO: F210L; OLKDIK_05355_pth: L66V; OLKDIK_05359_ridA: N81D; OLKDIK_05365_rsmA: K281T; OLKDIK_05367_tatD: E69D; OLKDIK_05368_metG: N150D; OLKDIK_05376_tmk: V79I; OLKDIK_05388_dnaX: A492E; OLKDIK_05400_dacA: K188T"
       }
     },
     "children": [
       {
-        "name": "NODE_0000001",
+        "name": "NODE_0000039",
         "node_attrs": {
-          "div": 1.29943e-05
+          "div": 1.29943e-05,
+          "branch_support": {
+            "value": 100.0
+          },
+          "confidence": {
+            "value": 100.0
+          }
         },
         "branch_attrs": {
           "mutations": {
             "nuc": [
-              "A17726G",
+              "C21055T",
               "C21834T",
               "A24201C",
+              "A33590G",
               "G36213A",
-              "G334461A",
-              "G336066A",
-              "G337140A",
+              "C40215T",
+              "G335724A",
+              "T337547G",
               "G339721T",
-              "G340025A",
-              "T484426A",
-              "G1157459A",
-              "A1363211C",
-              "T1389603C",
+              "T339956C",
+              "T340520C",
+              "G634600T",
+              "T635032G",
+              "A1514543G",
+              "T1514761C",
               "G1516080A",
+              "A1516106G",
               "C1516441T",
+              "A1517174G",
               "T1517353C",
-              "C1517392T",
-              "C1519278T",
+              "C1518903T",
+              "A1520537C",
+              "G1521009A",
               "T1521485G",
-              "A1534071G",
-              "T1691022G",
+              "A1699830G",
               "C1701020A",
-              "C1784475T",
-              "A1790317G",
+              "G1703032A",
+              "A1703886G",
+              "T1722074C",
               "G1790553T",
-              "T1801031C",
-              "C1888556G",
-              "T1891919C",
-              "A1895559G",
-              "G1897078C",
+              "T1887035C",
+              "A1887665G",
+              "G1888843T",
+              "G1889150T",
+              "A1943605G",
+              "T1964505C",
               "A1964822T",
               "A1972338G",
               "C2313425G",
+              "C2314407G",
+              "A2481682G",
               "A2484400G",
               "C2484988T",
-              "A2485774G",
-              "C2513771T",
-              "C2514265T",
-              "A2626648G",
+              "C2508466A",
+              "C2547019T",
+              "A2551698G",
+              "C2626372T",
               "A2626862G",
-              "A2660603G",
-              "A2668355G",
-              "T2697211C",
-              "G2709541A",
-              "T2713352A",
-              "T2739268C",
-              "A2742340C",
+              "A2670113G",
+              "T2739740C",
               "G2857279A",
               "T2859571C",
-              "C3117350T",
+              "G2918309A",
+              "C2918865T",
+              "T2936208C",
               "C3142135A",
-              "G3151834T",
-              "C3287290A",
-              "A3847266C",
-              "T3893938C",
-              "T3895706A",
+              "C3152744T",
+              "T3152830C",
+              "C3888662T",
               "G3905093T",
               "G4430627A",
-              "G4573637A",
-              "C4574612G",
-              "C4574613T",
-              "C4593954T",
-              "C4756209T",
+              "A4432522G",
+              "G4574991A",
+              "C4587854A",
+              "A4590027G",
+              "G4913244T",
+              "C4914190T",
+              "T5097881C",
               "C5122620A"
             ],
-            "OLKDIK_00320": [
-              "A186T"
+            "OLKDIK_00321": [
+              "D99E"
             ],
             "OLKDIK_00322_uvrB": [
               "A630S"
             ],
-            "OLKDIK_01436_aspB": [
-              "D167E"
+            "OLKDIK_00650": [
+              "I13L",
+              "Q157K"
+            ],
+            "OLKDIK_01603": [
+              "V109A"
             ],
             "OLKDIK_01605_pepP": [
               "G16R",
               "T136I"
             ],
-            "OLKDIK_01620_prkC": [
-              "T321A"
+            "OLKDIK_01606": [
+              "K136E"
             ],
-            "OLKDIK_01765": [
-              "L167V"
+            "OLKDIK_01608_mgtA": [
+              "V399I"
             ],
             "OLKDIK_01775_ansP": [
               "F334L"
             ],
+            "OLKDIK_01779_yqdH": [
+              "D57N"
+            ],
             "OLKDIK_01883": [
-              "I9V",
               "M87I"
             ],
-            "OLKDIK_01979": [
-              "S84R"
-            ],
-            "OLKDIK_01984_potE": [
-              "D10G"
-            ],
-            "OLKDIK_01985_gerSC": [
-              "L350V"
-            ],
             "OLKDIK_02046_hlyII": [
+              "I242T",
               "T348S"
             ],
-            "OLKDIK_02588": [
-              "S19L"
+            "OLKDIK_02404": [
+              "A12G"
             ],
-            "OLKDIK_02589": [
-              "A20V"
+            "OLKDIK_02580": [
+              "Q794K"
             ],
-            "OLKDIK_02759_grpB": [
-              "M1T"
-            ],
-            "OLKDIK_02767": [
-              "T67A"
-            ],
-            "OLKDIK_02813_mutT": [
-              "G78D"
-            ],
-            "OLKDIK_02818": [
-              "I22K"
+            "OLKDIK_02718": [
+              "V64I"
             ],
             "OLKDIK_02850_rhaT": [
-              "S216G"
+              "I58M"
             ],
-            "OLKDIK_02853": [
-              "K32Q"
-            ],
-            "OLKDIK_03219_mscS": [
-              "V180I"
+            "OLKDIK_03023": [
+              "Q13*"
             ],
             "OLKDIK_03243": [
               "R65I"
             ],
+            "OLKDIK_03256_azoR3": [
+              "I118V"
+            ],
             "OLKDIK_04030": [
               "Q73K"
             ],
-            "OLKDIK_04725_rbsR": [
-              "E227Q"
+            "OLKDIK_04564_cpdA": [
+              "S601P"
             ],
-            "OLKDIK_04742": [
-              "G163S"
+            "OLKDIK_04739_hAMP": [
+              "I14V"
             ],
-            "OLKDIK_04895_gltB3": [
-              "A610V"
+            "OLKDIK_05039_gabT": [
+              "T196N"
+            ],
+            "OLKDIK_05041_gph": [
+              "A181T"
+            ],
+            "OLKDIK_05220": [
+              "I342M"
             ]
           },
           "labels": {
-            "aa": "OLKDIK_00320: A186T; OLKDIK_00322_uvrB: A630S; OLKDIK_01436_aspB: D167E; OLKDIK_01605_pepP: G16R, T136I; OLKDIK_01620_prkC: T321A; OLKDIK_01765: L167V; OLKDIK_01775_ansP: F334L; OLKDIK_01883: I9V, M87I; OLKDIK_01979: S84R; OLKDIK_01984_potE: D10G; OLKDIK_01985_gerSC: L350V; OLKDIK_02046_hlyII: T348S; OLKDIK_02588: S19L; OLKDIK_02589: A20V; OLKDIK_02759_grpB: M1T; OLKDIK_02767: T67A; OLKDIK_02813_mutT: G78D; OLKDIK_02818: I22K; OLKDIK_02850_rhaT: S216G; OLKDIK_02853: K32Q; OLKDIK_03219_mscS: V180I; OLKDIK_03243: R65I; OLKDIK_04030: Q73K; OLKDIK_04725_rbsR: E227Q; OLKDIK_04742: G163S; OLKDIK_04895_gltB3: A610V"
+            "aa": "OLKDIK_00321: D99E; OLKDIK_00322_uvrB: A630S; OLKDIK_00650: I13L, Q157K; OLKDIK_01603: V109A; OLKDIK_01605_pepP: G16R, T136I; OLKDIK_01606: K136E; OLKDIK_01608_mgtA: V399I; OLKDIK_01775_ansP: F334L; OLKDIK_01779_yqdH: D57N; OLKDIK_01883: M87I; OLKDIK_02046_hlyII: I242T, T348S; OLKDIK_02404: A12G; OLKDIK_02580: Q794K; OLKDIK_02718: V64I; OLKDIK_02850_rhaT: I58M; OLKDIK_03023: Q13*; OLKDIK_03243: R65I; OLKDIK_03256_azoR3: I118V; OLKDIK_04030: Q73K; OLKDIK_04564_cpdA: S601P; OLKDIK_04739_hAMP: I14V; OLKDIK_05039_gabT: T196N; OLKDIK_05041_gph: A181T; OLKDIK_05220: I342M"
           }
         },
         "children": [
@@ -9286,7 +9307,6 @@
                   "A134857G",
                   "G162083A",
                   "A165688G",
-                  "T185231C",
                   "T186231A",
                   "T192321C",
                   "T261810G",
@@ -9309,6 +9329,7 @@
                   "G461858A",
                   "A470248G",
                   "C472698T",
+                  "A492131G",
                   "G525817T",
                   "G533724C",
                   "C546966T",
@@ -9338,6 +9359,7 @@
                   "C984530T",
                   "C993764T",
                   "A995459T",
+                  "T997234C",
                   "T1015042G",
                   "A1015309G",
                   "A1015723G",
@@ -9346,6 +9368,7 @@
                   "C1165595T",
                   "C1179272G",
                   "G1196657T",
+                  "A1295869G",
                   "G1311496A",
                   "T1314496G",
                   "G1321043A",
@@ -9384,6 +9407,7 @@
                   "C1868045T",
                   "C1894878T",
                   "A1911550G",
+                  "G1977285A",
                   "A1988248G",
                   "A1995989G",
                   "C2018745T",
@@ -9396,7 +9420,6 @@
                   "C2093600T",
                   "T2098516C",
                   "T2100860A",
-                  "A2101616G",
                   "G2125312C",
                   "A2125571G",
                   "C2127825A",
@@ -9474,6 +9497,7 @@
                   "G3724399A",
                   "G3732771T",
                   "C3779710T",
+                  "C3806063T",
                   "C3838362T",
                   "G3840242A",
                   "T3887096C",
@@ -9488,7 +9512,6 @@
                   "G3947591A",
                   "A3950946G",
                   "A3958389T",
-                  "C3962392A",
                   "G3964645A",
                   "C4479290T",
                   "A4514867C",
@@ -9532,6 +9555,7 @@
                   "A4826337G",
                   "C4826670T",
                   "T4861489C",
+                  "T4861714C",
                   "T4862060C",
                   "A4862184C",
                   "T4862232G",
@@ -9804,9 +9828,6 @@
                 "OLKDIK_04084_terC": [
                   "K106R"
                 ],
-                "OLKDIK_04096_glcD": [
-                  "N120K"
-                ],
                 "OLKDIK_04097_glpC": [
                   "V402I"
                 ],
@@ -9855,7 +9876,7 @@
                 ]
               },
               "labels": {
-                "aa": "OLKDIK_00039_guaC: V103L; OLKDIK_00053_lytT: K18N; OLKDIK_00059_acrR: F212L; OLKDIK_00062: M72I; OLKDIK_00068_arnT: I400L; OLKDIK_00072_rfaB: V136I; OLKDIK_00152_pyrG: T275A; OLKDIK_00256_ilvE: T77I; OLKDIK_00418_metG: V179L; OLKDIK_00419_rhtA: T215A; OLKDIK_00437_potE: V49I; OLKDIK_00448_fadB: V14I; OLKDIK_00458: V109I; OLKDIK_00532_manB: V138L; OLKDIK_00546_malY: E37K; OLKDIK_00622_salY: I375M; OLKDIK_00690: H131Y; OLKDIK_00708: N51H; OLKDIK_00725_kefB: G174R; OLKDIK_00907_frvX: E6A; OLKDIK_00958_etfA: N88S; OLKDIK_01022_spoIVFA: V87A; OLKDIK_01033_ybbP: P469S; OLKDIK_01034_salY: Q376H; OLKDIK_01056_yrzE: I28L; OLKDIK_01067_hisS: I369M; OLKDIK_01210: A140T; OLKDIK_01375_mutT: A137T; OLKDIK_01380_xerD: D206E; OLKDIK_01419_cof: V131I; OLKDIK_01436_aspB: N117S; OLKDIK_01583_sepF: P38L; OLKDIK_01631_fabD: I275V; OLKDIK_01665_polC: T78I; OLKDIK_01728_yxeI: G12C; OLKDIK_01781_pfkB: V171I; OLKDIK_01791_spoVK: Q265P; OLKDIK_01881_cwlA: S173L; OLKDIK_01935: P170H; OLKDIK_01937_melB: D406N; OLKDIK_02071_aguA: M10V; OLKDIK_02101: V91I; OLKDIK_02155_spxA: K128N; OLKDIK_02187: N110D; OLKDIK_02218: P364Q; OLKDIK_02240_mtnN: G88D; OLKDIK_02356_tnp: E15G, I47L; OLKDIK_02407_ytcJ: M125I; OLKDIK_02432_hblA: T129I; OLKDIK_02485: A56V; OLKDIK_02813_mutT: I24F, T48S, N69D; OLKDIK_02824_rimL: Q7P; OLKDIK_02885: E172G; OLKDIK_02951: L69W; OLKDIK_03073: S199L; OLKDIK_03113: L143I; OLKDIK_03136_caiD: E89K; OLKDIK_03150_araC: E33D; OLKDIK_03171: D97E, N107H; OLKDIK_03215_adhP: R316K; OLKDIK_03242_fecB: E137K; OLKDIK_03243: T13K; OLKDIK_03247_ibpA: A128S; OLKDIK_03248_sco1: G154S; OLKDIK_03252_tatC: M103I; OLKDIK_03255_plsC: G177D; OLKDIK_03287_pilF: T1045A; OLKDIK_03329_narG: R275Q; OLKDIK_03391_cbpA: D194N; OLKDIK_03393_mpfA: M98V; OLKDIK_03409_phoE: K45Q; OLKDIK_03410: N38D; OLKDIK_03452_aRO8: P341H; OLKDIK_03518_scyF: G476E; OLKDIK_03641_comP: P279S; OLKDIK_03799: T2986N, A4437T; OLKDIK_03838: T24K; OLKDIK_04005_gltP: V226A; OLKDIK_04026_yrpB: A160V; OLKDIK_04027_ldcA: S119A; OLKDIK_04073: E85G; OLKDIK_04076_phaC: P82A; OLKDIK_04084_terC: K106R; OLKDIK_04096_glcD: N120K; OLKDIK_04097_glpC: V402I; OLKDIK_04614: A187V; OLKDIK_04741_yobV: D313Y; OLKDIK_04760_treC: T491I; OLKDIK_04777_fepD: L332F; OLKDIK_04780_sspH: S34N; OLKDIK_04948: H431Y; OLKDIK_04957_mgtA: Q22H, E31K, V364A, V755G; OLKDIK_04964_nagC: E188K; OLKDIK_04994_glcD: I107T, F164L; OLKDIK_05116_rimI: M1I; OLKDIK_05162_ddpA: R132L; OLKDIK_05213: A3V; OLKDIK_05226_glxK: R104Q"
+                "aa": "OLKDIK_00039_guaC: V103L; OLKDIK_00053_lytT: K18N; OLKDIK_00059_acrR: F212L; OLKDIK_00062: M72I; OLKDIK_00068_arnT: I400L; OLKDIK_00072_rfaB: V136I; OLKDIK_00152_pyrG: T275A; OLKDIK_00256_ilvE: T77I; OLKDIK_00418_metG: V179L; OLKDIK_00419_rhtA: T215A; OLKDIK_00437_potE: V49I; OLKDIK_00448_fadB: V14I; OLKDIK_00458: V109I; OLKDIK_00532_manB: V138L; OLKDIK_00546_malY: E37K; OLKDIK_00622_salY: I375M; OLKDIK_00690: H131Y; OLKDIK_00708: N51H; OLKDIK_00725_kefB: G174R; OLKDIK_00907_frvX: E6A; OLKDIK_00958_etfA: N88S; OLKDIK_01022_spoIVFA: V87A; OLKDIK_01033_ybbP: P469S; OLKDIK_01034_salY: Q376H; OLKDIK_01056_yrzE: I28L; OLKDIK_01067_hisS: I369M; OLKDIK_01210: A140T; OLKDIK_01375_mutT: A137T; OLKDIK_01380_xerD: D206E; OLKDIK_01419_cof: V131I; OLKDIK_01436_aspB: N117S; OLKDIK_01583_sepF: P38L; OLKDIK_01631_fabD: I275V; OLKDIK_01665_polC: T78I; OLKDIK_01728_yxeI: G12C; OLKDIK_01781_pfkB: V171I; OLKDIK_01791_spoVK: Q265P; OLKDIK_01881_cwlA: S173L; OLKDIK_01935: P170H; OLKDIK_01937_melB: D406N; OLKDIK_02071_aguA: M10V; OLKDIK_02101: V91I; OLKDIK_02155_spxA: K128N; OLKDIK_02187: N110D; OLKDIK_02218: P364Q; OLKDIK_02240_mtnN: G88D; OLKDIK_02356_tnp: E15G, I47L; OLKDIK_02407_ytcJ: M125I; OLKDIK_02432_hblA: T129I; OLKDIK_02485: A56V; OLKDIK_02813_mutT: I24F, T48S, N69D; OLKDIK_02824_rimL: Q7P; OLKDIK_02885: E172G; OLKDIK_02951: L69W; OLKDIK_03073: S199L; OLKDIK_03113: L143I; OLKDIK_03136_caiD: E89K; OLKDIK_03150_araC: E33D; OLKDIK_03171: D97E, N107H; OLKDIK_03215_adhP: R316K; OLKDIK_03242_fecB: E137K; OLKDIK_03243: T13K; OLKDIK_03247_ibpA: A128S; OLKDIK_03248_sco1: G154S; OLKDIK_03252_tatC: M103I; OLKDIK_03255_plsC: G177D; OLKDIK_03287_pilF: T1045A; OLKDIK_03329_narG: R275Q; OLKDIK_03391_cbpA: D194N; OLKDIK_03393_mpfA: M98V; OLKDIK_03409_phoE: K45Q; OLKDIK_03410: N38D; OLKDIK_03452_aRO8: P341H; OLKDIK_03518_scyF: G476E; OLKDIK_03641_comP: P279S; OLKDIK_03799: T2986N, A4437T; OLKDIK_03838: T24K; OLKDIK_04005_gltP: V226A; OLKDIK_04026_yrpB: A160V; OLKDIK_04027_ldcA: S119A; OLKDIK_04073: E85G; OLKDIK_04076_phaC: P82A; OLKDIK_04084_terC: K106R; OLKDIK_04097_glpC: V402I; OLKDIK_04614: A187V; OLKDIK_04741_yobV: D313Y; OLKDIK_04760_treC: T491I; OLKDIK_04777_fepD: L332F; OLKDIK_04780_sspH: S34N; OLKDIK_04948: H431Y; OLKDIK_04957_mgtA: Q22H, E31K, V364A, V755G; OLKDIK_04964_nagC: E188K; OLKDIK_04994_glcD: I107T, F164L; OLKDIK_05116_rimI: M1I; OLKDIK_05162_ddpA: R132L; OLKDIK_05213: A3V; OLKDIK_05226_glxK: R104Q"
               }
             }
           },
@@ -10055,6 +10076,7 @@
                   "C145944T",
                   "A147060G",
                   "A148357G",
+                  "C185231T",
                   "T260541C",
                   "G262550A",
                   "A266595G",
@@ -10075,7 +10097,6 @@
                   "A429030G",
                   "C429684A",
                   "T444747C",
-                  "G492131A",
                   "G493783A",
                   "G527738A",
                   "G530932A",
@@ -10129,7 +10150,6 @@
                   "A992719G",
                   "G995690A",
                   "C997217T",
-                  "C997234T",
                   "C1003874T",
                   "C1014758T",
                   "T1016512C",
@@ -10172,7 +10192,6 @@
                   "C1288360T",
                   "A1289544G",
                   "T1290946C",
-                  "G1295869A",
                   "G1297034T",
                   "A1299418G",
                   "G1302539A",
@@ -10289,13 +10308,13 @@
                   "A1831306C",
                   "G1904422A",
                   "G1951345T",
-                  "A1977285G",
                   "G1979515A",
                   "G1991877T",
                   "C2083627T",
                   "T2083650A",
                   "G2087480A",
                   "A2093935G",
+                  "G2101616A",
                   "G2110929A",
                   "G2111423A",
                   "G2111746A",
@@ -10437,7 +10456,6 @@
                   "C3797722T",
                   "G3798085T",
                   "G3802295A",
-                  "T3806063C",
                   "C3806429T",
                   "C3811023T",
                   "C3818235G",
@@ -10469,6 +10487,7 @@
                   "C3944602T",
                   "C3945259T",
                   "C3960995A",
+                  "A3962392C",
                   "A3962577G",
                   "A3963418T",
                   "T3964362C",
@@ -10522,7 +10541,6 @@
                   "T4776478C",
                   "C4817828A",
                   "A4819073C",
-                  "C4861714T",
                   "A4880378C",
                   "G4881100A",
                   "T4881340C",
@@ -10982,6 +11000,7 @@
                   "R66S"
                 ],
                 "OLKDIK_04096_glcD": [
+                  "K120N",
                   "K182R"
                 ],
                 "OLKDIK_04564_cpdA": [
@@ -11069,132 +11088,135 @@
                 ]
               },
               "labels": {
-                "aa": "OLKDIK_00057_msrB: P285A; OLKDIK_00133_iap: D320G; OLKDIK_00136_yadH: T59A; OLKDIK_00137_comP: E246G; OLKDIK_00369_fatE: R180C; OLKDIK_00397_nupC: P295T; OLKDIK_00398_nupC: V51I; OLKDIK_00532_manB: S139R; OLKDIK_00541_arsB: Q97R; OLKDIK_00545_sodC: P98L; OLKDIK_00615_gntP: I263S; OLKDIK_00616: S12L; OLKDIK_00626_sdpI: V64I; OLKDIK_00725_kefB: I100V; OLKDIK_00821_rhaT: T208N; OLKDIK_00901_ytxC: E148G; OLKDIK_00918_yuzL: D8N; OLKDIK_00927_cvpA: P148L; OLKDIK_00954_menE: M284I; OLKDIK_00956_caiD: I159M; OLKDIK_01006_hemC: D23G; OLKDIK_01021_minD: T214I; OLKDIK_01031_baeS: M312I; OLKDIK_01034_salY: M453I; OLKDIK_01042_exsA: T93M; OLKDIK_01056_yrzE: M122I; OLKDIK_01062_recJ: Q760H; OLKDIK_01122_menH: G10S; OLKDIK_01183_nfo: E280Q; OLKDIK_01198_pstA: V40I; OLKDIK_01303_ugpQ: N54D; OLKDIK_01309_lpdA: K377R; OLKDIK_01318_hisJ: A220T; OLKDIK_01348_nhaC: L333I; OLKDIK_01358_ribBA: H200N; OLKDIK_01365_purR: G109E; OLKDIK_01366_yuiF: A10V; OLKDIK_01376_rimL: A49G; OLKDIK_01417_nagB: S208N; OLKDIK_01424: N84D; OLKDIK_01429_mmsB: C22R; OLKDIK_01435_mtnW: F297S; OLKDIK_01470_metE: E172K, V232A; OLKDIK_01471: S83A; OLKDIK_01474: R44S; OLKDIK_01475: S106N; OLKDIK_01494_ykuK: W67*; OLKDIK_01497_lysR: H124Y; OLKDIK_01511: L29F; OLKDIK_01520_speA: A75S, V363I, G377A; OLKDIK_01524_suhB: K173E; OLKDIK_01534_ftsW: N375S; OLKDIK_01535_pyc: K557R, I995V, A1136T; OLKDIK_01540_ctaE: K6N; OLKDIK_01554_ylbJ: A244T, I334L; OLKDIK_01555_rssA: V23I; OLKDIK_01557_tmcAL: N386D; OLKDIK_01563_bshC: K205E, K486R; OLKDIK_01574_divIB: A251V; OLKDIK_01577_spoIIGA: F109L, A233V; OLKDIK_01585_ylmH: E135K; OLKDIK_01617_rsmB: A305V; OLKDIK_01620_prkC: D318G; OLKDIK_01632_fabG: N65I; OLKDIK_01717_miaB: K41R; OLKDIK_01730_era: I21V, I135V; OLKDIK_01759_adaA: K122N; OLKDIK_01775_ansP: L131F; OLKDIK_01782_ptsN: A47V; OLKDIK_01795_glnR: G131A; OLKDIK_01892: D198N; OLKDIK_01919_pTC1: P77Q; OLKDIK_01989_forE: G88E; OLKDIK_02174_dotG: V159I; OLKDIK_02199: G73E, E238K; OLKDIK_02218: G300R; OLKDIK_02423_gerAB: N305S; OLKDIK_02424_gerAC: N6K, T386N; OLKDIK_02426_potE: A48T; OLKDIK_02433_kinE: S30F, K383N; OLKDIK_02793: S55A; OLKDIK_02813_mutT: C63S; OLKDIK_02873_arlS: S229A; OLKDIK_02881: D501G; OLKDIK_02885: V303A; OLKDIK_03058_amiC: K178Q; OLKDIK_03060_mdlB: D452E; OLKDIK_03112: D52N; OLKDIK_03120_sfp: K24R, I39V; OLKDIK_03121_araJ: V284I, S321L; OLKDIK_03136_caiD: N45H; OLKDIK_03171: D79G; OLKDIK_03172: C32Y; OLKDIK_03173_cnoX: E7D, Q8K; OLKDIK_03191: R15H; OLKDIK_03214_dppC: T128I; OLKDIK_03289_argS: G354V; OLKDIK_03309: N2S, I266M; OLKDIK_03394_yqgC: R85H; OLKDIK_03395: A60V; OLKDIK_03432_tar: F8S; OLKDIK_03437_araJ: A221T; OLKDIK_03453_lysE: R32S; OLKDIK_03455_sspA: D20E; OLKDIK_03456_asbF: N237D; OLKDIK_03466_baeS: V169I; OLKDIK_03474_thrA: V411I; OLKDIK_03475: P19R; OLKDIK_03478_pgaB: S38R; OLKDIK_03479: F181L; OLKDIK_03480: Y82S; OLKDIK_03504_cydD: A350T, M393I; OLKDIK_03517_livK: G72S, I343V; OLKDIK_03608: T30P; OLKDIK_03641_comP: A292T; OLKDIK_03705: E1051K; OLKDIK_03737: I61N, K184R, R316K; OLKDIK_03740_hrpE: K219E; OLKDIK_03799: E4611D; OLKDIK_03823_era: T718I; OLKDIK_03852_dinG: M609I; OLKDIK_03887: R35K; OLKDIK_03896_rpsA: L294S; OLKDIK_03903: V24A, A56T; OLKDIK_03915_mepM: P197T; OLKDIK_03947_ompH: R148T; OLKDIK_04056_pepF: F481Y; OLKDIK_04066_lys9: D143H; OLKDIK_04067_phnW: T232M; OLKDIK_04095_cdaR: R66S; OLKDIK_04096_glcD: K182R; OLKDIK_04564_cpdA: A666E, P688S; OLKDIK_04594_cps2a: A292V; OLKDIK_04646: A110T; OLKDIK_04648_cBS: K138T; OLKDIK_04707_tar: K308E; OLKDIK_04724_rbsK: A177V; OLKDIK_04725_rbsR: S2I; OLKDIK_04730_yejF: V226I; OLKDIK_04741_yobV: L72I; OLKDIK_04747_hisM: M119I, W134G; OLKDIK_04748_hisM: V22A; OLKDIK_04751_alsT: R454K; OLKDIK_04775_fpuD: A67V, A269V; OLKDIK_04846: T217A; OLKDIK_04856_yhbH: E4D; OLKDIK_04957_mgtA: Q11K, M426L; OLKDIK_05013_fepB: G22S; OLKDIK_05170_abc-f: G51E; OLKDIK_05171: Q177H; OLKDIK_05206: T80A; OLKDIK_05212: K190E; OLKDIK_05286_rpl7Ae: E10K; OLKDIK_05361_ispE: K86N; OLKDIK_05376_tmk: I79V; OLKDIK_05388_dnaX: T510N; OLKDIK_05402_yaaC: H137Y, T177I"
+                "aa": "OLKDIK_00057_msrB: P285A; OLKDIK_00133_iap: D320G; OLKDIK_00136_yadH: T59A; OLKDIK_00137_comP: E246G; OLKDIK_00369_fatE: R180C; OLKDIK_00397_nupC: P295T; OLKDIK_00398_nupC: V51I; OLKDIK_00532_manB: S139R; OLKDIK_00541_arsB: Q97R; OLKDIK_00545_sodC: P98L; OLKDIK_00615_gntP: I263S; OLKDIK_00616: S12L; OLKDIK_00626_sdpI: V64I; OLKDIK_00725_kefB: I100V; OLKDIK_00821_rhaT: T208N; OLKDIK_00901_ytxC: E148G; OLKDIK_00918_yuzL: D8N; OLKDIK_00927_cvpA: P148L; OLKDIK_00954_menE: M284I; OLKDIK_00956_caiD: I159M; OLKDIK_01006_hemC: D23G; OLKDIK_01021_minD: T214I; OLKDIK_01031_baeS: M312I; OLKDIK_01034_salY: M453I; OLKDIK_01042_exsA: T93M; OLKDIK_01056_yrzE: M122I; OLKDIK_01062_recJ: Q760H; OLKDIK_01122_menH: G10S; OLKDIK_01183_nfo: E280Q; OLKDIK_01198_pstA: V40I; OLKDIK_01303_ugpQ: N54D; OLKDIK_01309_lpdA: K377R; OLKDIK_01318_hisJ: A220T; OLKDIK_01348_nhaC: L333I; OLKDIK_01358_ribBA: H200N; OLKDIK_01365_purR: G109E; OLKDIK_01366_yuiF: A10V; OLKDIK_01376_rimL: A49G; OLKDIK_01417_nagB: S208N; OLKDIK_01424: N84D; OLKDIK_01429_mmsB: C22R; OLKDIK_01435_mtnW: F297S; OLKDIK_01470_metE: E172K, V232A; OLKDIK_01471: S83A; OLKDIK_01474: R44S; OLKDIK_01475: S106N; OLKDIK_01494_ykuK: W67*; OLKDIK_01497_lysR: H124Y; OLKDIK_01511: L29F; OLKDIK_01520_speA: A75S, V363I, G377A; OLKDIK_01524_suhB: K173E; OLKDIK_01534_ftsW: N375S; OLKDIK_01535_pyc: K557R, I995V, A1136T; OLKDIK_01540_ctaE: K6N; OLKDIK_01554_ylbJ: A244T, I334L; OLKDIK_01555_rssA: V23I; OLKDIK_01557_tmcAL: N386D; OLKDIK_01563_bshC: K205E, K486R; OLKDIK_01574_divIB: A251V; OLKDIK_01577_spoIIGA: F109L, A233V; OLKDIK_01585_ylmH: E135K; OLKDIK_01617_rsmB: A305V; OLKDIK_01620_prkC: D318G; OLKDIK_01632_fabG: N65I; OLKDIK_01717_miaB: K41R; OLKDIK_01730_era: I21V, I135V; OLKDIK_01759_adaA: K122N; OLKDIK_01775_ansP: L131F; OLKDIK_01782_ptsN: A47V; OLKDIK_01795_glnR: G131A; OLKDIK_01892: D198N; OLKDIK_01919_pTC1: P77Q; OLKDIK_01989_forE: G88E; OLKDIK_02174_dotG: V159I; OLKDIK_02199: G73E, E238K; OLKDIK_02218: G300R; OLKDIK_02423_gerAB: N305S; OLKDIK_02424_gerAC: N6K, T386N; OLKDIK_02426_potE: A48T; OLKDIK_02433_kinE: S30F, K383N; OLKDIK_02793: S55A; OLKDIK_02813_mutT: C63S; OLKDIK_02873_arlS: S229A; OLKDIK_02881: D501G; OLKDIK_02885: V303A; OLKDIK_03058_amiC: K178Q; OLKDIK_03060_mdlB: D452E; OLKDIK_03112: D52N; OLKDIK_03120_sfp: K24R, I39V; OLKDIK_03121_araJ: V284I, S321L; OLKDIK_03136_caiD: N45H; OLKDIK_03171: D79G; OLKDIK_03172: C32Y; OLKDIK_03173_cnoX: E7D, Q8K; OLKDIK_03191: R15H; OLKDIK_03214_dppC: T128I; OLKDIK_03289_argS: G354V; OLKDIK_03309: N2S, I266M; OLKDIK_03394_yqgC: R85H; OLKDIK_03395: A60V; OLKDIK_03432_tar: F8S; OLKDIK_03437_araJ: A221T; OLKDIK_03453_lysE: R32S; OLKDIK_03455_sspA: D20E; OLKDIK_03456_asbF: N237D; OLKDIK_03466_baeS: V169I; OLKDIK_03474_thrA: V411I; OLKDIK_03475: P19R; OLKDIK_03478_pgaB: S38R; OLKDIK_03479: F181L; OLKDIK_03480: Y82S; OLKDIK_03504_cydD: A350T, M393I; OLKDIK_03517_livK: G72S, I343V; OLKDIK_03608: T30P; OLKDIK_03641_comP: A292T; OLKDIK_03705: E1051K; OLKDIK_03737: I61N, K184R, R316K; OLKDIK_03740_hrpE: K219E; OLKDIK_03799: E4611D; OLKDIK_03823_era: T718I; OLKDIK_03852_dinG: M609I; OLKDIK_03887: R35K; OLKDIK_03896_rpsA: L294S; OLKDIK_03903: V24A, A56T; OLKDIK_03915_mepM: P197T; OLKDIK_03947_ompH: R148T; OLKDIK_04056_pepF: F481Y; OLKDIK_04066_lys9: D143H; OLKDIK_04067_phnW: T232M; OLKDIK_04095_cdaR: R66S; OLKDIK_04096_glcD: K120N, K182R; OLKDIK_04564_cpdA: A666E, P688S; OLKDIK_04594_cps2a: A292V; OLKDIK_04646: A110T; OLKDIK_04648_cBS: K138T; OLKDIK_04707_tar: K308E; OLKDIK_04724_rbsK: A177V; OLKDIK_04725_rbsR: S2I; OLKDIK_04730_yejF: V226I; OLKDIK_04741_yobV: L72I; OLKDIK_04747_hisM: M119I, W134G; OLKDIK_04748_hisM: V22A; OLKDIK_04751_alsT: R454K; OLKDIK_04775_fpuD: A67V, A269V; OLKDIK_04846: T217A; OLKDIK_04856_yhbH: E4D; OLKDIK_04957_mgtA: Q11K, M426L; OLKDIK_05013_fepB: G22S; OLKDIK_05170_abc-f: G51E; OLKDIK_05171: Q177H; OLKDIK_05206: T80A; OLKDIK_05212: K190E; OLKDIK_05286_rpl7Ae: E10K; OLKDIK_05361_ispE: K86N; OLKDIK_05376_tmk: I79V; OLKDIK_05388_dnaX: T510N; OLKDIK_05402_yaaC: H137Y, T177I"
               }
             }
           }
         ]
       },
       {
-        "name": "NODE_0000002",
+        "name": "NODE_0000001",
         "node_attrs": {
-          "div": 2.12144e-05
+          "div": 2.12144e-05,
+          "branch_support": {
+            "value": 44.0
+          },
+          "confidence": {
+            "value": 44.0
+          }
         },
         "branch_attrs": {
           "mutations": {
             "nuc": [
-              "T21055C",
+              "G17726A",
               "T24159G",
-              "G33590A",
               "A35421G",
               "C36688T",
-              "T40215C",
+              "A334461G",
               "C335509T",
-              "A335724G",
+              "A336066G",
+              "A337140G",
               "G337284A",
-              "G337547T",
               "C339723T",
-              "C339956T",
+              "A340025G",
               "A340046G",
               "G340052C",
-              "C340520T",
               "G347958T",
               "T352321C",
               "G358041A",
+              "A484426T",
               "G633899A",
-              "T634600G",
-              "G635032T",
+              "A1157459G",
+              "C1363211A",
               "G1364337A",
               "G1364511A",
+              "C1389603T",
               "A1390927G",
               "G1391689A",
               "T1487583C",
-              "G1514543A",
-              "C1514761T",
-              "G1516106A",
               "C1517065T",
-              "G1517174A",
+              "T1517392C",
               "T1517953G",
               "C1518285T",
               "C1518545T",
-              "T1518903C",
+              "T1519278C",
               "G1520513A",
-              "C1520537A",
-              "A1521009G",
               "A1526096C",
+              "G1534071A",
               "C1536080T",
-              "A1703032G",
-              "G1703886A",
-              "C1722074T",
+              "G1691022T",
+              "T1784475C",
               "C1786378T",
+              "G1790317A",
               "G1791660A",
+              "C1801031T",
               "T1867314G",
-              "G1887665A",
-              "T1888843G",
-              "T1889150G",
+              "G1888556C",
               "T1889334C",
               "T1891911C",
+              "C1891919T",
+              "G1895559A",
+              "C1897078G",
               "A1943474G",
-              "G1943605A",
-              "C1964505T",
               "C1964836T",
               "G1969967A",
               "C2266665T",
               "A2312256G",
-              "G2314407C",
-              "G2481682A",
               "T2485192C",
               "T2485426C",
+              "G2485774A",
               "C2489985A",
               "T2491489G",
-              "A2508466C",
+              "T2513771C",
+              "T2514265C",
               "C2514347T",
-              "T2547019C",
-              "G2551698A",
               "C2607309T",
-              "T2626372C",
+              "G2626648A",
+              "G2660603A",
               "C2663701T",
-              "G2670113A",
+              "G2668355A",
               "T2690197C",
+              "C2697211T",
               "G2708494T",
-              "C2739740T",
+              "A2709541G",
+              "A2713352T",
+              "C2739268T",
               "C2741682T",
+              "C2742340A",
               "A2843974G",
               "T2854593C",
               "G2859363A",
               "A2918025G",
-              "A2918309G",
-              "T2918865C",
-              "C2936208T",
               "C2952136T",
               "G3081634A",
               "A3082684G",
+              "T3117350C",
               "A3143540G",
               "A3143659G",
               "G3150150A",
               "C3151151G",
-              "T3152744C",
-              "C3152830T",
+              "T3151834G",
               "A3155167G",
               "T3155404C",
+              "A3287290C",
               "C3287407T",
               "T3735210C",
-              "T3888662C",
+              "C3847266A",
               "T3892864C",
+              "C3893938T",
               "T3895664C",
-              "G4432522A",
+              "A3895706T",
               "G4504957A",
-              "A4574991G",
-              "A4587854C",
+              "A4573637G",
+              "G4574612C",
+              "T4574613C",
               "T4589001C",
-              "G4590027A",
+              "T4593954C",
+              "T4756209C",
               "T4905277C",
               "A4912635G",
               "T4913226C",
-              "T4913244G",
-              "T4914190C",
               "A4915930G",
-              "C5097881T",
               "G5097983T"
             ],
             "OLKDIK_00029_walK": [
@@ -11203,49 +11225,50 @@
             "OLKDIK_00318": [
               "P4S"
             ],
+            "OLKDIK_00320": [
+              "T186A"
+            ],
             "OLKDIK_00321": [
-              "V12I",
-              "E99D"
+              "V12I"
             ],
             "OLKDIK_00330_tadD": [
               "V316L"
             ],
-            "OLKDIK_00650": [
-              "L13I",
-              "K157Q"
-            ],
-            "OLKDIK_01603": [
-              "A109V"
-            ],
-            "OLKDIK_01606": [
-              "E136K"
+            "OLKDIK_01436_aspB": [
+              "E167D"
             ],
             "OLKDIK_01607_rqcH": [
               "V389I"
             ],
-            "OLKDIK_01608_mgtA": [
-              "I399V"
-            ],
             "OLKDIK_01614_priA": [
               "T11P"
+            ],
+            "OLKDIK_01620_prkC": [
+              "A321T"
             ],
             "OLKDIK_01621_rsgA": [
               "A243V"
             ],
-            "OLKDIK_01779_yqdH": [
-              "N57D"
+            "OLKDIK_01765": [
+              "V167L"
+            ],
+            "OLKDIK_01883": [
+              "V9I"
             ],
             "OLKDIK_01960_parE": [
               "S236A"
             ],
+            "OLKDIK_01979": [
+              "R84S"
+            ],
+            "OLKDIK_01984_potE": [
+              "G10D"
+            ],
+            "OLKDIK_01985_gerSC": [
+              "V350L"
+            ],
             "OLKDIK_02027": [
               "S9P"
-            ],
-            "OLKDIK_02046_hlyII": [
-              "T242I"
-            ],
-            "OLKDIK_02404": [
-              "G12A"
             ],
             "OLKDIK_02566": [
               "E153D"
@@ -11253,17 +11276,32 @@
             "OLKDIK_02569": [
               "F28V"
             ],
-            "OLKDIK_02580": [
-              "K794Q"
+            "OLKDIK_02588": [
+              "L19S"
             ],
-            "OLKDIK_02718": [
-              "I64V"
+            "OLKDIK_02589": [
+              "V20A"
+            ],
+            "OLKDIK_02759_grpB": [
+              "T1M"
+            ],
+            "OLKDIK_02767": [
+              "A67T"
+            ],
+            "OLKDIK_02813_mutT": [
+              "D78G"
+            ],
+            "OLKDIK_02818": [
+              "K22I"
             ],
             "OLKDIK_02850_rhaT": [
-              "M58I"
+              "G216S"
             ],
             "OLKDIK_02852": [
               "R131H"
+            ],
+            "OLKDIK_02853": [
+              "Q32K"
             ],
             "OLKDIK_02964_walK": [
               "Y130H"
@@ -11271,11 +11309,8 @@
             "OLKDIK_02970": [
               "A22V"
             ],
-            "OLKDIK_03023": [
-              "*13Q"
-            ],
-            "OLKDIK_03256_azoR3": [
-              "V118I"
+            "OLKDIK_03219_mscS": [
+              "I180V"
             ],
             "OLKDIK_03257_pbpC": [
               "K2R",
@@ -11284,37 +11319,41 @@
             "OLKDIK_04014_bioY": [
               "S34G"
             ],
-            "OLKDIK_04564_cpdA": [
-              "P601S"
-            ],
             "OLKDIK_04645_ygiM": [
               "R262K"
             ],
-            "OLKDIK_04739_hAMP": [
-              "V14I"
+            "OLKDIK_04725_rbsR": [
+              "Q227E"
+            ],
+            "OLKDIK_04742": [
+              "S163G"
+            ],
+            "OLKDIK_04895_gltB3": [
+              "V610A"
             ],
             "OLKDIK_05039_gabT": [
-              "N196T",
               "D202G",
               "V399A"
             ],
-            "OLKDIK_05041_gph": [
-              "T181A"
-            ],
             "OLKDIK_05220": [
-              "S308R",
-              "M342I"
+              "S308R"
             ]
           },
           "labels": {
-            "aa": "OLKDIK_00029_walK: S71A; OLKDIK_00318: P4S; OLKDIK_00321: V12I, E99D; OLKDIK_00330_tadD: V316L; OLKDIK_00650: L13I, K157Q; OLKDIK_01603: A109V; OLKDIK_01606: E136K; OLKDIK_01607_rqcH: V389I; OLKDIK_01608_mgtA: I399V; OLKDIK_01614_priA: T11P; OLKDIK_01621_rsgA: A243V; OLKDIK_01779_yqdH: N57D; OLKDIK_01960_parE: S236A; OLKDIK_02027: S9P; OLKDIK_02046_hlyII: T242I; OLKDIK_02404: G12A; OLKDIK_02566: E153D; OLKDIK_02569: F28V; OLKDIK_02580: K794Q; OLKDIK_02718: I64V; OLKDIK_02850_rhaT: M58I; OLKDIK_02852: R131H; OLKDIK_02964_walK: Y130H; OLKDIK_02970: A22V; OLKDIK_03023: *13Q; OLKDIK_03256_azoR3: V118I; OLKDIK_03257_pbpC: K2R, I81T; OLKDIK_04014_bioY: S34G; OLKDIK_04564_cpdA: P601S; OLKDIK_04645_ygiM: R262K; OLKDIK_04739_hAMP: V14I; OLKDIK_05039_gabT: N196T, D202G, V399A; OLKDIK_05041_gph: T181A; OLKDIK_05220: S308R, M342I"
+            "aa": "OLKDIK_00029_walK: S71A; OLKDIK_00318: P4S; OLKDIK_00320: T186A; OLKDIK_00321: V12I; OLKDIK_00330_tadD: V316L; OLKDIK_01436_aspB: E167D; OLKDIK_01607_rqcH: V389I; OLKDIK_01614_priA: T11P; OLKDIK_01620_prkC: A321T; OLKDIK_01621_rsgA: A243V; OLKDIK_01765: V167L; OLKDIK_01883: V9I; OLKDIK_01960_parE: S236A; OLKDIK_01979: R84S; OLKDIK_01984_potE: G10D; OLKDIK_01985_gerSC: V350L; OLKDIK_02027: S9P; OLKDIK_02566: E153D; OLKDIK_02569: F28V; OLKDIK_02588: L19S; OLKDIK_02589: V20A; OLKDIK_02759_grpB: T1M; OLKDIK_02767: A67T; OLKDIK_02813_mutT: D78G; OLKDIK_02818: K22I; OLKDIK_02850_rhaT: G216S; OLKDIK_02852: R131H; OLKDIK_02853: Q32K; OLKDIK_02964_walK: Y130H; OLKDIK_02970: A22V; OLKDIK_03219_mscS: I180V; OLKDIK_03257_pbpC: K2R, I81T; OLKDIK_04014_bioY: S34G; OLKDIK_04645_ygiM: R262K; OLKDIK_04725_rbsR: Q227E; OLKDIK_04742: S163G; OLKDIK_04895_gltB3: V610A; OLKDIK_05039_gabT: D202G, V399A; OLKDIK_05220: S308R"
           }
         },
         "children": [
           {
-            "name": "NODE_0000003",
+            "name": "NODE_0000028",
             "node_attrs": {
-              "div": 2.73287e-05
+              "div": 2.73287e-05,
+              "branch_support": {
+                "value": 87.0
+              },
+              "confidence": {
+                "value": 87.0
+              }
             },
             "branch_attrs": {
               "mutations": {
@@ -11323,24 +11362,23 @@
                   "G149873A",
                   "G149892A",
                   "T165123C",
+                  "C185231T",
                   "G337118A",
                   "G678767T",
                   "A693686G",
                   "A970837G",
                   "G995690A",
                   "C997217T",
-                  "C997234T",
                   "C1895758T",
                   "T1915101C",
-                  "A1977285G",
                   "C2361021T",
                   "C2660912T",
                   "T2890834G",
                   "G3696474A",
+                  "C3806063T",
                   "G3894968A",
                   "A4460152G",
                   "C4542053T",
-                  "C4861714T",
                   "T5218931C",
                   "G5220626T",
                   "C5222534T",
@@ -11379,9 +11417,15 @@
             },
             "children": [
               {
-                "name": "NODE_0000004",
+                "name": "NODE_0000037",
                 "node_attrs": {
-                  "div": 5.03066e-05
+                  "div": 5.03066e-05,
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "confidence": {
+                    "value": 100.0
+                  }
                 },
                 "branch_attrs": {
                   "mutations": {
@@ -11393,6 +11437,7 @@
                       "C365269G",
                       "C366137T",
                       "T444747C",
+                      "A492131G",
                       "G532526A",
                       "G532606A",
                       "A532612G",
@@ -11414,7 +11459,6 @@
                       "C1258860T",
                       "A1262001G",
                       "C1288360T",
-                      "G1295869A",
                       "C1309629T",
                       "G1321960A",
                       "G1407422A",
@@ -11424,7 +11468,6 @@
                       "G1627948A",
                       "C1697546A",
                       "C1699559T",
-                      "G1699830A",
                       "G1700231A",
                       "C1701289T",
                       "G1703949A",
@@ -11433,7 +11476,6 @@
                       "C2093600T",
                       "T2098516C",
                       "T2100860A",
-                      "A2101616G",
                       "A2127580G",
                       "A2266494G",
                       "T2266665C",
@@ -11488,7 +11530,6 @@
                       "T3940237G",
                       "C3944602T",
                       "C3960844A",
-                      "C3962392A",
                       "G3962527T",
                       "A3963418T",
                       "G4615740A",
@@ -11586,7 +11627,6 @@
                       "A295V"
                     ],
                     "OLKDIK_04096_glcD": [
-                      "N120K",
                       "M165I"
                     ],
                     "OLKDIK_04760_treC": [
@@ -11612,7 +11652,7 @@
                     ]
                   },
                   "labels": {
-                    "aa": "OLKDIK_00122_speB: A207V; OLKDIK_00256_ilvE: T77I; OLKDIK_00687: G553E; OLKDIK_00725_kefB: I100V; OLKDIK_01096_ubiE: P104Q; OLKDIK_01201_gCD1: E48D; OLKDIK_01203_fAU1: S160G; OLKDIK_01677_pgaB: D244G; OLKDIK_01774_chi1: V64I; OLKDIK_01775_ansP: S424L; OLKDIK_02187: N110D; OLKDIK_02356_tnp: V43A; OLKDIK_02404: A12G; OLKDIK_02485: P138L; OLKDIK_02775: V59F; OLKDIK_02812_dadA: A127V; OLKDIK_03136_caiD: Q82L; OLKDIK_03189_atoD: S9N; OLKDIK_03288: E81A; OLKDIK_03289_argS: G354V; OLKDIK_03347_ubiE: S160P; OLKDIK_03409_phoE: K45Q; OLKDIK_03410: N38D; OLKDIK_03437_araJ: V185I, T279S; OLKDIK_04070_potA: N22D; OLKDIK_04071_afuA: K154Q, A295V; OLKDIK_04096_glcD: N120K, M165I; OLKDIK_04760_treC: T491I; OLKDIK_05013_fepB: G22S; OLKDIK_05143_uvsE: T307K; OLKDIK_05201_dppF: G70S; OLKDIK_05355_pth: V66L; OLKDIK_05359_ridA: D81N; OLKDIK_05412: E127G"
+                    "aa": "OLKDIK_00122_speB: A207V; OLKDIK_00256_ilvE: T77I; OLKDIK_00687: G553E; OLKDIK_00725_kefB: I100V; OLKDIK_01096_ubiE: P104Q; OLKDIK_01201_gCD1: E48D; OLKDIK_01203_fAU1: S160G; OLKDIK_01677_pgaB: D244G; OLKDIK_01774_chi1: V64I; OLKDIK_01775_ansP: S424L; OLKDIK_02187: N110D; OLKDIK_02356_tnp: V43A; OLKDIK_02404: A12G; OLKDIK_02485: P138L; OLKDIK_02775: V59F; OLKDIK_02812_dadA: A127V; OLKDIK_03136_caiD: Q82L; OLKDIK_03189_atoD: S9N; OLKDIK_03288: E81A; OLKDIK_03289_argS: G354V; OLKDIK_03347_ubiE: S160P; OLKDIK_03409_phoE: K45Q; OLKDIK_03410: N38D; OLKDIK_03437_araJ: V185I, T279S; OLKDIK_04070_potA: N22D; OLKDIK_04071_afuA: K154Q, A295V; OLKDIK_04096_glcD: M165I; OLKDIK_04760_treC: T491I; OLKDIK_05013_fepB: G22S; OLKDIK_05143_uvsE: T307K; OLKDIK_05201_dppF: G70S; OLKDIK_05355_pth: V66L; OLKDIK_05359_ridA: D81N; OLKDIK_05412: E127G"
                   }
                 },
                 "children": [
@@ -11906,6 +11946,7 @@
                           "T1801031C",
                           "A1802174G",
                           "A1880421G",
+                          "T1887035C",
                           "A1888463G",
                           "C1888556G",
                           "G1888843T",
@@ -12385,9 +12426,15 @@
                     }
                   },
                   {
-                    "name": "NODE_0000005",
+                    "name": "NODE_0000038",
                     "node_attrs": {
-                      "div": 0.00010155
+                      "div": 0.00010155,
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "confidence": {
+                        "value": 100.0
+                      }
                     },
                     "branch_attrs": {
                       "mutations": {
@@ -12470,7 +12517,6 @@
                           "A1840943G",
                           "G1846212A",
                           "A1886789G",
-                          "C1887035T",
                           "G1888220A",
                           "A1890640G",
                           "A1896520G",
@@ -13285,9 +13331,15 @@
                 ]
               },
               {
-                "name": "NODE_0000006",
+                "name": "NODE_0000029",
                 "node_attrs": {
-                  "div": 3.82934e-05
+                  "div": 3.82934e-05,
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "confidence": {
+                    "value": 100.0
+                  }
                 },
                 "branch_attrs": {
                   "mutations": {
@@ -13298,7 +13350,6 @@
                       "C165997T",
                       "C272223T",
                       "A479658G",
-                      "G492131A",
                       "G564275A",
                       "T610085C",
                       "A669318G",
@@ -13306,13 +13357,14 @@
                       "A1049839G",
                       "A1060825G",
                       "A1197138G",
+                      "A1295869G",
                       "G1321043A",
                       "G1521314A",
                       "G1523906T",
+                      "A1699830G",
                       "C1701020A",
                       "G1703032A",
                       "A1703886G",
-                      "C1887035T",
                       "C1900216T",
                       "G1903250A",
                       "C1904200A",
@@ -13737,7 +13789,6 @@
                           "C2087046A",
                           "G2087668A",
                           "A2093935G",
-                          "A2101616G",
                           "G2111686A",
                           "G2113098A",
                           "C2123940A",
@@ -13848,6 +13899,7 @@
                           "A3943486C",
                           "C3945917T",
                           "T3959169G",
+                          "A3962392C",
                           "G3976992A",
                           "G3977572A",
                           "G3978316A",
@@ -14150,6 +14202,9 @@
                         "OLKDIK_04093_ompR": [
                           "Q176H"
                         ],
+                        "OLKDIK_04096_glcD": [
+                          "K120N"
+                        ],
                         "OLKDIK_04110_inhA1": [
                           "P750S"
                         ],
@@ -14233,14 +14288,20 @@
                         ]
                       },
                       "labels": {
-                        "aa": "OLKDIK_00012_yyaC: I43V; OLKDIK_00036: N43T; OLKDIK_00051_uhpC: G152E; OLKDIK_00253: A148V; OLKDIK_00400_ftnA: K99N; OLKDIK_00418_metG: P341A; OLKDIK_00484: T20I; OLKDIK_00531_cdaS: T70M; OLKDIK_00541_arsB: G195S; OLKDIK_00542_kapD: K174I; OLKDIK_00547: A61T; OLKDIK_00725_kefB: A125T, I214L; OLKDIK_01022_spoIVFA: V87A; OLKDIK_01024_cafA: I206V; OLKDIK_01056_yrzE: M122I; OLKDIK_01190_lysM: I66T; OLKDIK_01374_padR: W17*; OLKDIK_01407_cof: A213E; OLKDIK_01408_ypuA: A77S; OLKDIK_01428: F21L; OLKDIK_01429_mmsB: C22R; OLKDIK_01433_mtnB: I14V; OLKDIK_01435_mtnW: D394G; OLKDIK_01436_aspB: D167E, C292S; OLKDIK_01488_fadH: I93V; OLKDIK_01512: E82K; OLKDIK_01651_trmFO: M137K; OLKDIK_01660_uppS: D161G; OLKDIK_01664_proS: N563S; OLKDIK_01665_polC: F586V, E1328D; OLKDIK_01679_ylmC: A60T; OLKDIK_01714: Q94K; OLKDIK_01730_era: V455I; OLKDIK_01769_copZ: T54I; OLKDIK_01782_ptsN: A47V; OLKDIK_01793_yadS: I55V; OLKDIK_01869: V95M; OLKDIK_01890_rbbA: D255Y; OLKDIK_01976: Q209L; OLKDIK_01981: G643E; OLKDIK_02102_araJ: I62V; OLKDIK_02164_qor: C279R; OLKDIK_02174_dotG: T14K; OLKDIK_02202: G138E; OLKDIK_02240_mtnN: K184R; OLKDIK_02569: V28F; OLKDIK_02580: Q794K; OLKDIK_02586_bamE: D63H; OLKDIK_02759_grpB: M1T; OLKDIK_02850_rhaT: I58M, S216G; OLKDIK_02881: S6Y; OLKDIK_02884_yjiC: D148E; OLKDIK_02886_cof: V55A; OLKDIK_02888_cypX: D45E; OLKDIK_02942_aRO8: Y269H; OLKDIK_02964_walK: A213S; OLKDIK_02967: G74S; OLKDIK_03097: Y126*; OLKDIK_03112: A64V; OLKDIK_03120_sfp: K24R, I39V; OLKDIK_03136_caiD: N45H; OLKDIK_03239: V49A, D63E; OLKDIK_03243: R65I, V157A; OLKDIK_03249_ulaG: N195I; OLKDIK_03285_ileS: R955H; OLKDIK_03395: S64N; OLKDIK_03739_fliI: A42V; OLKDIK_03799: G3304E; OLKDIK_03821_rimI: I118V; OLKDIK_03877_aroB: Q205E; OLKDIK_03922_rluB: A176V; OLKDIK_03926_sodA: G5S; OLKDIK_03956_comP: G349E; OLKDIK_03972_cysH: G214D; OLKDIK_04070_potA: N22D; OLKDIK_04071_afuA: K154Q, A295V; OLKDIK_04075_dadA: V227G; OLKDIK_04093_ompR: Q176H; OLKDIK_04110_inhA1: P750S; OLKDIK_04113_ftsN: T91A; OLKDIK_04556_murP: G23C; OLKDIK_04557_murQ: E257G; OLKDIK_04613_gerYC: D302N; OLKDIK_04698_ansP: I339V, A416T; OLKDIK_04704: I68N; OLKDIK_04712_dsd1: D90N; OLKDIK_04725_rbsR: E227Q; OLKDIK_04742: N315K; OLKDIK_04747_hisM: M119I; OLKDIK_04748_hisM: V22A; OLKDIK_04750_glnQ: F26C, T261K; OLKDIK_04751_alsT: N201S, R454K; OLKDIK_04776_fepD: A304T; OLKDIK_04944_yzzA: K25E; OLKDIK_04993_amyA: I251S; OLKDIK_05013_fepB: G22S; OLKDIK_05073_purC: T223K; OLKDIK_05213: T125N; OLKDIK_05214_fabG: T109M; OLKDIK_05220: M604L; OLKDIK_05302_gltX: A432T; OLKDIK_05303_ispF: I100V; OLKDIK_05350_mazG: V321I; OLKDIK_05394_dck: D12E"
+                        "aa": "OLKDIK_00012_yyaC: I43V; OLKDIK_00036: N43T; OLKDIK_00051_uhpC: G152E; OLKDIK_00253: A148V; OLKDIK_00400_ftnA: K99N; OLKDIK_00418_metG: P341A; OLKDIK_00484: T20I; OLKDIK_00531_cdaS: T70M; OLKDIK_00541_arsB: G195S; OLKDIK_00542_kapD: K174I; OLKDIK_00547: A61T; OLKDIK_00725_kefB: A125T, I214L; OLKDIK_01022_spoIVFA: V87A; OLKDIK_01024_cafA: I206V; OLKDIK_01056_yrzE: M122I; OLKDIK_01190_lysM: I66T; OLKDIK_01374_padR: W17*; OLKDIK_01407_cof: A213E; OLKDIK_01408_ypuA: A77S; OLKDIK_01428: F21L; OLKDIK_01429_mmsB: C22R; OLKDIK_01433_mtnB: I14V; OLKDIK_01435_mtnW: D394G; OLKDIK_01436_aspB: D167E, C292S; OLKDIK_01488_fadH: I93V; OLKDIK_01512: E82K; OLKDIK_01651_trmFO: M137K; OLKDIK_01660_uppS: D161G; OLKDIK_01664_proS: N563S; OLKDIK_01665_polC: F586V, E1328D; OLKDIK_01679_ylmC: A60T; OLKDIK_01714: Q94K; OLKDIK_01730_era: V455I; OLKDIK_01769_copZ: T54I; OLKDIK_01782_ptsN: A47V; OLKDIK_01793_yadS: I55V; OLKDIK_01869: V95M; OLKDIK_01890_rbbA: D255Y; OLKDIK_01976: Q209L; OLKDIK_01981: G643E; OLKDIK_02102_araJ: I62V; OLKDIK_02164_qor: C279R; OLKDIK_02174_dotG: T14K; OLKDIK_02202: G138E; OLKDIK_02240_mtnN: K184R; OLKDIK_02569: V28F; OLKDIK_02580: Q794K; OLKDIK_02586_bamE: D63H; OLKDIK_02759_grpB: M1T; OLKDIK_02850_rhaT: I58M, S216G; OLKDIK_02881: S6Y; OLKDIK_02884_yjiC: D148E; OLKDIK_02886_cof: V55A; OLKDIK_02888_cypX: D45E; OLKDIK_02942_aRO8: Y269H; OLKDIK_02964_walK: A213S; OLKDIK_02967: G74S; OLKDIK_03097: Y126*; OLKDIK_03112: A64V; OLKDIK_03120_sfp: K24R, I39V; OLKDIK_03136_caiD: N45H; OLKDIK_03239: V49A, D63E; OLKDIK_03243: R65I, V157A; OLKDIK_03249_ulaG: N195I; OLKDIK_03285_ileS: R955H; OLKDIK_03395: S64N; OLKDIK_03739_fliI: A42V; OLKDIK_03799: G3304E; OLKDIK_03821_rimI: I118V; OLKDIK_03877_aroB: Q205E; OLKDIK_03922_rluB: A176V; OLKDIK_03926_sodA: G5S; OLKDIK_03956_comP: G349E; OLKDIK_03972_cysH: G214D; OLKDIK_04070_potA: N22D; OLKDIK_04071_afuA: K154Q, A295V; OLKDIK_04075_dadA: V227G; OLKDIK_04093_ompR: Q176H; OLKDIK_04096_glcD: K120N; OLKDIK_04110_inhA1: P750S; OLKDIK_04113_ftsN: T91A; OLKDIK_04556_murP: G23C; OLKDIK_04557_murQ: E257G; OLKDIK_04613_gerYC: D302N; OLKDIK_04698_ansP: I339V, A416T; OLKDIK_04704: I68N; OLKDIK_04712_dsd1: D90N; OLKDIK_04725_rbsR: E227Q; OLKDIK_04742: N315K; OLKDIK_04747_hisM: M119I; OLKDIK_04748_hisM: V22A; OLKDIK_04750_glnQ: F26C, T261K; OLKDIK_04751_alsT: N201S, R454K; OLKDIK_04776_fepD: A304T; OLKDIK_04944_yzzA: K25E; OLKDIK_04993_amyA: I251S; OLKDIK_05013_fepB: G22S; OLKDIK_05073_purC: T223K; OLKDIK_05213: T125N; OLKDIK_05214_fabG: T109M; OLKDIK_05220: M604L; OLKDIK_05302_gltX: A432T; OLKDIK_05303_ispF: I100V; OLKDIK_05350_mazG: V321I; OLKDIK_05394_dck: D12E"
                       }
                     }
                   },
                   {
-                    "name": "NODE_0000007",
+                    "name": "NODE_0000030",
                     "node_attrs": {
-                      "div": 6.27486e-05
+                      "div": 6.27486e-05,
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "confidence": {
+                        "value": 100.0
+                      }
                     },
                     "branch_attrs": {
                       "mutations": {
@@ -14279,6 +14340,7 @@
                           "G1831444A",
                           "C1842657T",
                           "G1843395A",
+                          "G2101616A",
                           "G2110929A",
                           "G2111423A",
                           "G2111746A",
@@ -14321,7 +14383,6 @@
                           "G3946303T",
                           "G3947591A",
                           "A3958389T",
-                          "C3962392A",
                           "G3964645A",
                           "G4430627A",
                           "G4433420T",
@@ -14465,9 +14526,6 @@
                         "OLKDIK_04073": [
                           "E85G"
                         ],
-                        "OLKDIK_04096_glcD": [
-                          "N120K"
-                        ],
                         "OLKDIK_04097_glpC": [
                           "V402I"
                         ],
@@ -14513,14 +14571,20 @@
                         ]
                       },
                       "labels": {
-                        "aa": "OLKDIK_00336_whiA: R269S; OLKDIK_00448_fadB: V14I; OLKDIK_00615_gntP: I263S; OLKDIK_00616: S12L; OLKDIK_00619: R440G; OLKDIK_00626_sdpI: V64I; OLKDIK_01918_yitT: S206L; OLKDIK_01931: P329S; OLKDIK_02199: G73E, E238K; OLKDIK_02432_hblA: T129I; OLKDIK_02485: A56V; OLKDIK_02580: S840A; OLKDIK_02788: G43S, T126I; OLKDIK_02795: G129R; OLKDIK_02849_bcsZ: S239N; OLKDIK_02851_aRO8: D59N; OLKDIK_02853: K32Q; OLKDIK_02873_arlS: V218I; OLKDIK_02877: E87K; OLKDIK_02881: H344Q, D501G; OLKDIK_03073: H44N; OLKDIK_03098_rihB: S99P, Q276R; OLKDIK_03112: F24L; OLKDIK_03121_araJ: P319S; OLKDIK_03123_dhbF: T2096I; OLKDIK_03136_caiD: E89K; OLKDIK_03219_mscS: V180I; OLKDIK_03429_ykvI: D82N; OLKDIK_03434: H142Y; OLKDIK_03503_cydC: T273S; OLKDIK_04073: E85G; OLKDIK_04096_glcD: N120K; OLKDIK_04097_glpC: V402I; OLKDIK_04645_ygiM: K262R; OLKDIK_04648_cBS: K138T; OLKDIK_04705_xRE: E69K; OLKDIK_04707_tar: K308E; OLKDIK_04957_mgtA: M426L; OLKDIK_05031_rlmD: V18I; OLKDIK_05039_gabT: G202D; OLKDIK_05041_gph: A181T; OLKDIK_05151_hppD: G80S; OLKDIK_05206: T80A; OLKDIK_05220: R308S, I342M; OLKDIK_05355_pth: V66L; OLKDIK_05359_ridA: D81N"
+                        "aa": "OLKDIK_00336_whiA: R269S; OLKDIK_00448_fadB: V14I; OLKDIK_00615_gntP: I263S; OLKDIK_00616: S12L; OLKDIK_00619: R440G; OLKDIK_00626_sdpI: V64I; OLKDIK_01918_yitT: S206L; OLKDIK_01931: P329S; OLKDIK_02199: G73E, E238K; OLKDIK_02432_hblA: T129I; OLKDIK_02485: A56V; OLKDIK_02580: S840A; OLKDIK_02788: G43S, T126I; OLKDIK_02795: G129R; OLKDIK_02849_bcsZ: S239N; OLKDIK_02851_aRO8: D59N; OLKDIK_02853: K32Q; OLKDIK_02873_arlS: V218I; OLKDIK_02877: E87K; OLKDIK_02881: H344Q, D501G; OLKDIK_03073: H44N; OLKDIK_03098_rihB: S99P, Q276R; OLKDIK_03112: F24L; OLKDIK_03121_araJ: P319S; OLKDIK_03123_dhbF: T2096I; OLKDIK_03136_caiD: E89K; OLKDIK_03219_mscS: V180I; OLKDIK_03429_ykvI: D82N; OLKDIK_03434: H142Y; OLKDIK_03503_cydC: T273S; OLKDIK_04073: E85G; OLKDIK_04097_glpC: V402I; OLKDIK_04645_ygiM: K262R; OLKDIK_04648_cBS: K138T; OLKDIK_04705_xRE: E69K; OLKDIK_04707_tar: K308E; OLKDIK_04957_mgtA: M426L; OLKDIK_05031_rlmD: V18I; OLKDIK_05039_gabT: G202D; OLKDIK_05041_gph: A181T; OLKDIK_05151_hppD: G80S; OLKDIK_05206: T80A; OLKDIK_05220: R308S, I342M; OLKDIK_05355_pth: V66L; OLKDIK_05359_ridA: D81N"
                       }
                     },
                     "children": [
                       {
-                        "name": "NODE_0000008",
+                        "name": "NODE_0000031",
                         "node_attrs": {
-                          "div": 8.37697e-05
+                          "div": 8.37697e-05,
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "confidence": {
+                            "value": 100.0
+                          }
                         },
                         "branch_attrs": {
                           "mutations": {
@@ -15005,9 +15069,15 @@
                             }
                           },
                           {
-                            "name": "NODE_0000009",
+                            "name": "NODE_0000032",
                             "node_attrs": {
-                              "div": 8.37892e-05
+                              "div": 8.37892e-05,
+                              "branch_support": {
+                                "value": 48.0
+                              },
+                              "confidence": {
+                                "value": 48.0
+                              }
                             },
                             "branch_attrs": {
                               "mutations": {}
@@ -15307,9 +15377,15 @@
                                 }
                               },
                               {
-                                "name": "NODE_0000010",
+                                "name": "NODE_0000033",
                                 "node_attrs": {
-                                  "div": 8.64762e-05
+                                  "div": 8.64762e-05,
+                                  "branch_support": {
+                                    "value": 100.0
+                                  },
+                                  "confidence": {
+                                    "value": 100.0
+                                  }
                                 },
                                 "branch_attrs": {
                                   "mutations": {
@@ -15817,9 +15893,15 @@
                         ]
                       },
                       {
-                        "name": "NODE_0000011",
+                        "name": "NODE_0000034",
                         "node_attrs": {
-                          "div": 7.17775e-05
+                          "div": 7.17775e-05,
+                          "branch_support": {
+                            "value": 81.0
+                          },
+                          "confidence": {
+                            "value": 81.0
+                          }
                         },
                         "branch_attrs": {
                           "mutations": {
@@ -16507,9 +16589,15 @@
                             }
                           },
                           {
-                            "name": "NODE_0000012",
+                            "name": "NODE_0000035",
                             "node_attrs": {
-                              "div": 7.27988e-05
+                              "div": 7.27988e-05,
+                              "branch_support": {
+                                "value": 44.0
+                              },
+                              "confidence": {
+                                "value": 44.0
+                              }
                             },
                             "branch_attrs": {
                               "mutations": {
@@ -17152,9 +17240,15 @@
                                 }
                               },
                               {
-                                "name": "NODE_0000013",
+                                "name": "NODE_0000036",
                                 "node_attrs": {
-                                  "div": 0.000107862
+                                  "div": 0.000107862,
+                                  "branch_support": {
+                                    "value": 100.0
+                                  },
+                                  "confidence": {
+                                    "value": 100.0
+                                  }
                                 },
                                 "branch_attrs": {
                                   "mutations": {
@@ -18086,22 +18180,32 @@
             ]
           },
           {
-            "name": "NODE_0000014",
+            "name": "NODE_0000002",
             "node_attrs": {
-              "div": 2.31188e-05
+              "div": 2.31188e-05,
+              "branch_support": {
+                "value": 92.0
+              },
+              "confidence": {
+                "value": 92.0
+              }
             },
             "branch_attrs": {
               "mutations": {
                 "nuc": [
+                  "T997234C",
                   "A1496372G",
                   "T1777648G",
+                  "G1977285A",
                   "C1993919A",
+                  "G2101616A",
                   "A2670974G",
                   "A3048065G",
                   "C3048067T",
                   "C3147009T",
                   "G3696998T",
                   "C3945917T",
+                  "A3962392C",
                   "A4425021C"
                 ],
                 "OLKDIK_02076_pepF": [
@@ -18115,17 +18219,26 @@
                 ],
                 "OLKDIK_03799": [
                   "E4611D"
+                ],
+                "OLKDIK_04096_glcD": [
+                  "K120N"
                 ]
               },
               "labels": {
-                "aa": "OLKDIK_02076_pepF: Q442H; OLKDIK_02771: K54E; OLKDIK_03147_mrcB: A54T; OLKDIK_03799: E4611D"
+                "aa": "OLKDIK_02076_pepF: Q442H; OLKDIK_02771: K54E; OLKDIK_03147_mrcB: A54T; OLKDIK_03799: E4611D; OLKDIK_04096_glcD: K120N"
               }
             },
             "children": [
               {
-                "name": "NODE_0000015",
+                "name": "NODE_0000021",
                 "node_attrs": {
-                  "div": 3.4069e-05
+                  "div": 3.4069e-05,
+                  "branch_support": {
+                    "value": 99.0
+                  },
+                  "confidence": {
+                    "value": 99.0
+                  }
                 },
                 "branch_attrs": {
                   "mutations": {
@@ -18157,7 +18270,6 @@
                       "T3771737C",
                       "C3775439T",
                       "T3790957G",
-                      "T3806063C",
                       "T3821756C",
                       "A3822915C",
                       "T3823114G",
@@ -18233,14 +18345,19 @@
                 },
                 "children": [
                   {
-                    "name": "NODE_0000016",
+                    "name": "NODE_0000022",
                     "node_attrs": {
-                      "div": 4.2825e-05
+                      "div": 4.2825e-05,
+                      "branch_support": {
+                        "value": 90.0
+                      },
+                      "confidence": {
+                        "value": 90.0
+                      }
                     },
                     "branch_attrs": {
                       "mutations": {
                         "nuc": [
-                          "T185231C",
                           "T186231A",
                           "G271559A",
                           "C356642T",
@@ -18261,7 +18378,6 @@
                           "G1647993A",
                           "G1654112A",
                           "C1699559T",
-                          "G1699830A",
                           "G1700231A",
                           "C1701289T",
                           "G1703949A",
@@ -18276,6 +18392,7 @@
                           "C1779482T",
                           "C1784475T",
                           "T1786378C",
+                          "T1887035C",
                           "C1890157G",
                           "T1890309C",
                           "G1890576A",
@@ -18356,9 +18473,15 @@
                     },
                     "children": [
                       {
-                        "name": "NODE_0000017",
+                        "name": "NODE_0000023",
                         "node_attrs": {
-                          "div": 9.6291e-05
+                          "div": 9.6291e-05,
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "confidence": {
+                            "value": 100.0
+                          }
                         },
                         "branch_attrs": {
                           "mutations": {
@@ -18381,7 +18504,6 @@
                               "G414851A",
                               "G440295T",
                               "T444747C",
-                              "G492131A",
                               "T603991A",
                               "G605361A",
                               "A605976C",
@@ -18412,6 +18534,7 @@
                               "C1163127G",
                               "G1163602A",
                               "C1258860T",
+                              "A1295869G",
                               "G1299522A",
                               "C1310955A",
                               "G1311496A",
@@ -18570,6 +18693,7 @@
                               "C4805382T",
                               "T4860846C",
                               "T4861489C",
+                              "T4861714C",
                               "C4878861T",
                               "C4905277T",
                               "C4911654T",
@@ -19250,9 +19374,15 @@
                         ]
                       },
                       {
-                        "name": "NODE_0000018",
+                        "name": "NODE_0000024",
                         "node_attrs": {
-                          "div": 0.000101562
+                          "div": 0.000101562,
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "confidence": {
+                            "value": 100.0
+                          }
                         },
                         "branch_attrs": {
                           "mutations": {
@@ -19281,6 +19411,7 @@
                               "C467882T",
                               "G468625T",
                               "T484426A",
+                              "A492131G",
                               "G530920A",
                               "C556177T",
                               "G601259A",
@@ -19316,7 +19447,6 @@
                               "G1088413A",
                               "T1196010C",
                               "C1288360T",
-                              "G1295869A",
                               "C1309629T",
                               "A1310968C",
                               "G1319349A",
@@ -19528,7 +19658,6 @@
                               "C4734599T",
                               "C4756209T",
                               "A4805115G",
-                              "C4861714T",
                               "G4881975A",
                               "T4932177C",
                               "A4993080C",
@@ -20332,9 +20461,15 @@
                     ]
                   },
                   {
-                    "name": "NODE_0000019",
+                    "name": "NODE_0000025",
                     "node_attrs": {
-                      "div": 5.35491e-05
+                      "div": 5.35491e-05,
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "confidence": {
+                        "value": 100.0
+                      }
                     },
                     "branch_attrs": {
                       "mutations": {
@@ -20342,9 +20477,9 @@
                           "A148840G",
                           "A358041G",
                           "T484426A",
+                          "A492131G",
                           "G678767T",
                           "C858198T",
-                          "G1295869A",
                           "C1309629T",
                           "A1310968C",
                           "G1319349A",
@@ -20385,6 +20520,7 @@
                           "A1551669G",
                           "G1552460A",
                           "T1553065A",
+                          "A1699830G",
                           "A1702747G",
                           "T1915101C",
                           "T1978262G",
@@ -20718,7 +20854,6 @@
                               "C135709T",
                               "A145886G",
                               "G162083A",
-                              "T185231C",
                               "T186231A",
                               "G271559A",
                               "A351463G",
@@ -20805,7 +20940,6 @@
                               "G1774340A",
                               "G1783720A",
                               "G1799654T",
-                              "C1887035T",
                               "C1895758T",
                               "C1900216T",
                               "G1903250A",
@@ -20935,6 +21069,7 @@
                               "C4817677A",
                               "T4860846C",
                               "T4861489C",
+                              "T4861714C",
                               "A4903871G",
                               "C4941668T",
                               "T4949569G",
@@ -21256,13 +21391,20 @@
                         }
                       },
                       {
-                        "name": "NODE_0000020",
+                        "name": "NODE_0000026",
                         "node_attrs": {
-                          "div": 6.39614e-05
+                          "div": 6.39614e-05,
+                          "branch_support": {
+                            "value": 92.0
+                          },
+                          "confidence": {
+                            "value": 92.0
+                          }
                         },
                         "branch_attrs": {
                           "mutations": {
                             "nuc": [
+                              "C185231T",
                               "T983619C",
                               "C1144702T",
                               "G1145501T",
@@ -21308,7 +21450,6 @@
                               "G3143540A",
                               "G3143659A",
                               "A4805115G",
-                              "C4861714T",
                               "G4881975A",
                               "G5004588A",
                               "G5005016A"
@@ -21688,6 +21829,7 @@
                                   "C1784475T",
                                   "T1786378C",
                                   "A1788208G",
+                                  "T1887035C",
                                   "G1888490A",
                                   "C1890157G",
                                   "T1890309C",
@@ -22046,9 +22188,15 @@
                             }
                           },
                           {
-                            "name": "NODE_0000021",
+                            "name": "NODE_0000027",
                             "node_attrs": {
-                              "div": 9.06415e-05
+                              "div": 9.06415e-05,
+                              "branch_support": {
+                                "value": 100.0
+                              },
+                              "confidence": {
+                                "value": 100.0
+                              }
                             },
                             "branch_attrs": {
                               "mutations": {
@@ -22105,7 +22253,6 @@
                                   "C1705999T",
                                   "G1774340A",
                                   "G1783720A",
-                                  "C1887035T",
                                   "C1895758T",
                                   "C1900216T",
                                   "T1901648C",
@@ -23073,9 +23220,15 @@
                 ]
               },
               {
-                "name": "NODE_0000022",
+                "name": "NODE_0000003",
                 "node_attrs": {
-                  "div": 3.44176e-05
+                  "div": 3.44176e-05,
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "confidence": {
+                    "value": 100.0
+                  }
                 },
                 "branch_attrs": {
                   "mutations": {
@@ -23084,7 +23237,6 @@
                       "C356642T",
                       "C364477T",
                       "G470198A",
-                      "G492131A",
                       "G564027A",
                       "G564275A",
                       "G863696T",
@@ -23105,6 +23257,7 @@
                       "G1003082A",
                       "T1029061G",
                       "G1032718A",
+                      "A1295869G",
                       "T1357488C",
                       "G1563917A",
                       "A1564885G",
@@ -23117,7 +23270,6 @@
                       "C1686458A",
                       "T1693168C",
                       "T1694829C",
-                      "G1699830A",
                       "A1702747G",
                       "A1703033T",
                       "C1709049T",
@@ -23131,6 +23283,7 @@
                       "A4587074C",
                       "G4615740A",
                       "T4861489C",
+                      "T4861714C",
                       "C4911543T",
                       "G4911868A",
                       "G4912540T",
@@ -23197,9 +23350,15 @@
                 },
                 "children": [
                   {
-                    "name": "NODE_0000023",
+                    "name": "NODE_0000019",
                     "node_attrs": {
-                      "div": 5.02855e-05
+                      "div": 5.02855e-05,
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "confidence": {
+                        "value": 100.0
+                      }
                     },
                     "branch_attrs": {
                       "mutations": {
@@ -23207,6 +23366,7 @@
                           "A89662G",
                           "C89805G",
                           "G133909A",
+                          "C185231T",
                           "G530920A",
                           "T920452C",
                           "C923160T",
@@ -23241,6 +23401,7 @@
                           "C1646447T",
                           "G1649361T",
                           "A1786573G",
+                          "T1887035C",
                           "C1890157G",
                           "T1890309C",
                           "G1890576A",
@@ -23263,7 +23424,6 @@
                           "C2966427T",
                           "C3566164T",
                           "C3692885T",
-                          "T3806063C",
                           "C3811023T",
                           "C3823463T",
                           "C3829019T",
@@ -23998,9 +24158,15 @@
                         }
                       },
                       {
-                        "name": "NODE_0000024",
+                        "name": "NODE_0000020",
                         "node_attrs": {
-                          "div": 6.7836e-05
+                          "div": 6.7836e-05,
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "confidence": {
+                            "value": 100.0
+                          }
                         },
                         "branch_attrs": {
                           "mutations": {
@@ -25070,14 +25236,19 @@
                     ]
                   },
                   {
-                    "name": "NODE_0000025",
+                    "name": "NODE_0000004",
                     "node_attrs": {
-                      "div": 4.44815e-05
+                      "div": 4.44815e-05,
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "confidence": {
+                        "value": 100.0
+                      }
                     },
                     "branch_attrs": {
                       "mutations": {
                         "nuc": [
-                          "T185231C",
                           "T186231A",
                           "G259893A",
                           "G330373A",
@@ -25107,7 +25278,6 @@
                           "G1578118A",
                           "G1685168A",
                           "T1847168C",
-                          "C1887035T",
                           "C1895758T",
                           "G1901952A",
                           "C1949682T",
@@ -25131,6 +25301,7 @@
                           "G3724399A",
                           "G3732771T",
                           "C3735210T",
+                          "C3806063T",
                           "G3894968A",
                           "G4522617A",
                           "C4593954T",
@@ -25923,9 +26094,15 @@
                         }
                       },
                       {
-                        "name": "NODE_0000026",
+                        "name": "NODE_0000005",
                         "node_attrs": {
-                          "div": 8.80333e-05
+                          "div": 8.80333e-05,
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "confidence": {
+                            "value": 100.0
+                          }
                         },
                         "branch_attrs": {
                           "mutations": {
@@ -27146,9 +27323,15 @@
                             }
                           },
                           {
-                            "name": "NODE_0000027",
+                            "name": "NODE_0000006",
                             "node_attrs": {
-                              "div": 0.000110526
+                              "div": 0.000110526,
+                              "branch_support": {
+                                "value": 100.0
+                              },
+                              "confidence": {
+                                "value": 100.0
+                              }
                             },
                             "branch_attrs": {
                               "mutations": {
@@ -27476,9 +27659,15 @@
                             },
                             "children": [
                               {
-                                "name": "NODE_0000028",
+                                "name": "NODE_0000007",
                                 "node_attrs": {
-                                  "div": 0.000111859
+                                  "div": 0.000111859,
+                                  "branch_support": {
+                                    "value": 100.0
+                                  },
+                                  "confidence": {
+                                    "value": 100.0
+                                  }
                                 },
                                 "branch_attrs": {
                                   "mutations": {
@@ -27724,7 +27913,7 @@
                                     }
                                   },
                                   {
-                                    "name": "NODE_0000029",
+                                    "name": "NODE_0000008",
                                     "node_attrs": {
                                       "div": 0.000113764
                                     },
@@ -28148,9 +28337,15 @@
                                 ]
                               },
                               {
-                                "name": "NODE_0000030",
+                                "name": "NODE_0000009",
                                 "node_attrs": {
-                                  "div": 0.000111477
+                                  "div": 0.000111477,
+                                  "branch_support": {
+                                    "value": 100.0
+                                  },
+                                  "confidence": {
+                                    "value": 100.0
+                                  }
                                 },
                                 "branch_attrs": {
                                   "mutations": {
@@ -28174,9 +28369,15 @@
                                 },
                                 "children": [
                                   {
-                                    "name": "NODE_0000031",
+                                    "name": "NODE_0000015",
                                     "node_attrs": {
-                                      "div": 0.00011243
+                                      "div": 0.00011243,
+                                      "branch_support": {
+                                        "value": 100.0
+                                      },
+                                      "confidence": {
+                                        "value": 100.0
+                                      }
                                     },
                                     "branch_attrs": {
                                       "mutations": {
@@ -28396,9 +28597,15 @@
                                         }
                                       },
                                       {
-                                        "name": "NODE_0000032",
+                                        "name": "NODE_0000016",
                                         "node_attrs": {
-                                          "div": 0.000112808
+                                          "div": 0.000112808,
+                                          "branch_support": {
+                                            "value": 99.0
+                                          },
+                                          "confidence": {
+                                            "value": 99.0
+                                          }
                                         },
                                         "branch_attrs": {
                                           "mutations": {
@@ -28614,9 +28821,15 @@
                                             }
                                           },
                                           {
-                                            "name": "NODE_0000033",
+                                            "name": "NODE_0000017",
                                             "node_attrs": {
-                                              "div": 0.000112828
+                                              "div": 0.000112828,
+                                              "branch_support": {
+                                                "value": 94.0
+                                              },
+                                              "confidence": {
+                                                "value": 94.0
+                                              }
                                             },
                                             "branch_attrs": {
                                               "mutations": {}
@@ -28792,7 +29005,7 @@
                                                 }
                                               },
                                               {
-                                                "name": "NODE_0000034",
+                                                "name": "NODE_0000018",
                                                 "node_attrs": {
                                                   "div": 0.000112847
                                                 },
@@ -29198,9 +29411,15 @@
                                     ]
                                   },
                                   {
-                                    "name": "NODE_0000035",
+                                    "name": "NODE_0000010",
                                     "node_attrs": {
-                                      "div": 0.000111859
+                                      "div": 0.000111859,
+                                      "branch_support": {
+                                        "value": 94.0
+                                      },
+                                      "confidence": {
+                                        "value": 94.0
+                                      }
                                     },
                                     "branch_attrs": {
                                       "mutations": {
@@ -29218,9 +29437,15 @@
                                     },
                                     "children": [
                                       {
-                                        "name": "NODE_0000036",
+                                        "name": "NODE_0000014",
                                         "node_attrs": {
-                                          "div": 0.00011243
+                                          "div": 0.00011243,
+                                          "branch_support": {
+                                            "value": 99.0
+                                          },
+                                          "confidence": {
+                                            "value": 99.0
+                                          }
                                         },
                                         "branch_attrs": {
                                           "mutations": {
@@ -29671,9 +29896,15 @@
                                         ]
                                       },
                                       {
-                                        "name": "NODE_0000037",
+                                        "name": "NODE_0000011",
                                         "node_attrs": {
-                                          "div": 0.000112237
+                                          "div": 0.000112237,
+                                          "branch_support": {
+                                            "value": 97.0
+                                          },
+                                          "confidence": {
+                                            "value": 97.0
+                                          }
                                         },
                                         "branch_attrs": {
                                           "mutations": {
@@ -29897,9 +30128,15 @@
                                             }
                                           },
                                           {
-                                            "name": "NODE_0000038",
+                                            "name": "NODE_0000012",
                                             "node_attrs": {
-                                              "div": 0.000112257
+                                              "div": 0.000112257,
+                                              "branch_support": {
+                                                "value": 91.0
+                                              },
+                                              "confidence": {
+                                                "value": 91.0
+                                              }
                                             },
                                             "branch_attrs": {
                                               "mutations": {}
@@ -30108,7 +30345,7 @@
                                                 }
                                               },
                                               {
-                                                "name": "NODE_0000039",
+                                                "name": "NODE_0000013",
                                                 "node_attrs": {
                                                   "div": 0.000112276
                                                 },
