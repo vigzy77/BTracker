@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-10-25",
+    "updated": "2026-11-11",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -582,21 +582,13 @@
       {
         "key": "Country(Code)",
         "demes": {
-          "BEL": {
-            "latitude": 50.49593874,
-            "longitude": 4.469936
-          },
           "USA": {
             "latitude": 37.66895362,
             "longitude": -102.3925645
           },
-          "FRA": {
-            "latitude": 46.48372145,
-            "longitude": 2.60926281
-          },
-          "DEU": {
-            "latitude": 50.82871201,
-            "longitude": 10.97887975
+          "THA": {
+            "latitude": 14.6000981,
+            "longitude": 101.38805881
           },
           "NLD": {
             "latitude": 52.33939951,
@@ -606,17 +598,25 @@
             "latitude": 46.81010721,
             "longitude": 8.227512
           },
-          "THA": {
-            "latitude": 14.6000981,
-            "longitude": 101.38805881
+          "NOR": {
+            "latitude": 65.04680297,
+            "longitude": 13.50069228
+          },
+          "FRA": {
+            "latitude": 46.48372145,
+            "longitude": 2.60926281
+          },
+          "BEL": {
+            "latitude": 50.49593874,
+            "longitude": 4.469936
+          },
+          "DEU": {
+            "latitude": 50.82871201,
+            "longitude": 10.97887975
           },
           "CAN": {
             "latitude": 60.36196817,
             "longitude": -106.6983315
-          },
-          "NOR": {
-            "latitude": 65.04680297,
-            "longitude": 13.50069228
           }
         }
       },
@@ -631,33 +631,33 @@
             "latitude": 47.4133,
             "longitude": 8.6564
           },
-          "BE-BRU": {
-            "latitude": 50.8388,
-            "longitude": 4.3753
+          "US-MD": {
+            "latitude": 39.5162,
+            "longitude": -76.9382
           },
           "DE-NW": {
             "latitude": 51.4789,
             "longitude": 7.5544
           },
-          "DE-SN": {
-            "latitude": 50.9296,
-            "longitude": 13.4585
-          },
           "US-AL": {
             "latitude": 33.2589,
             "longitude": -86.8295
           },
-          "US-MD": {
-            "latitude": 39.5162,
-            "longitude": -76.9382
+          "BE-WAL": {
+            "latitude": 50.1546,
+            "longitude": 5.3992
+          },
+          "BE-BRU": {
+            "latitude": 50.8388,
+            "longitude": 4.3753
           },
           "US-WA": {
             "latitude": 47.2868,
             "longitude": -120.2126
           },
-          "BE-WAL": {
-            "latitude": 50.1546,
-            "longitude": 5.3992
+          "DE-SN": {
+            "latitude": 50.9296,
+            "longitude": 13.4585
           }
         }
       }
@@ -789,9 +789,6 @@
                   },
                   "GTDB_Species": {
                     "value": "Bacillus_A_cytotoxicus"
-                  },
-                  "MLST_Scheme": {
-                    "value": "-"
                   },
                   "Prokka_Genes": {
                     "value": "4356"
@@ -962,9 +959,6 @@
                   },
                   "GTDB_Species": {
                     "value": "Bacillus_A_cytotoxicus"
-                  },
-                  "MLST_Scheme": {
-                    "value": "-"
                   },
                   "Prokka_Genes": {
                     "value": "4447"
@@ -1148,8 +1142,8 @@
                   "GTDB_Species": {
                     "value": "Bacillus_A_cytotoxicus"
                   },
-                  "MLST_Scheme": {
-                    "value": "bcereus"
+                  "PubMLST_Allelic_Profile": {
+                    "value": "glp(~211);gmk(127?);ilv(333?);pta(348?);pur(338?);pyc(~266);tpi(~250)"
                   },
                   "Prokka_Genes": {
                     "value": "4336"
@@ -1350,8 +1344,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_cytotoxicus"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(~211);gmk(127?);ilv(333?);pta(84?);pur(338?);pyc(~266);tpi(~250)"
                           },
                           "Prokka_Genes": {
                             "value": "4197"
@@ -1538,8 +1532,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_cytotoxicus"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(~211);gmk(127?);ilv(333?);pta(84?);pur(338?);pyc(~266);tpi(~250)"
                           },
                           "Prokka_Genes": {
                             "value": "4199"
@@ -1732,8 +1726,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_cytotoxicus"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(~211);gmk(127?);ilv(333?);pta(84?);pur(338?);pyc(~266);tpi(~250)"
                           },
                           "Prokka_Genes": {
                             "value": "4251"
@@ -1924,8 +1918,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_cytotoxicus"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(~211);gmk(127?);ilv(333?);pta(84?);pur(338?);pyc(~266);tpi(~250)"
                               },
                               "Prokka_Genes": {
                                 "value": "4166"
@@ -2094,8 +2088,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_cytotoxicus"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(~211);gmk(127?);ilv(333?);pta(84?);pur(338?);pyc(~266);tpi(~250)"
                               },
                               "Prokka_Genes": {
                                 "value": "4198"
@@ -2307,8 +2301,8 @@
                       "GTDB_Species": {
                         "value": "Bacillus_A_cytotoxicus"
                       },
-                      "MLST_Scheme": {
-                        "value": "bcereus"
+                      "PubMLST_Allelic_Profile": {
+                        "value": "glp(211);gmk(127);ilv(339);pta(424);pur(338);pyc(266);tpi(171)"
                       },
                       "Prokka_Genes": {
                         "value": "4021"
@@ -2485,8 +2479,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_cytotoxicus"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(211);gmk(127);ilv(333);pta(424);pur(345);pyc(266);tpi(171)"
                               },
                               "Prokka_Genes": {
                                 "value": "3986"
@@ -2680,8 +2674,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_cytotoxicus"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(211);gmk(127);ilv(333);pta(424);pur(345);pyc(266);tpi(171)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "4234"
@@ -2860,8 +2854,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(424);pur(345);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4082"
@@ -3045,8 +3039,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(424);pur(345);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4381"
@@ -3243,8 +3237,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_cytotoxicus"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(211);gmk(127);ilv(333);pta(359);pur(345);pyc(266);tpi(171)"
                               },
                               "Prokka_Genes": {
                                 "value": "4190"
@@ -3433,8 +3427,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(359);pur(345);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4304"
@@ -3609,8 +3603,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(359);pur(345);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4392"
@@ -3794,8 +3788,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(359);pur(345);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4216"
@@ -3970,8 +3964,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(359);pur(345);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4038"
@@ -4182,8 +4176,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_cytotoxicus"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                           },
                           "Prokka_Genes": {
                             "value": "3984"
@@ -4358,8 +4352,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_cytotoxicus"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                           },
                           "Prokka_Genes": {
                             "value": "4009"
@@ -4550,8 +4544,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_cytotoxicus"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(211);gmk(127);ilv(333);pta(424);pur(338);pyc(266);tpi(171)"
                               },
                               "Prokka_Genes": {
                                 "value": "4294"
@@ -4735,8 +4729,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_cytotoxicus"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(211);gmk(127);ilv(333);pta(424);pur(338);pyc(266);tpi(171)"
                               },
                               "Prokka_Genes": {
                                 "value": "4221"
@@ -4936,8 +4930,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_cytotoxicus"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "4131"
@@ -5126,8 +5120,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4274"
@@ -5302,8 +5296,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4277"
@@ -5487,8 +5481,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4277"
@@ -5670,8 +5664,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4277"
@@ -5853,8 +5847,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4275"
@@ -6029,8 +6023,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4273"
@@ -6235,8 +6229,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4195"
@@ -6450,8 +6444,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4433"
@@ -6632,8 +6626,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4406"
@@ -6822,8 +6816,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4321"
@@ -6998,8 +6992,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4320"
@@ -7186,8 +7180,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4181"
@@ -7377,8 +7371,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4133"
@@ -7562,8 +7556,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4140"
@@ -7733,8 +7727,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4202"
@@ -7928,8 +7922,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4176"
@@ -8111,8 +8105,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_cytotoxicus"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "4191"
@@ -8300,8 +8294,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_cytotoxicus"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "4310"
@@ -8476,8 +8470,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_cytotoxicus"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "4253"
@@ -8694,8 +8688,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4340"
@@ -8877,8 +8871,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4336"
@@ -9053,8 +9047,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4332"
@@ -9247,8 +9241,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4184"
@@ -9430,8 +9424,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4182"
@@ -9606,8 +9600,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4183"
@@ -9793,8 +9787,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4244"
@@ -9976,8 +9970,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4245"
@@ -10166,8 +10160,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4244"
@@ -10349,8 +10343,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_cytotoxicus"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "4244"
@@ -10525,8 +10519,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_cytotoxicus"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "4242"
@@ -10712,8 +10706,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4244"
@@ -10895,8 +10889,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_cytotoxicus"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "4244"
@@ -11071,8 +11065,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_cytotoxicus"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(345);pyc(266);tpi(250)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "4244"
@@ -11285,8 +11279,8 @@
                       "GTDB_Species": {
                         "value": "Bacillus_A_cytotoxicus"
                       },
-                      "MLST_Scheme": {
-                        "value": "bcereus"
+                      "PubMLST_Allelic_Profile": {
+                        "value": "glp(211);gmk(127);ilv(333);pta(424);pur(338);pyc(266);tpi(250)"
                       },
                       "Prokka_Genes": {
                         "value": "4236"
@@ -11480,8 +11474,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_cytotoxicus"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(211);gmk(127);ilv(333);pta(324);pur(338);pyc(266);tpi(289)"
                           },
                           "Prokka_Genes": {
                             "value": "4279"
@@ -11671,8 +11665,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_cytotoxicus"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(211);gmk(127);ilv(333);pta(324);pur(338);pyc(266);tpi(289)"
                           },
                           "Prokka_Genes": {
                             "value": "4384"
@@ -11888,8 +11882,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_cytotoxicus"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(211);gmk(127);ilv(465);pta(424);pur(338);pyc(266);tpi(171)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "4113"
@@ -12076,8 +12070,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_cytotoxicus"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(211);gmk(127);ilv(465);pta(324);pur(338);pyc(266);tpi(171)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "4175"
@@ -12265,8 +12259,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4072"
@@ -12438,8 +12432,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4237"
@@ -12620,8 +12614,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(465);pta(324);pur(338);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4165"
@@ -12803,8 +12797,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4178"
@@ -12982,8 +12976,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4172"
@@ -13202,8 +13196,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "3998"
@@ -13403,8 +13397,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4180"
@@ -13591,8 +13585,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4029"
@@ -13767,8 +13761,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4029"
@@ -13963,8 +13957,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(~211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4141"
@@ -14155,8 +14149,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(~211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4142"
@@ -14340,8 +14334,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(~211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4145"
@@ -14536,8 +14530,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(~211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4218"
@@ -14722,8 +14716,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(~211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4268"
@@ -14920,8 +14914,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4166"
@@ -15108,8 +15102,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(~211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4160"
@@ -15324,8 +15318,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4180"
@@ -15500,8 +15494,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4184"
@@ -15700,8 +15694,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4143"
@@ -15897,8 +15891,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4109"
@@ -16103,8 +16097,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "3986"
@@ -16300,8 +16294,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "3996"
@@ -16501,8 +16495,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4053"
@@ -16698,8 +16692,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4057"
@@ -16892,8 +16886,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4095"
@@ -17075,8 +17069,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(~211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4041"
@@ -17266,8 +17260,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4018"
@@ -17482,8 +17476,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_cytotoxicus"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(~171)"
                               },
                               "Prokka_Genes": {
                                 "value": "4209"
@@ -17668,8 +17662,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_cytotoxicus"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(~171)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "4150"
@@ -17860,8 +17854,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(~171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4206"
@@ -18045,8 +18039,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(465);pta(221);pur(338);pyc(266);tpi(~171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4218"
@@ -18238,8 +18232,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_cytotoxicus"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(211);gmk(127);ilv(333);pta(221);pur(338);pyc(266);tpi(171)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "4896"
@@ -18414,8 +18408,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_cytotoxicus"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "4892"
@@ -18609,8 +18603,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_cytotoxicus"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "4309"
@@ -18792,8 +18786,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4304"
@@ -18975,8 +18969,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4359"
@@ -19163,8 +19157,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4369"
@@ -19371,8 +19365,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_cytotoxicus"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4304"
@@ -19560,8 +19554,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_cytotoxicus"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "4400"
@@ -19749,8 +19743,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4419"
@@ -19931,8 +19925,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(461);pta(221);pur(338);pyc(266);tpi(171)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4449"
@@ -20122,8 +20116,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_cytotoxicus"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "4197"
@@ -20317,8 +20311,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4170"
@@ -20493,8 +20487,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4175"
@@ -20687,8 +20681,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4185"
@@ -20882,8 +20876,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4276"
@@ -21067,8 +21061,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(324);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4252"
@@ -21261,8 +21255,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4181"
@@ -21437,8 +21431,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4062"
@@ -21634,8 +21628,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4146"
@@ -21810,8 +21804,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4094"
@@ -22015,8 +22009,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4312"
@@ -22191,8 +22185,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4242"
@@ -22388,8 +22382,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4293"
@@ -22571,8 +22565,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4242"
@@ -22747,8 +22741,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4239"
@@ -22949,8 +22943,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4377"
@@ -23125,8 +23119,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_cytotoxicus"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "4355"
@@ -23305,8 +23299,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4243"
@@ -23499,8 +23493,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4245"
@@ -23696,8 +23690,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_cytotoxicus"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "4279"
@@ -23885,8 +23879,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_cytotoxicus"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "4332"
@@ -24067,8 +24061,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_cytotoxicus"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(211);gmk(127);ilv(339);pta(221);pur(338);pyc(266);tpi(171)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "4332"

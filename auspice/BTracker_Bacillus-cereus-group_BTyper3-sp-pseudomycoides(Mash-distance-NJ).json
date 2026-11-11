@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-10-25",
+    "updated": "2026-11-11",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -843,25 +843,25 @@
             "latitude": 50.0,
             "longitude": 15.0
           },
-          "South America": {
-            "latitude": -20.0,
-            "longitude": -60.0
-          },
-          "North America": {
-            "latitude": 30.0,
-            "longitude": -100.0
+          "Africa": {
+            "latitude": 4.0,
+            "longitude": 22.0
           },
           "Oceania": {
             "latitude": -25.0,
             "longitude": 162.0
           },
-          "Africa": {
-            "latitude": 4.0,
-            "longitude": 22.0
-          },
           "Asia": {
             "latitude": 35.0,
             "longitude": 85.0
+          },
+          "North America": {
+            "latitude": 30.0,
+            "longitude": -100.0
+          },
+          "South America": {
+            "latitude": -20.0,
+            "longitude": -60.0
           }
         }
       },
@@ -872,21 +872,9 @@
             "latitude": 37.66895362,
             "longitude": -102.3925645
           },
-          "GRC": {
-            "latitude": 38.52254746,
-            "longitude": 24.53794505
-          },
-          "TUR": {
-            "latitude": 38.27069555,
-            "longitude": 36.28703317
-          },
-          "CAN": {
-            "latitude": 60.36196817,
-            "longitude": -106.6983315
-          },
-          "BEL": {
-            "latitude": 50.49593874,
-            "longitude": 4.469936
+          "ESP": {
+            "latitude": 39.87299401,
+            "longitude": -3.67089492
           },
           "NLD": {
             "latitude": 52.33939951,
@@ -896,150 +884,162 @@
             "latitude": 44.06736041,
             "longitude": 20.29725084
           },
-          "ARG": {
-            "latitude": -38.01529308,
-            "longitude": -64.97897469
-          },
-          "UKR": {
-            "latitude": 48.89358596,
-            "longitude": 31.1051692
-          },
-          "PNG": {
-            "latitude": -6.62414046,
-            "longitude": 144.44993477
-          },
-          "GRL": {
-            "latitude": 71.42932629,
-            "longitude": -34.38651956
-          },
-          "ESP": {
-            "latitude": 39.87299401,
-            "longitude": -3.67089492
-          },
           "GHA": {
             "latitude": 7.69154199,
             "longitude": -1.29234904
-          },
-          "GBR": {
-            "latitude": 53.36540813,
-            "longitude": -2.72184767
           },
           "CHN": {
             "latitude": 36.7145744,
             "longitude": 103.55819197
           },
+          "ARG": {
+            "latitude": -38.01529308,
+            "longitude": -64.97897469
+          },
+          "BEL": {
+            "latitude": 50.49593874,
+            "longitude": 4.469936
+          },
+          "GRC": {
+            "latitude": 38.52254746,
+            "longitude": 24.53794505
+          },
+          "UKR": {
+            "latitude": 48.89358596,
+            "longitude": 31.1051692
+          },
           "DEU": {
             "latitude": 50.82871201,
             "longitude": 10.97887975
+          },
+          "PNG": {
+            "latitude": -6.62414046,
+            "longitude": 144.44993477
+          },
+          "CAN": {
+            "latitude": 60.36196817,
+            "longitude": -106.6983315
+          },
+          "TUR": {
+            "latitude": 38.27069555,
+            "longitude": 36.28703317
+          },
+          "GBR": {
+            "latitude": 53.36540813,
+            "longitude": -2.72184767
+          },
+          "GRL": {
+            "latitude": 71.42932629,
+            "longitude": -34.38651956
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "US-MO": {
-            "latitude": 38.7605,
-            "longitude": -92.5618
-          },
-          "AR-X": {
-            "latitude": -32.0222,
-            "longitude": -63.9699
-          },
-          "BE-WAL": {
-            "latitude": 50.1546,
-            "longitude": 5.3992
-          },
-          "CA-QC": {
-            "latitude": 52.4761,
-            "longitude": -71.8259
-          },
-          "DE-SH": {
-            "latitude": 54.1854,
-            "longitude": 9.822
-          },
-          "CA-ON": {
-            "latitude": 50.0007,
-            "longitude": -86.001
-          },
-          "US-NC": {
-            "latitude": 35.673,
-            "longitude": -79.0393
-          },
-          "US-OK": {
-            "latitude": 34.9551,
-            "longitude": -97.2684
-          },
-          "GB-SCT": {
-            "latitude": 56.0,
-            "longitude": -4.0
-          },
-          "US-IN": {
-            "latitude": 40.327,
-            "longitude": -86.1747
-          },
-          "US-NY": {
-            "latitude": 43.1562,
-            "longitude": -75.845
-          },
-          "DE-SN": {
-            "latitude": 50.9296,
-            "longitude": 13.4585
-          },
-          "US-SD": {
-            "latitude": 44.6472,
-            "longitude": -100.3488
-          },
-          "US-OH": {
-            "latitude": 40.2254,
-            "longitude": -82.6881
-          },
-          "US-IA": {
-            "latitude": 41.9217,
-            "longitude": -93.3123
-          },
-          "US-IL": {
-            "latitude": 40.0797,
-            "longitude": -89.4337
-          },
-          "US-MD": {
-            "latitude": 39.5162,
-            "longitude": -76.9382
-          },
-          "CN-HB": {
-            "latitude": 31.0,
-            "longitude": 112.0
-          },
-          "DE-BE": {
-            "latitude": 52.5174,
-            "longitude": 13.3951
-          },
           "US-MI": {
             "latitude": 43.6212,
             "longitude": -84.6824
-          },
-          "US-MN": {
-            "latitude": 45.9897,
-            "longitude": -94.6113
-          },
-          "US-WI": {
-            "latitude": 44.4309,
-            "longitude": -89.6885
           },
           "US-WA": {
             "latitude": 47.2868,
             "longitude": -120.2126
           },
-          "CN-BJ": {
-            "latitude": 40.1906,
-            "longitude": 116.4121
+          "US-IA": {
+            "latitude": 41.9217,
+            "longitude": -93.3123
+          },
+          "US-SD": {
+            "latitude": 44.6472,
+            "longitude": -100.3488
+          },
+          "US-OK": {
+            "latitude": 34.9551,
+            "longitude": -97.2684
+          },
+          "CN-HB": {
+            "latitude": 31.0,
+            "longitude": 112.0
+          },
+          "CA-ON": {
+            "latitude": 50.0007,
+            "longitude": -86.001
+          },
+          "US-NY": {
+            "latitude": 43.1562,
+            "longitude": -75.845
+          },
+          "US-IN": {
+            "latitude": 40.327,
+            "longitude": -86.1747
+          },
+          "US-IL": {
+            "latitude": 40.0797,
+            "longitude": -89.4337
+          },
+          "DE-SN": {
+            "latitude": 50.9296,
+            "longitude": 13.4585
+          },
+          "US-MN": {
+            "latitude": 45.9897,
+            "longitude": -94.6113
+          },
+          "US-OH": {
+            "latitude": 40.2254,
+            "longitude": -82.6881
+          },
+          "AR-X": {
+            "latitude": -32.0222,
+            "longitude": -63.9699
           },
           "CA-NB": {
             "latitude": 46.5003,
             "longitude": -66.7502
           },
+          "DE-BE": {
+            "latitude": 52.5174,
+            "longitude": 13.3951
+          },
+          "US-NC": {
+            "latitude": 35.673,
+            "longitude": -79.0393
+          },
+          "BE-WAL": {
+            "latitude": 50.1546,
+            "longitude": 5.3992
+          },
+          "DE-SH": {
+            "latitude": 54.1854,
+            "longitude": 9.822
+          },
+          "CA-QC": {
+            "latitude": 52.4761,
+            "longitude": -71.8259
+          },
+          "US-WI": {
+            "latitude": 44.4309,
+            "longitude": -89.6885
+          },
+          "US-MD": {
+            "latitude": 39.5162,
+            "longitude": -76.9382
+          },
           "US-MA": {
             "latitude": 42.3789,
             "longitude": -72.0324
+          },
+          "CN-BJ": {
+            "latitude": 40.1906,
+            "longitude": 116.4121
+          },
+          "GB-SCT": {
+            "latitude": 56.0,
+            "longitude": -4.0
+          },
+          "US-MO": {
+            "latitude": 38.7605,
+            "longitude": -92.5618
           }
         }
       }
@@ -1182,8 +1182,8 @@
                       "GTDB_Species": {
                         "value": "Bacillus_A_pseudomycoides"
                       },
-                      "MLST_Scheme": {
-                        "value": "bcereus"
+                      "PubMLST_Allelic_Profile": {
+                        "value": "glp(300);gmk(187);ilv(380);pta(312);pur(381);pyc(314);tpi(248)"
                       },
                       "Prokka_Genes": {
                         "value": "5516"
@@ -1378,8 +1378,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(300);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(248)"
                               },
                               "Prokka_Genes": {
                                 "value": "5575"
@@ -1560,8 +1560,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(300);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(248)"
                               },
                               "Prokka_Genes": {
                                 "value": "5634"
@@ -1758,8 +1758,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(301);gmk(187);ilv(380);pta(312);pur(315);pyc(261);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5668"
@@ -1947,8 +1947,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(300);gmk(187);ilv(380);pta(411);pur(311);pyc(261);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5678"
@@ -2136,8 +2136,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(300);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5710"
@@ -2325,8 +2325,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(301);gmk(187);ilv(457);pta(312);pur(311);pyc(261);tpi(35)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5629"
@@ -2507,8 +2507,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(301);gmk(187);ilv(457);pta(312);pur(311);pyc(261);tpi(35)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5655"
@@ -2704,8 +2704,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5601"
@@ -2893,8 +2893,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5655"
@@ -3089,8 +3089,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5573"
@@ -3278,8 +3278,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5683"
@@ -3460,8 +3460,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5604"
@@ -3653,8 +3653,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5513"
@@ -3842,8 +3842,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5522"
@@ -4024,8 +4024,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(301);gmk(187);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5510"
@@ -4229,8 +4229,8 @@
                       "GTDB_Species": {
                         "value": "Bacillus_A_pseudomycoides"
                       },
-                      "MLST_Scheme": {
-                        "value": "bcereus"
+                      "PubMLST_Allelic_Profile": {
+                        "value": "glp(300);gmk(187);ilv(380);pta(411);pur(315);pyc(261);tpi(35)"
                       },
                       "Prokka_Genes": {
                         "value": "5740"
@@ -4432,8 +4432,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(399);gmk(190);ilv(380);pta(312);pur(311);pyc(314);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5530"
@@ -4614,8 +4614,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(399);gmk(190);ilv(380);pta(312);pur(311);pyc(314);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5693"
@@ -4805,8 +4805,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(399);gmk(190);ilv(380);pta(312);pur(311);pyc(314);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5596"
@@ -4994,8 +4994,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(399);gmk(190);ilv(380);pta(312);pur(311);pyc(314);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5457"
@@ -5176,8 +5176,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(399);gmk(190);ilv(380);pta(312);pur(311);pyc(314);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5534"
@@ -5371,8 +5371,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                               },
                               "Prokka_Genes": {
                                 "value": "5589"
@@ -5560,8 +5560,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5536"
@@ -5749,8 +5749,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5608"
@@ -5945,8 +5945,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5622"
@@ -6127,8 +6127,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(332)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5612"
@@ -6318,8 +6318,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5698"
@@ -6507,8 +6507,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5671"
@@ -6696,8 +6696,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5713"
@@ -6885,8 +6885,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5742"
@@ -7067,8 +7067,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(301);gmk(190);ilv(380);pta(312);pur(311);pyc(261);tpi(35)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5783"
@@ -7285,8 +7285,8 @@
                       "GTDB_Species": {
                         "value": "Bacillus_A_pseudomycoides"
                       },
-                      "MLST_Scheme": {
-                        "value": "bcereus"
+                      "PubMLST_Allelic_Profile": {
+                        "value": "glp(301);gmk(185);ilv(380);pta(409);pur(311);pyc(30);tpi(249)"
                       },
                       "Prokka_Genes": {
                         "value": "5399"
@@ -7474,8 +7474,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_pseudomycoides"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(301);gmk(185);ilv(380);pta(317);pur(310);pyc(30);tpi(249)"
                           },
                           "Prokka_Genes": {
                             "value": "5345"
@@ -7663,8 +7663,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(301);gmk(185);ilv(380);pta(317);pur(310);pyc(30);tpi(249)"
                               },
                               "Prokka_Genes": {
                                 "value": "5439"
@@ -7845,8 +7845,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(301);gmk(185);ilv(380);pta(317);pur(310);pyc(30);tpi(249)"
                               },
                               "Prokka_Genes": {
                                 "value": "5385"
@@ -8041,8 +8041,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_pseudomycoides"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(20)"
                           },
                           "Prokka_Genes": {
                             "value": "5210"
@@ -8245,8 +8245,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                               },
                               "Prokka_Genes": {
                                 "value": "5083"
@@ -8434,8 +8434,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5294"
@@ -8635,8 +8635,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5117"
@@ -8836,8 +8836,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5119"
@@ -9047,8 +9047,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5264"
@@ -9248,8 +9248,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5392"
@@ -9433,8 +9433,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5305"
@@ -9626,8 +9626,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5406"
@@ -9827,8 +9827,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5411"
@@ -10028,8 +10028,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5316"
@@ -10222,8 +10222,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5195"
@@ -10435,8 +10435,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_pseudomycoides"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(20)"
                           },
                           "Prokka_Genes": {
                             "value": "5286"
@@ -10625,8 +10625,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5205"
@@ -10807,8 +10807,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5486"
@@ -11008,8 +11008,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(109);gmk(18);ilv(120);pta(24);pur(~311);pyc(30);tpi(173)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5344"
@@ -11174,8 +11174,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(173)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5125"
@@ -11338,8 +11338,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(173)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5134"
@@ -11535,8 +11535,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(-);pyc(30);tpi(173)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5190"
@@ -11694,8 +11694,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(173)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5152"
@@ -11858,8 +11858,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(173)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5148"
@@ -12078,8 +12078,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5161"
@@ -12254,8 +12254,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5142"
@@ -12445,8 +12445,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5277"
@@ -12627,8 +12627,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5294"
@@ -12819,8 +12819,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(173)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5266"
@@ -12996,8 +12996,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(175)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5397"
@@ -13182,8 +13182,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(124)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5395"
@@ -13360,8 +13360,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(109);gmk(18);ilv(120);pta(24);pur(31);pyc(30);tpi(173)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5244"
@@ -13569,8 +13569,8 @@
               "GTDB_Species": {
                 "value": "Bacillus_A_pseudomycoides"
               },
-              "MLST_Scheme": {
-                "value": "bcereus"
+              "PubMLST_Allelic_Profile": {
+                "value": "glp(134);gmk(~187);ilv(58);pta(~88);pur(311);pyc(~261);tpi(35)"
               },
               "Prokka_Genes": {
                 "value": "5228"
@@ -13770,8 +13770,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(308);gmk(59);ilv(58);pta(319);pur(25);pyc(258);tpi(35)"
                               },
                               "Prokka_Genes": {
                                 "value": "5183"
@@ -13971,8 +13971,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(308);gmk(59);ilv(58);pta(319);pur(25);pyc(258);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5690"
@@ -14160,8 +14160,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(308);gmk(59);ilv(58);pta(319);pur(25);pyc(258);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5730"
@@ -14342,8 +14342,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(308);gmk(59);ilv(58);pta(319);pur(25);pyc(258);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5758"
@@ -14544,8 +14544,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(306);gmk(59);ilv(58);pta(319);pur(25);pyc(258);tpi(219)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5844"
@@ -14738,8 +14738,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(306);gmk(59);ilv(58);pta(319);pur(25);pyc(258);tpi(219)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5925"
@@ -14917,8 +14917,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(306);gmk(59);ilv(58);pta(319);pur(25);pyc(258);tpi(257)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5599"
@@ -15118,8 +15118,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(306);gmk(59);ilv(58);pta(319);pur(309);pyc(258);tpi(257)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5767"
@@ -15307,8 +15307,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(306);gmk(59);ilv(58);pta(321);pur(309);pyc(258);tpi(257)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5879"
@@ -15496,8 +15496,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(306);gmk(59);ilv(58);pta(321);pur(309);pyc(258);tpi(257)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5686"
@@ -15678,8 +15678,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(306);gmk(59);ilv(58);pta(321);pur(309);pyc(258);tpi(257)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5693"
@@ -15900,8 +15900,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(244);gmk(13);ilv(58);pta(318);pur(25);pyc(78);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5670"
@@ -16082,8 +16082,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(244);gmk(13);ilv(58);pta(318);pur(25);pyc(78);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5656"
@@ -16273,8 +16273,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(244);gmk(13);ilv(58);pta(318);pur(25);pyc(78);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5525"
@@ -16462,8 +16462,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(244);gmk(13);ilv(58);pta(318);pur(25);pyc(78);tpi(35)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5653"
@@ -16644,8 +16644,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(244);gmk(13);ilv(58);pta(318);pur(25);pyc(78);tpi(35)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5724"
@@ -16842,8 +16842,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(106);gmk(13);ilv(58);pta(88);pur(386);pyc(78);tpi(219)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5584"
@@ -17034,8 +17034,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(106);gmk(13);ilv(58);pta(88);pur(25);pyc(78);tpi(~219)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5529"
@@ -17211,8 +17211,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(106);gmk(59);ilv(58);pta(88);pur(99);pyc(78);tpi(66)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5584"
@@ -17385,8 +17385,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(106);gmk(59);ilv(58);pta(88);pur(99);pyc(78);tpi(66)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5671"
@@ -17540,8 +17540,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(106);gmk(59);ilv(58);pta(88);pur(99);pyc(78);tpi(66)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5664"
@@ -17753,8 +17753,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(246)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5766"
@@ -17942,8 +17942,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(246)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5751"
@@ -18124,8 +18124,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(246)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5773"
@@ -18317,8 +18317,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(309);gmk(13);ilv(379);pta(410);pur(25);pyc(44);tpi(246)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5905"
@@ -18506,8 +18506,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(309);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(247)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "6065"
@@ -18704,8 +18704,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(247)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5786"
@@ -18886,8 +18886,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(247)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5800"
@@ -19097,8 +19097,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(309);gmk(13);ilv(379);pta(23);pur(25);pyc(44);tpi(246)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5647"
@@ -19279,8 +19279,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(309);gmk(13);ilv(379);pta(23);pur(25);pyc(44);tpi(246)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5717"
@@ -19470,8 +19470,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(35)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5760"
@@ -19659,8 +19659,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(35)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5908"
@@ -19848,8 +19848,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5884"
@@ -20030,8 +20030,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(309);gmk(13);ilv(377);pta(23);pur(25);pyc(44);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5841"
@@ -20227,8 +20227,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(398);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5808"
@@ -20392,8 +20392,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5654"
@@ -20597,8 +20597,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5702"
@@ -20788,8 +20788,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5620"
@@ -20983,8 +20983,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5697"
@@ -21184,8 +21184,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5880"
@@ -21378,8 +21378,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5880"
@@ -21578,8 +21578,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5712"
@@ -21760,8 +21760,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5679"
@@ -21951,8 +21951,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5824"
@@ -22140,8 +22140,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5680"
@@ -22305,8 +22305,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5790"
@@ -22481,8 +22481,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(63);gmk(13);ilv(58);pta(23);pur(25);pyc(44);tpi(35)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5727"
@@ -22700,8 +22700,8 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_pseudomycoides"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
+                          "PubMLST_Allelic_Profile": {
+                            "value": "glp(244);gmk(13);ilv(274);pta(253);pur(84);pyc(44);tpi(74)"
                           },
                           "Prokka_Genes": {
                             "value": "5852"
@@ -22883,8 +22883,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(134);gmk(13);ilv(274);pta(253);pur(84);pyc(44);tpi(~35)"
                               },
                               "Prokka_Genes": {
                                 "value": "6036"
@@ -23061,8 +23061,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(134);gmk(13);ilv(275);pta(253);pur(84);pyc(44);tpi(35)"
                               },
                               "Prokka_Genes": {
                                 "value": "5965"
@@ -23237,8 +23237,8 @@
                               "GTDB_Species": {
                                 "value": "Bacillus_A_pseudomycoides"
                               },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
+                              "PubMLST_Allelic_Profile": {
+                                "value": "glp(139);gmk(13);ilv(379);pta(407);pur(25);pyc(313);tpi(35)"
                               },
                               "Prokka_Genes": {
                                 "value": "5903"
@@ -23435,8 +23435,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(139);gmk(13);ilv(379);pta(407);pur(25);pyc(124);tpi(35)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5684"
@@ -23624,8 +23624,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(309);gmk(248);ilv(379);pta(407);pur(25);pyc(313);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5647"
@@ -23806,8 +23806,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(309);gmk(248);ilv(379);pta(407);pur(25);pyc(313);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5653"
@@ -24008,8 +24008,8 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_pseudomycoides"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
+                                  "PubMLST_Allelic_Profile": {
+                                    "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                   },
                                   "Prokka_Genes": {
                                     "value": "5779"
@@ -24188,8 +24188,8 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_pseudomycoides"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
+                                      "PubMLST_Allelic_Profile": {
+                                        "value": "glp(400);gmk(13);ilv(84);pta(408);pur(84);pyc(73);tpi(35)"
                                       },
                                       "Prokka_Genes": {
                                         "value": "5886"
@@ -24377,8 +24377,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(400);gmk(13);ilv(84);pta(408);pur(84);pyc(73);tpi(35)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5911"
@@ -24559,8 +24559,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(400);gmk(13);ilv(84);pta(408);pur(84);pyc(73);tpi(35)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5803"
@@ -24774,8 +24774,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(98);gmk(13);ilv(84);pta(408);pur(84);pyc(73);tpi(74)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "4334"
@@ -24960,8 +24960,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(134);gmk(13);ilv(84);pta(408);pur(84);pyc(73);tpi(74)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5744"
@@ -25146,8 +25146,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(134);gmk(13);ilv(84);pta(408);pur(380);pyc(73);tpi(74)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5974"
@@ -25328,8 +25328,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(134);gmk(13);ilv(84);pta(~408);pur(84);pyc(73);tpi(74)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5872"
@@ -25520,8 +25520,8 @@
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_pseudomycoides"
                                           },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
+                                          "PubMLST_Allelic_Profile": {
+                                            "value": "glp(134);gmk(13);ilv(386);pta(408);pur(84);pyc(73);tpi(74)"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5962"
@@ -25706,8 +25706,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5715"
@@ -25910,8 +25910,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5729"
@@ -26083,8 +26083,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5955"
@@ -26267,8 +26267,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(~74)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5689"
@@ -26436,8 +26436,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5468"
@@ -26615,8 +26615,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5751"
@@ -26818,8 +26818,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5577"
@@ -27000,8 +27000,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5742"
@@ -27202,8 +27202,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5806"
@@ -27391,8 +27391,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5536"
@@ -27573,8 +27573,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5685"
@@ -27769,8 +27769,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(309);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5699"
@@ -27958,8 +27958,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(134);gmk(13);ilv(386);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5665"
@@ -28147,8 +28147,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5843"
@@ -28348,8 +28348,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5874"
@@ -28542,8 +28542,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5892"
@@ -28738,8 +28738,8 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_pseudomycoides"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
+                                              "PubMLST_Allelic_Profile": {
+                                                "value": "glp(98);gmk(186);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                               },
                                               "Prokka_Genes": {
                                                 "value": "5698"
@@ -28936,8 +28936,8 @@
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_pseudomycoides"
                                                   },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
+                                                  "PubMLST_Allelic_Profile": {
+                                                    "value": "glp(134);gmk(186);ilv(386);pta(84);pur(84);pyc(73);tpi(74)"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5680"
@@ -29125,8 +29125,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(134);gmk(186);ilv(386);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5843"
@@ -29307,8 +29307,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5897"
@@ -29528,8 +29528,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(397);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5669"
@@ -29710,8 +29710,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(397);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5672"
@@ -29908,8 +29908,8 @@
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_pseudomycoides"
                                                           },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
+                                                          "PubMLST_Allelic_Profile": {
+                                                            "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5758"
@@ -30097,8 +30097,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5745"
@@ -30279,8 +30279,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5762"
@@ -30479,8 +30479,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5725"
@@ -30668,8 +30668,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5701"
@@ -30850,8 +30850,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5644"
@@ -31043,8 +31043,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5675"
@@ -31232,8 +31232,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5648"
@@ -31414,8 +31414,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5632"
@@ -31596,8 +31596,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(108)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5750"
@@ -31787,8 +31787,8 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_pseudomycoides"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
+                                                      "PubMLST_Allelic_Profile": {
+                                                        "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                       },
                                                       "Prokka_Genes": {
                                                         "value": "5538"
@@ -31992,8 +31992,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5697"
@@ -32173,8 +32173,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5665"
@@ -32355,8 +32355,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5774"
@@ -32529,8 +32529,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5512"
@@ -32687,8 +32687,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(98);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5388"
@@ -32901,8 +32901,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(134);gmk(13);ilv(84);pta(134);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5592"
@@ -33083,8 +33083,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(134);gmk(13);ilv(84);pta(134);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5799"
@@ -33286,8 +33286,8 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_pseudomycoides"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
+                                                              "PubMLST_Allelic_Profile": {
+                                                                "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                               },
                                                               "Prokka_Genes": {
                                                                 "value": "5882"
@@ -33487,8 +33487,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5919"
@@ -33669,8 +33669,8 @@
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_pseudomycoides"
                                                                   },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
+                                                                  "PubMLST_Allelic_Profile": {
+                                                                    "value": "glp(134);gmk(13);ilv(84);pta(84);pur(84);pyc(73);tpi(74)"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5829"
