@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-11-11",
+    "updated": "2026-11-19",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -10,6 +10,14 @@
         "url": "https://btyperdb.btyper.app/"
       }
     ],
+    "sharing": {
+      "dataset_json": false,
+      "metadata_tsv": false,
+      "authors": false,
+      "trees": false,
+      "entropy": false,
+      "screenshot": true
+    },
     "maintainers": [
       {
         "name": "Vignesh Ramnath",
@@ -569,42 +577,22 @@
             "latitude": 35.0,
             "longitude": 85.0
           },
-          "Europe": {
-            "latitude": 50.0,
-            "longitude": 15.0
-          },
           "North America": {
             "latitude": 30.0,
             "longitude": -100.0
+          },
+          "Europe": {
+            "latitude": 50.0,
+            "longitude": 15.0
           }
         }
       },
       {
         "key": "Country(Code)",
         "demes": {
-          "USA": {
-            "latitude": 37.66895362,
-            "longitude": -102.3925645
-          },
           "THA": {
             "latitude": 14.6000981,
             "longitude": 101.38805881
-          },
-          "NLD": {
-            "latitude": 52.33939951,
-            "longitude": 4.98914998
-          },
-          "CHE": {
-            "latitude": 46.81010721,
-            "longitude": 8.227512
-          },
-          "NOR": {
-            "latitude": 65.04680297,
-            "longitude": 13.50069228
-          },
-          "FRA": {
-            "latitude": 46.48372145,
-            "longitude": 2.60926281
           },
           "BEL": {
             "latitude": 50.49593874,
@@ -613,6 +601,26 @@
           "DEU": {
             "latitude": 50.82871201,
             "longitude": 10.97887975
+          },
+          "CHE": {
+            "latitude": 46.81010721,
+            "longitude": 8.227512
+          },
+          "USA": {
+            "latitude": 37.66895362,
+            "longitude": -102.3925645
+          },
+          "NLD": {
+            "latitude": 52.33939951,
+            "longitude": 4.98914998
+          },
+          "NOR": {
+            "latitude": 65.04680297,
+            "longitude": 13.50069228
+          },
+          "FRA": {
+            "latitude": 46.48372145,
+            "longitude": 2.60926281
           },
           "CAN": {
             "latitude": 60.36196817,
@@ -623,41 +631,41 @@
       {
         "key": "Region(Code)",
         "demes": {
-          "US-CA": {
-            "latitude": 36.7015,
-            "longitude": -118.756
+          "DE-SN": {
+            "latitude": 50.9296,
+            "longitude": 13.4585
           },
           "CH-ZH": {
             "latitude": 47.4133,
             "longitude": 8.6564
           },
-          "US-MD": {
-            "latitude": 39.5162,
-            "longitude": -76.9382
-          },
-          "DE-NW": {
-            "latitude": 51.4789,
-            "longitude": 7.5544
-          },
-          "US-AL": {
-            "latitude": 33.2589,
-            "longitude": -86.8295
-          },
           "BE-WAL": {
             "latitude": 50.1546,
             "longitude": 5.3992
           },
-          "BE-BRU": {
-            "latitude": 50.8388,
-            "longitude": 4.3753
+          "US-MD": {
+            "latitude": 39.5162,
+            "longitude": -76.9382
           },
           "US-WA": {
             "latitude": 47.2868,
             "longitude": -120.2126
           },
-          "DE-SN": {
-            "latitude": 50.9296,
-            "longitude": 13.4585
+          "BE-BRU": {
+            "latitude": 50.8388,
+            "longitude": 4.3753
+          },
+          "US-CA": {
+            "latitude": 36.7015,
+            "longitude": -118.756
+          },
+          "US-AL": {
+            "latitude": 33.2589,
+            "longitude": -86.8295
+          },
+          "DE-NW": {
+            "latitude": 51.4789,
+            "longitude": 7.5544
           }
         }
       }
