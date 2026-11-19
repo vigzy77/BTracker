@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-10-21",
+    "updated": "2026-11-19",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -10,6 +10,14 @@
         "url": "https://btyperdb.btyper.app/"
       }
     ],
+    "sharing": {
+      "dataset_json": false,
+      "metadata_tsv": false,
+      "authors": false,
+      "trees": false,
+      "entropy": false,
+      "screenshot": true
+    },
     "maintainers": [
       {
         "name": "Vignesh Ramnath",
@@ -582,14 +590,6 @@
       {
         "key": "Location",
         "demes": {
-          "SATARA": {
-            "latitude": -24.3977,
-            "longitude": 31.77778
-          },
-          "SHANGONI": {
-            "latitude": -23.1675,
-            "longitude": 30.94262
-          },
           "KNP_UNKNOWN": {
             "latitude": -24.0114,
             "longitude": 31.4883
@@ -597,6 +597,38 @@
           "VLAKTEPLAAS": {
             "latitude": -22.868,
             "longitude": 31.22733
+          },
+          "TIMBAVATI RIVER": {
+            "latitude": -24.2604,
+            "longitude": 31.64154
+          },
+          "TSHOKWANE": {
+            "latitude": -24.7882,
+            "longitude": 31.85594
+          },
+          "HOUTBOSCHRAND": {
+            "latitude": -24.1049,
+            "longitude": 31.66733
+          },
+          "SKUKUZA": {
+            "latitude": -24.9954,
+            "longitude": 31.59287
+          },
+          "LETABA": {
+            "latitude": -23.851,
+            "longitude": 31.57673
+          },
+          "PAFURI": {
+            "latitude": -22.4485,
+            "longitude": 31.314
+          },
+          "SHANGONI": {
+            "latitude": -23.1675,
+            "longitude": 30.94262
+          },
+          "MOOIPLAAS": {
+            "latitude": -23.5193,
+            "longitude": 31.40373
           },
           "PHALABORWA": {
             "latitude": -23.94,
@@ -606,65 +638,41 @@
             "latitude": -25.3584,
             "longitude": 31.89236
           },
-          "SABI SANDS": {
-            "latitude": -24.800556,
-            "longitude": 31.541389
-          },
-          "HOUTBOSCHRAND": {
-            "latitude": -24.1049,
-            "longitude": 31.66733
-          },
-          "NWANETSI": {
-            "latitude": -24.4715,
-            "longitude": 31.97667
-          },
-          "SHINGWEDZI": {
-            "latitude": -23.116111,
-            "longitude": 31.4325
-          },
           "MAHLANGENI": {
             "latitude": -23.6478,
             "longitude": 31.14744
-          },
-          "TSHOKWANE": {
-            "latitude": -24.7882,
-            "longitude": 31.85594
-          },
-          "SKUKUZA": {
-            "latitude": -24.9954,
-            "longitude": 31.59287
-          },
-          "WOODLAND": {
-            "latitude": -23.2197,
-            "longitude": 31.21203
-          },
-          "KINGFISHERSPRUIT": {
-            "latitude": -24.4629,
-            "longitude": 31.44153
-          },
-          "TIMBAVATI RIVER": {
-            "latitude": -24.2604,
-            "longitude": 31.64154
-          },
-          "MOOIPLAAS": {
-            "latitude": -23.5193,
-            "longitude": 31.40373
-          },
-          "PAFURI": {
-            "latitude": -22.4485,
-            "longitude": 31.314
-          },
-          "LETABA": {
-            "latitude": -23.851,
-            "longitude": 31.57673
           },
           "GUNDZANI DAM": {
             "latitude": -24.365237,
             "longitude": 31.922665
           },
+          "SABI SANDS": {
+            "latitude": -24.800556,
+            "longitude": 31.541389
+          },
+          "SHINGWEDZI": {
+            "latitude": -23.116111,
+            "longitude": 31.4325
+          },
+          "KINGFISHERSPRUIT": {
+            "latitude": -24.4629,
+            "longitude": 31.44153
+          },
           "OLIFANT RIVER": {
             "latitude": -24.0057,
             "longitude": 31.74022
+          },
+          "WOODLAND": {
+            "latitude": -23.2197,
+            "longitude": 31.21203
+          },
+          "SATARA": {
+            "latitude": -24.3977,
+            "longitude": 31.77778
+          },
+          "NWANETSI": {
+            "latitude": -24.4715,
+            "longitude": 31.97667
           }
         },
         "title": "Kruger National Park"
@@ -864,9 +872,6 @@
               },
               "GTDB_Species": {
                 "value": "Bacillus_A_anthracis"
-              },
-              "MLST_Scheme": {
-                "value": "bcereus"
               },
               "Prokka_Genes": {
                 "value": "5735"
@@ -1078,9 +1083,6 @@
               },
               "GTDB_Species": {
                 "value": "Bacillus_A_anthracis"
-              },
-              "MLST_Scheme": {
-                "value": "bcereus"
               },
               "Prokka_Genes": {
                 "value": "5737"
@@ -1324,9 +1326,6 @@
               },
               "GTDB_Species": {
                 "value": "Bacillus_A_anthracis"
-              },
-              "MLST_Scheme": {
-                "value": "bcereus"
               },
               "Prokka_Genes": {
                 "value": "5745"
@@ -1608,9 +1607,6 @@
                       "GTDB_Species": {
                         "value": "Bacillus_A_anthracis"
                       },
-                      "MLST_Scheme": {
-                        "value": "bcereus"
-                      },
                       "Prokka_Genes": {
                         "value": "5733"
                       },
@@ -1853,9 +1849,6 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_anthracis"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
-                          },
                           "Prokka_Genes": {
                             "value": "5743"
                           },
@@ -2067,9 +2060,6 @@
                           },
                           "GTDB_Species": {
                             "value": "Bacillus_A_anthracis"
-                          },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
                           },
                           "Prokka_Genes": {
                             "value": "5742"
@@ -2346,9 +2336,6 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_anthracis"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
-                          },
                           "Prokka_Genes": {
                             "value": "5745"
                           },
@@ -2557,9 +2544,6 @@
                           },
                           "GTDB_Species": {
                             "value": "Bacillus_A_anthracis"
-                          },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
                           },
                           "Prokka_Genes": {
                             "value": "5744"
@@ -2801,9 +2785,6 @@
                           "GTDB_Species": {
                             "value": "Bacillus_A_anthracis"
                           },
-                          "MLST_Scheme": {
-                            "value": "bcereus"
-                          },
                           "Prokka_Genes": {
                             "value": "5742"
                           },
@@ -3039,9 +3020,6 @@
                               },
                               "GTDB_Species": {
                                 "value": "Bacillus_A_anthracis"
-                              },
-                              "MLST_Scheme": {
-                                "value": "bcereus"
                               },
                               "Prokka_Genes": {
                                 "value": "5743"
@@ -3279,9 +3257,6 @@
                                   "GTDB_Species": {
                                     "value": "Bacillus_A_anthracis"
                                   },
-                                  "MLST_Scheme": {
-                                    "value": "bcereus"
-                                  },
                                   "Prokka_Genes": {
                                     "value": "5740"
                                   },
@@ -3518,9 +3493,6 @@
                                       "GTDB_Species": {
                                         "value": "Bacillus_A_anthracis"
                                       },
-                                      "MLST_Scheme": {
-                                        "value": "bcereus"
-                                      },
                                       "Prokka_Genes": {
                                         "value": "5741"
                                       },
@@ -3750,9 +3722,6 @@
                                           },
                                           "GTDB_Species": {
                                             "value": "Bacillus_A_anthracis"
-                                          },
-                                          "MLST_Scheme": {
-                                            "value": "bcereus"
                                           },
                                           "Prokka_Genes": {
                                             "value": "5742"
@@ -3984,9 +3953,6 @@
                                               "GTDB_Species": {
                                                 "value": "Bacillus_A_anthracis"
                                               },
-                                              "MLST_Scheme": {
-                                                "value": "bcereus"
-                                              },
                                               "Prokka_Genes": {
                                                 "value": "5742"
                                               },
@@ -4216,9 +4182,6 @@
                                                   },
                                                   "GTDB_Species": {
                                                     "value": "Bacillus_A_anthracis"
-                                                  },
-                                                  "MLST_Scheme": {
-                                                    "value": "bcereus"
                                                   },
                                                   "Prokka_Genes": {
                                                     "value": "5742"
@@ -4456,9 +4419,6 @@
                                                       "GTDB_Species": {
                                                         "value": "Bacillus_A_anthracis"
                                                       },
-                                                      "MLST_Scheme": {
-                                                        "value": "bcereus"
-                                                      },
                                                       "Prokka_Genes": {
                                                         "value": "5743"
                                                       },
@@ -4691,9 +4651,6 @@
                                                           },
                                                           "GTDB_Species": {
                                                             "value": "Bacillus_A_anthracis"
-                                                          },
-                                                          "MLST_Scheme": {
-                                                            "value": "bcereus"
                                                           },
                                                           "Prokka_Genes": {
                                                             "value": "5744"
@@ -4934,9 +4891,6 @@
                                                               "GTDB_Species": {
                                                                 "value": "Bacillus_A_anthracis"
                                                               },
-                                                              "MLST_Scheme": {
-                                                                "value": "bcereus"
-                                                              },
                                                               "Prokka_Genes": {
                                                                 "value": "5742"
                                                               },
@@ -5166,9 +5120,6 @@
                                                                   },
                                                                   "GTDB_Species": {
                                                                     "value": "Bacillus_A_anthracis"
-                                                                  },
-                                                                  "MLST_Scheme": {
-                                                                    "value": "bcereus"
                                                                   },
                                                                   "Prokka_Genes": {
                                                                     "value": "5745"
@@ -5406,9 +5357,6 @@
                                                                       "GTDB_Species": {
                                                                         "value": "Bacillus_A_anthracis"
                                                                       },
-                                                                      "MLST_Scheme": {
-                                                                        "value": "bcereus"
-                                                                      },
                                                                       "Prokka_Genes": {
                                                                         "value": "5739"
                                                                       },
@@ -5641,9 +5589,6 @@
                                                                           },
                                                                           "GTDB_Species": {
                                                                             "value": "Bacillus_A_anthracis"
-                                                                          },
-                                                                          "MLST_Scheme": {
-                                                                            "value": "bcereus"
                                                                           },
                                                                           "Prokka_Genes": {
                                                                             "value": "5739"
@@ -5881,9 +5826,6 @@
                                                                               "GTDB_Species": {
                                                                                 "value": "Bacillus_A_anthracis"
                                                                               },
-                                                                              "MLST_Scheme": {
-                                                                                "value": "bcereus"
-                                                                              },
                                                                               "Prokka_Genes": {
                                                                                 "value": "5743"
                                                                               },
@@ -6116,9 +6058,6 @@
                                                                                   },
                                                                                   "GTDB_Species": {
                                                                                     "value": "Bacillus_A_anthracis"
-                                                                                  },
-                                                                                  "MLST_Scheme": {
-                                                                                    "value": "bcereus"
                                                                                   },
                                                                                   "Prokka_Genes": {
                                                                                     "value": "5642"
@@ -6356,9 +6295,6 @@
                                                                                       "GTDB_Species": {
                                                                                         "value": "Bacillus_A_anthracis"
                                                                                       },
-                                                                                      "MLST_Scheme": {
-                                                                                        "value": "bcereus"
-                                                                                      },
                                                                                       "Prokka_Genes": {
                                                                                         "value": "5640"
                                                                                       },
@@ -6591,9 +6527,6 @@
                                                                                           },
                                                                                           "GTDB_Species": {
                                                                                             "value": "Bacillus_A_anthracis"
-                                                                                          },
-                                                                                          "MLST_Scheme": {
-                                                                                            "value": "bcereus"
                                                                                           },
                                                                                           "Prokka_Genes": {
                                                                                             "value": "5741"
@@ -6834,9 +6767,6 @@
                                                                                               "GTDB_Species": {
                                                                                                 "value": "Bacillus_A_anthracis"
                                                                                               },
-                                                                                              "MLST_Scheme": {
-                                                                                                "value": "bcereus"
-                                                                                              },
                                                                                               "Prokka_Genes": {
                                                                                                 "value": "5744"
                                                                                               },
@@ -7072,9 +7002,6 @@
                                                                                                   },
                                                                                                   "GTDB_Species": {
                                                                                                     "value": "Bacillus_A_anthracis"
-                                                                                                  },
-                                                                                                  "MLST_Scheme": {
-                                                                                                    "value": "bcereus"
                                                                                                   },
                                                                                                   "Prokka_Genes": {
                                                                                                     "value": "5739"
@@ -7312,9 +7239,6 @@
                                                                                                       "GTDB_Species": {
                                                                                                         "value": "Bacillus_A_anthracis"
                                                                                                       },
-                                                                                                      "MLST_Scheme": {
-                                                                                                        "value": "bcereus"
-                                                                                                      },
                                                                                                       "Prokka_Genes": {
                                                                                                         "value": "5742"
                                                                                                       },
@@ -7547,9 +7471,6 @@
                                                                                                           },
                                                                                                           "GTDB_Species": {
                                                                                                             "value": "Bacillus_A_anthracis"
-                                                                                                          },
-                                                                                                          "MLST_Scheme": {
-                                                                                                            "value": "bcereus"
                                                                                                           },
                                                                                                           "Prokka_Genes": {
                                                                                                             "value": "5742"
@@ -7787,9 +7708,6 @@
                                                                                                               "GTDB_Species": {
                                                                                                                 "value": "Bacillus_A_anthracis"
                                                                                                               },
-                                                                                                              "MLST_Scheme": {
-                                                                                                                "value": "bcereus"
-                                                                                                              },
                                                                                                               "Prokka_Genes": {
                                                                                                                 "value": "5739"
                                                                                                               },
@@ -8016,9 +7934,6 @@
                                                                                                                   },
                                                                                                                   "GTDB_Species": {
                                                                                                                     "value": "Bacillus_A_anthracis"
-                                                                                                                  },
-                                                                                                                  "MLST_Scheme": {
-                                                                                                                    "value": "bcereus"
                                                                                                                   },
                                                                                                                   "Prokka_Genes": {
                                                                                                                     "value": "5733"
@@ -8252,9 +8167,6 @@
                                                                                                                       },
                                                                                                                       "GTDB_Species": {
                                                                                                                         "value": "Bacillus_A_anthracis"
-                                                                                                                      },
-                                                                                                                      "MLST_Scheme": {
-                                                                                                                        "value": "bcereus"
                                                                                                                       },
                                                                                                                       "Prokka_Genes": {
                                                                                                                         "value": "5740"
@@ -8492,9 +8404,6 @@
                                                                                                                           "GTDB_Species": {
                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                           },
-                                                                                                                          "MLST_Scheme": {
-                                                                                                                            "value": "bcereus"
-                                                                                                                          },
                                                                                                                           "Prokka_Genes": {
                                                                                                                             "value": "5739"
                                                                                                                           },
@@ -8730,9 +8639,6 @@
                                                                                                                               },
                                                                                                                               "GTDB_Species": {
                                                                                                                                 "value": "Bacillus_A_anthracis"
-                                                                                                                              },
-                                                                                                                              "MLST_Scheme": {
-                                                                                                                                "value": "bcereus"
                                                                                                                               },
                                                                                                                               "Prokka_Genes": {
                                                                                                                                 "value": "5743"
@@ -8970,9 +8876,6 @@
                                                                                                                                   "GTDB_Species": {
                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                   },
-                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                    "value": "bcereus"
-                                                                                                                                  },
                                                                                                                                   "Prokka_Genes": {
                                                                                                                                     "value": "5743"
                                                                                                                                   },
@@ -9209,9 +9112,6 @@
                                                                                                                                       "GTDB_Species": {
                                                                                                                                         "value": "Bacillus_A_anthracis"
                                                                                                                                       },
-                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                        "value": "bcereus"
-                                                                                                                                      },
                                                                                                                                       "Prokka_Genes": {
                                                                                                                                         "value": "5738"
                                                                                                                                       },
@@ -9417,9 +9317,6 @@
                                                                                                                                           },
                                                                                                                                           "GTDB_Species": {
                                                                                                                                             "value": "Bacillus_A_anthracis"
-                                                                                                                                          },
-                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                            "value": "bcereus"
                                                                                                                                           },
                                                                                                                                           "Prokka_Genes": {
                                                                                                                                             "value": "5742"
@@ -9657,9 +9554,6 @@
                                                                                                                                               "GTDB_Species": {
                                                                                                                                                 "value": "Bacillus_A_anthracis"
                                                                                                                                               },
-                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                "value": "bcereus"
-                                                                                                                                              },
                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                 "value": "5738"
                                                                                                                                               },
@@ -9896,9 +9790,6 @@
                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                                   },
-                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                    "value": "bcereus"
-                                                                                                                                                  },
                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                     "value": "5741"
                                                                                                                                                   },
@@ -10110,9 +10001,6 @@
                                                                                                                                                       },
                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                         "value": "Bacillus_A_anthracis"
-                                                                                                                                                      },
-                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                        "value": "bcereus"
                                                                                                                                                       },
                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                         "value": "5737"
@@ -10350,9 +10238,6 @@
                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                                                           },
-                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                            "value": "bcereus"
-                                                                                                                                                          },
                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                             "value": "5743"
                                                                                                                                                           },
@@ -10588,9 +10473,6 @@
                                                                                                                                                               },
                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                 "value": "Bacillus_A_anthracis"
-                                                                                                                                                              },
-                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                "value": "bcereus"
                                                                                                                                                               },
                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                 "value": "5743"
@@ -10828,9 +10710,6 @@
                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                                                   },
-                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                    "value": "bcereus"
-                                                                                                                                                                  },
                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                     "value": "5742"
                                                                                                                                                                   },
@@ -11060,9 +10939,6 @@
                                                                                                                                                                       },
                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                         "value": "Bacillus_A_anthracis"
-                                                                                                                                                                      },
-                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                        "value": "bcereus"
                                                                                                                                                                       },
                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                         "value": "5741"
@@ -11300,9 +11176,6 @@
                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                                                                           },
-                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                            "value": "bcereus"
-                                                                                                                                                                          },
                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                             "value": "5812"
                                                                                                                                                                           },
@@ -11532,9 +11405,6 @@
                                                                                                                                                                               },
                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
-                                                                                                                                                                              },
-                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                "value": "bcereus"
                                                                                                                                                                               },
                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                 "value": "5742"
@@ -11769,9 +11639,6 @@
                                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                                                                   },
-                                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                                    "value": "bcereus"
-                                                                                                                                                                                  },
                                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                                     "value": "5742"
                                                                                                                                                                                   },
@@ -12002,9 +11869,6 @@
                                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                                         "value": "Bacillus_A_anthracis"
                                                                                                                                                                                       },
-                                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                                        "value": "bcereus"
-                                                                                                                                                                                      },
                                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                                         "value": "5734"
                                                                                                                                                                                       },
@@ -12234,9 +12098,6 @@
                                                                                                                                                                                           },
                                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                                             "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                          },
-                                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                                            "value": "bcereus"
                                                                                                                                                                                           },
                                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                                             "value": "5744"
@@ -12474,9 +12335,6 @@
                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
                                                                                                                                                                                               },
-                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                "value": "bcereus"
-                                                                                                                                                                                              },
                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                 "value": "5743"
                                                                                                                                                                                               },
@@ -12709,9 +12567,6 @@
                                                                                                                                                                                                   },
                                                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                                                     "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                  },
-                                                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                                                    "value": "bcereus"
                                                                                                                                                                                                   },
                                                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                                                     "value": "5740"
@@ -12946,9 +12801,6 @@
                                                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                                                         "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                       },
-                                                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                                                        "value": "bcereus"
-                                                                                                                                                                                                      },
                                                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                                                         "value": "5741"
                                                                                                                                                                                                       },
@@ -13181,9 +13033,6 @@
                                                                                                                                                                                                           },
                                                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                                                             "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                          },
-                                                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                                                            "value": "bcereus"
                                                                                                                                                                                                           },
                                                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                                                             "value": "5672"
@@ -13421,9 +13270,6 @@
                                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                               },
-                                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                                "value": "bcereus"
-                                                                                                                                                                                                              },
                                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                                 "value": "5641"
                                                                                                                                                                                                               },
@@ -13657,9 +13503,6 @@
                                                                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                   },
-                                                                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                                                                    "value": "bcereus"
-                                                                                                                                                                                                                  },
                                                                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                                                                     "value": "5741"
                                                                                                                                                                                                                   },
@@ -13889,9 +13732,6 @@
                                                                                                                                                                                                                       },
                                                                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                                                                         "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                                                                        "value": "bcereus"
                                                                                                                                                                                                                       },
                                                                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                                                                         "value": "5743"
@@ -14126,9 +13966,6 @@
                                                                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                           },
-                                                                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                                                                            "value": "bcereus"
-                                                                                                                                                                                                                          },
                                                                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                                                                             "value": "5743"
                                                                                                                                                                                                                           },
@@ -14358,9 +14195,6 @@
                                                                                                                                                                                                                               },
                                                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                              },
-                                                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                                                "value": "bcereus"
                                                                                                                                                                                                                               },
                                                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                                                 "value": "5735"
@@ -14598,9 +14432,6 @@
                                                                                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                   },
-                                                                                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                                                                                    "value": "bcereus"
-                                                                                                                                                                                                                                  },
                                                                                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                                                                                     "value": "5742"
                                                                                                                                                                                                                                   },
@@ -14830,9 +14661,6 @@
                                                                                                                                                                                                                                       },
                                                                                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                                                                                         "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                                                                                        "value": "bcereus"
                                                                                                                                                                                                                                       },
                                                                                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                                                                                         "value": "5742"
@@ -15073,9 +14901,6 @@
                                                                                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                           },
-                                                                                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                                                                                            "value": "bcereus"
-                                                                                                                                                                                                                                          },
                                                                                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                                                                                             "value": "5741"
                                                                                                                                                                                                                                           },
@@ -15305,9 +15130,6 @@
                                                                                                                                                                                                                                               },
                                                                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                                              },
-                                                                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                                                                "value": "bcereus"
                                                                                                                                                                                                                                               },
                                                                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                                                                 "value": "5741"
@@ -15545,9 +15367,6 @@
                                                                                                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                   },
-                                                                                                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                                                                                                    "value": "bcereus"
-                                                                                                                                                                                                                                                  },
                                                                                                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                                                                                                     "value": "5734"
                                                                                                                                                                                                                                                   },
@@ -15783,9 +15602,6 @@
                                                                                                                                                                                                                                                       },
                                                                                                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                                                                                                         "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                                                                                                        "value": "bcereus"
                                                                                                                                                                                                                                                       },
                                                                                                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                                                                                                         "value": "5742"
@@ -16023,9 +15839,6 @@
                                                                                                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                           },
-                                                                                                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                                                                                                            "value": "bcereus"
-                                                                                                                                                                                                                                                          },
                                                                                                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                                                                                                             "value": "5741"
                                                                                                                                                                                                                                                           },
@@ -16261,9 +16074,6 @@
                                                                                                                                                                                                                                                               },
                                                                                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                                                              },
-                                                                                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                                                                                "value": "bcereus"
                                                                                                                                                                                                                                                               },
                                                                                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                                                                                 "value": "5812"
@@ -16501,9 +16311,6 @@
                                                                                                                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                                                                                                                     "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                                   },
-                                                                                                                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                                                                                                                    "value": "bcereus"
-                                                                                                                                                                                                                                                                  },
                                                                                                                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                                                                                                                     "value": "5655"
                                                                                                                                                                                                                                                                   },
@@ -16736,9 +16543,6 @@
                                                                                                                                                                                                                                                                       },
                                                                                                                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                                                                                                                         "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                                                                                                                        "value": "bcereus"
                                                                                                                                                                                                                                                                       },
                                                                                                                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                                                                                                                         "value": "5744"
@@ -16976,9 +16780,6 @@
                                                                                                                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                                           },
-                                                                                                                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                                                                                                                            "value": "bcereus"
-                                                                                                                                                                                                                                                                          },
                                                                                                                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                                                                                                                             "value": "5743"
                                                                                                                                                                                                                                                                           },
@@ -17215,9 +17016,6 @@
                                                                                                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                                               },
-                                                                                                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                                                                                                "value": "bcereus"
-                                                                                                                                                                                                                                                                              },
                                                                                                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                                                                                                 "value": "5742"
                                                                                                                                                                                                                                                                               },
@@ -17447,9 +17245,6 @@
                                                                                                                                                                                                                                                                                   },
                                                                                                                                                                                                                                                                                   "GTDB_Species": {
                                                                                                                                                                                                                                                                                     "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                                                                                  },
-                                                                                                                                                                                                                                                                                  "MLST_Scheme": {
-                                                                                                                                                                                                                                                                                    "value": "bcereus"
                                                                                                                                                                                                                                                                                   },
                                                                                                                                                                                                                                                                                   "Prokka_Genes": {
                                                                                                                                                                                                                                                                                     "value": "5742"
@@ -17687,9 +17482,6 @@
                                                                                                                                                                                                                                                                                       "GTDB_Species": {
                                                                                                                                                                                                                                                                                         "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                                                       },
-                                                                                                                                                                                                                                                                                      "MLST_Scheme": {
-                                                                                                                                                                                                                                                                                        "value": "bcereus"
-                                                                                                                                                                                                                                                                                      },
                                                                                                                                                                                                                                                                                       "Prokka_Genes": {
                                                                                                                                                                                                                                                                                         "value": "5743"
                                                                                                                                                                                                                                                                                       },
@@ -17926,9 +17718,6 @@
                                                                                                                                                                                                                                                                                           "GTDB_Species": {
                                                                                                                                                                                                                                                                                             "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                                                           },
-                                                                                                                                                                                                                                                                                          "MLST_Scheme": {
-                                                                                                                                                                                                                                                                                            "value": "bcereus"
-                                                                                                                                                                                                                                                                                          },
                                                                                                                                                                                                                                                                                           "Prokka_Genes": {
                                                                                                                                                                                                                                                                                             "value": "5738"
                                                                                                                                                                                                                                                                                           },
@@ -18162,9 +17951,6 @@
                                                                                                                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
                                                                                                                                                                                                                                                                                               },
-                                                                                                                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                                                                                                                "value": "bcereus"
-                                                                                                                                                                                                                                                                                              },
                                                                                                                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                                                                                                                 "value": "5733"
                                                                                                                                                                                                                                                                                               },
@@ -18372,9 +18158,6 @@
                                                                                                                                                                                                                                                                                               },
                                                                                                                                                                                                                                                                                               "GTDB_Species": {
                                                                                                                                                                                                                                                                                                 "value": "Bacillus_A_anthracis"
-                                                                                                                                                                                                                                                                                              },
-                                                                                                                                                                                                                                                                                              "MLST_Scheme": {
-                                                                                                                                                                                                                                                                                                "value": "bcereus"
                                                                                                                                                                                                                                                                                               },
                                                                                                                                                                                                                                                                                               "Prokka_Genes": {
                                                                                                                                                                                                                                                                                                 "value": "5738"
