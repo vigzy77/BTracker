@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-11-11",
+    "updated": "2026-11-19",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -10,6 +10,14 @@
         "url": "https://btyperdb.btyper.app/"
       }
     ],
+    "sharing": {
+      "dataset_json": false,
+      "metadata_tsv": false,
+      "authors": false,
+      "trees": false,
+      "entropy": false,
+      "screenshot": true
+    },
     "maintainers": [
       {
         "name": "Vignesh Ramnath",
@@ -8148,7 +8156,7 @@
       },
       {
         "key": "branch_support",
-        "title": "branch_support",
+        "title": "Branch_support_UFBoot",
         "type": "continuous"
       },
       {
@@ -8193,13 +8201,13 @@
       {
         "key": "Country(Code)",
         "demes": {
-          "THA": {
-            "latitude": 14.6000981,
-            "longitude": 101.38805881
-          },
           "TWN": {
             "latitude": 23.71891402,
             "longitude": 121.10884043
+          },
+          "THA": {
+            "latitude": 14.6000981,
+            "longitude": 101.38805881
           },
           "CHN": {
             "latitude": 36.7145744,
@@ -8210,21 +8218,21 @@
       {
         "key": "Region(Code)",
         "demes": {
-          "CN-JX": {
-            "latitude": 28.0,
-            "longitude": 116.0
-          },
           "TW-PIF": {
             "latitude": 22.6828,
             "longitude": 120.4879
           },
-          "CN-HE": {
-            "latitude": 39.0,
-            "longitude": 116.0
-          },
           "CN-LN": {
             "latitude": 41.2374,
             "longitude": 122.9955
+          },
+          "CN-JX": {
+            "latitude": 28.0,
+            "longitude": 116.0
+          },
+          "CN-HE": {
+            "latitude": 39.0,
+            "longitude": 116.0
           }
         }
       }

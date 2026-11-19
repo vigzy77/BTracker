@@ -2,7 +2,7 @@
   "version": "v2",
   "meta": {
     "title": "BTracker: Real-time genomic epidemiology of the Bacillus cereus group",
-    "updated": "2026-11-11",
+    "updated": "2026-11-19",
     "build_url": "https://github.com/vigzy77/BTracker/",
     "data_provenance": [
       {
@@ -10,6 +10,14 @@
         "url": "https://btyperdb.btyper.app/"
       }
     ],
+    "sharing": {
+      "dataset_json": false,
+      "metadata_tsv": false,
+      "authors": false,
+      "trees": false,
+      "entropy": false,
+      "screenshot": true
+    },
     "maintainers": [
       {
         "name": "Vignesh Ramnath",
@@ -7846,13 +7854,13 @@
         ]
       },
       {
-        "key": "confidence",
-        "title": "confidence",
+        "key": "branch_support",
+        "title": "Branch_support_UFBoot",
         "type": "continuous"
       },
       {
-        "key": "branch_support",
-        "title": "branch_support",
+        "key": "confidence",
+        "title": "confidence",
         "type": "continuous"
       }
     ],
@@ -7908,58 +7916,58 @@
             "latitude": 37.66895362,
             "longitude": -102.3925645
           },
-          "CHN": {
-            "latitude": 36.7145744,
-            "longitude": 103.55819197
-          },
           "KOR": {
             "latitude": 36.56344139,
             "longitude": 127.51424646
+          },
+          "CHN": {
+            "latitude": 36.7145744,
+            "longitude": 103.55819197
           }
         }
       },
       {
         "key": "Region(Code)",
         "demes": {
-          "US-MO": {
-            "latitude": 38.7605,
-            "longitude": -92.5618
-          },
-          "CN-GX": {
-            "latitude": 24.0,
-            "longitude": 109.0
-          },
           "CN-ZJ": {
             "latitude": 29.0,
             "longitude": 120.0
-          },
-          "GB-SCT": {
-            "latitude": 56.0,
-            "longitude": -4.0
           },
           "US-LA": {
             "latitude": 30.8704,
             "longitude": -92.0071
           },
-          "US-TX": {
-            "latitude": 31.2639,
-            "longitude": -98.5456
-          },
-          "US-IL": {
-            "latitude": 40.0797,
-            "longitude": -89.4337
-          },
-          "US-FL": {
-            "latitude": 27.7568,
-            "longitude": -81.464
+          "US-MO": {
+            "latitude": 38.7605,
+            "longitude": -92.5618
           },
           "US-NC": {
             "latitude": 35.673,
             "longitude": -79.0393
           },
+          "US-FL": {
+            "latitude": 27.7568,
+            "longitude": -81.464
+          },
+          "US-IL": {
+            "latitude": 40.0797,
+            "longitude": -89.4337
+          },
+          "US-TX": {
+            "latitude": 31.2639,
+            "longitude": -98.5456
+          },
           "US-NJ": {
             "latitude": 40.0757,
             "longitude": -74.4042
+          },
+          "GB-SCT": {
+            "latitude": 56.0,
+            "longitude": -4.0
+          },
+          "CN-GX": {
+            "latitude": 24.0,
+            "longitude": 109.0
           }
         }
       }
